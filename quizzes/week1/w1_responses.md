@@ -32,10 +32,17 @@ The data used to model staff absence patterns can be used as an input into a dec
 
 As a teacher in the public school system, I observed curriculum creep, by which the curriculum of a school (or school system) continually grows in terms of teachable content, but with no corresponding increase in teaching time. That is, schools and educators are expected to fit more content into the same (or less) instruction time.
 
-I believe that this may be contributing to a decline in academic performance, as students are expected to understand, consolidate and apply new knowledge in a shorter time, with decreased opportunities for practice and experimentation.
+I believe that this may be contributing to a decline in academic performance, as students are expected to understand, consolidate and apply new knowledge in a shorter time, with fewer opportunities for practice and experimentation.
 
-EBDM (evidence-based decision-making) can help me to establish whether curriculum creep - or some other factors - are contributing to the decline in student performance. 
+EBDM (evidence-based decision-making) can help me to establish whether curriculum creep - or other factors - are contributing to the decline in student performance. EBDM provides a framework for acquiring, appraising and aggregating existing studies pertaining to school education, as well as its augmentation by primary data, likely collected from schools, educators, students and parents. The output of this process would be a recommendation on whether or not the curriculum should be made smaller; and if it is made smaller, this would be followed by post-implementation primary data collection and a review of the impacts.
 
+#### (b)
 
+Some of the literature on education - in research papers and books - is not directly relevant to certain large demographic groups, such as first- and second-generation immigrants and low-SES communities. Because of this, extra attention would need to be paid to the appraisal of data sources, to ensure their relevance to a wide range of demographics; and there would likely need to be a significant effort spent on the collection of primary data to supplement the published material.
 
 ![[Pasted image 20230115212259.png]]
+
+![[322777966_505811621439863_2532799597846169072_n.jpg]]
+
+![[324787506_1351016795665880_3859557467476710756_n.jpg]]
+
