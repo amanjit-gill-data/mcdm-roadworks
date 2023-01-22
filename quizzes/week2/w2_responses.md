@@ -58,15 +58,15 @@ Data sources:
 
 The developers of the cloud storage service, Dropbox, considered the risk that their business idea would fail, leaving them unemployed and bankrupt. Ultimately, their decision to pursue innovation paid off.
 
-(a) In 2007, they had to choose between finding IT jobs, or developing Dropbox full-time. They knew Dropbox would fail unless they could attract investors. The future states were thus clear:
+(a) In 2007, they had to choose between finding IT jobs, or developing Dropbox full-time. They knew Dropbox would fail unless they could attract investors. The future states were thus obvious:
 
 - fail to attract investors; end up unemployed and bankrupt
 - successfully attract investors, then fail to build a market
 - successfully attract investors, then succeed in building a market
 
-(b) Statistics show that most IT startups fail. This would have allowed the developers to estimate a very low probability of attracting investors and building a market.
+(b) Statistics show that most IT startups fail. This would have allowed the developers to assume a very low probability of attracting investors and building a market.
 
-(c) If investors relied solely on probabilities, then startups would rarely secure funding, and innovation would rarely occur. Therefore, I'd use a non-probability method, like minimax regret, as this would account for the large costs (bankruptcy) and very large payoffs (billion-dollar revenues) that characterise IT ventures.
+(c) If investors relied solely on probabilities, then startups would rarely secure funding, and innovation would rarely occur. Therefore, I'd use a non-probability method, like minimax regret, as this would account for the large risks (of losses and bankruptcy) and very large profits that characterise IT ventures.
 
 (d) The developers likely considered the following data:
 - competitor activity (whether others were developing similar products)
@@ -92,3 +92,14 @@ cost calculation:
 - fixed fee = monthly fee x 36
 - excess kms cost = 0 (if no excess kms) or excess kms x cost per km
 
+(a) payoff table
+
+![[Pasted image 20230123014817.png]]
+
+(b) decisions using optimistic, conservative and minimax regret
+
+![[Pasted image 20230123014912.png | 300]]
+
+(c) decision using expected value criterion
+
+![[Pasted image 20230123015126.png]]
