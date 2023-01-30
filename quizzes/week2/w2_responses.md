@@ -1,10 +1,12 @@
+## Q1
+
 ![[Pasted image 20230121224046.png]]
 
 topic chosen: Dropbox 
 
 https://www.forbes.com/sites/victoriabarret/2011/10/18/dropbox-the-inside-story-of-techs-hottest-startup/?sh=352b59e66437
 
-#### rough notes
+### rough notes
 
 Risks taken:
 
@@ -54,7 +56,7 @@ Data sources:
 - salaries for early-career cs/eng professionals
 - financial growth in startups that succeed
 
-#### submission
+### submission
 
 The developers of the cloud storage service, Dropbox, considered the risk that their business idea would fail, leaving them unemployed and bankrupt. Ultimately, their decision to pursue innovation paid off.
 
@@ -73,6 +75,9 @@ The developers of the cloud storage service, Dropbox, considered the risk that t
 - economic conditions (likelihood of attracting investors) 
 - salaries for IT employees, compared to salaries of successful startup founders
 
+## Q2
+
+calcs: [[q2_calcs.xlsx]]
 
 ![[Pasted image 20230121224114.png]]
 ![[Pasted image 20230121224133.png]]

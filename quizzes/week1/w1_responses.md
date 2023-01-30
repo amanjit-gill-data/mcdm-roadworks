@@ -1,3 +1,5 @@
+## Q1
+
 ![[Pasted image 20230115212044.png]]
 
 #### (a)
@@ -26,6 +28,8 @@ If it were established that staff shortages were exacerbated, and not reduced, b
 
 The data used to model staff absence rates can be used as an input into a decision analytics technique, such as those required for Task 3, the output of which would form the basis of a recommendation to be made to the state government.
 
+## Q2
+
 ![[Pasted image 20230115212159.png]]
 
 #### (a)
@@ -37,6 +41,10 @@ EBDM (evidence-based decision-making) can help establish whether curriculum cree
 #### (b)
 
 Some of the literature on education is not directly relevant to certain large demographic groups, such as families from non-English-speaking backgrounds. Because of this, extra attention would need to be paid to the appraisal of data sources, to check their relevance to a wide range of demographics; and there would likely need to be a significant effort spent on the collection of primary data to supplement coverage of these groups.
+
+## Q3
+
+hand calcs and drawings in [[w1_calcs.pdf]]
 
 ![[Pasted image 20230115212259.png]]
 
