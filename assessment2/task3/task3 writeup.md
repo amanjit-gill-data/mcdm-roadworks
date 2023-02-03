@@ -71,7 +71,7 @@ higher population = better i.e. more people experiencing benefits of safer roads
 all the attributes are <u>quantifiable</u> so should be assessed using a value function
 
 - [x] create value function for each attribute
-- [ ] for each alternative, look up the raw data value on the value function for each attribute, and record in a table
+- [x] for each alternative, look up the raw data value on the value function for each attribute, and record in a table
 
 ![[Pasted image 20230203190313.png]]
 
@@ -99,4 +99,22 @@ local population
 - chose 200 as the midpoint
 - chose 150 for the lower quarter point; there are many LGAs in this ball park, so it doesn't matter that much, and the median would have been almost the same (151.5)
 - chose 300 for the upper quarter point, as this is a very large population for an LGA, and i wanted to ensure it got a high value (median would've been 328)
+
+![[Pasted image 20230203233104.png | 650]]
+
+### assign weights to attributes
+
+![[Pasted image 20230204022600.png | 500]]
+
+### evaluate performance of alternatives and make decision
+
+![[Pasted image 20230204022700.png]]
+
+### sensitivity analysis
+
+scenarios:
+
+- weight for serious accidents changes; important to check because it's weighted so heavily
+- weight for congestion changes; important to see impact of this attribute because traffic congestion may become a political issue
+- weight for population changes; political advisors may prioritise this attribute to attract more votes by focusing investment on more populous areas
 
