@@ -15,11 +15,11 @@
 - [x] Offers a preview of the findings.
 - [x] Provides a good number of academic references from recent years while documenting the research matters.
 
-The purpose of this analysis is to assess and shortlist the most dangerous road locations in Victoria, and then to use a multi-criteria decision analytics approach to select the location that is most in need of redevelopment.
+The purpose of this analysis is to assess and shortlist the most dangerous road locations in Victoria, and then to use a multi-criteria decision analytics approach to select the location that is most in need of major redevelopment.
 
 The impetus for this undertaking came from an observation that was recently made in the author's locality in Victoria. This observation was of a local road and intersection that have undergone a costly, time-consuming and disruptive reconstruction process (XXXX), only to appear, at the conclusion of these works, to have changed very little in terms of both function and appearance.
 
-The road and intersection in question have never been marked by severe traffic congestion or frequent collisions. Publicly available data show that the intersection, denoted in records by the identifier 332806, was involved in only 4 collisions in the five-year period to June 2020 (XXXX). While the Victorian government has documented the purported benefits of the project (XXXX), it has not published - or validated - the process by which this location was prioritised.
+The road and intersection in question have never been marked by severe traffic congestion or frequent collisions. Publicly available data show that the intersection, denoted in records by the identifier 332806, was involved in only 4 collisions in the five-year period to June 2020 (XXXX). Furthermore, the government has not published - or validated - the process by which this location was prioritised.
 
 By contrast, the method proposed in the present analysis, multi-criteria decision-making (MCDM), has been validated as an approach to road infrastructure planning by numerous researchers. Among them, XXXX (XXXX) demonstrates the use of the analytical heirarchy process (AHP) to assess and prioritise road surface repairs, and XXXX (XXXX) demonstrates a hybrid approach combining multi-criteria and cost-benefit analyses. In addition, XXXX (XXXX) validates the applicability of SMART (simple multi-attribute rating technique) across a broad range of technical and planning activities.
 
@@ -28,30 +28,35 @@ The present analysis is, however, limited in that an exhaustive investigation an
 Despite these limitations, a considerable amount of relevant data have been found, leading to the shortlisting and subsequent selection of a road location that is most in need of redevelopment. Furthermore, the process has been found to be robust against changes. It is hoped that this analysis can provide a blueprint from which the Victorian government may make sound, evidence-based, planning decisions in the future.
 
 
-
-
-
-
-
-
-
-
-
-
 ## Problem Identification
 
-- [ ] Addresses a wide range of articles/papers.
-- [ ] Succinctly presents the findings from the review.
-- [ ] Indicates that the presenter is very well versed with the topic. 
-- [ ] Extensive illustration on how this problem is related to the quantitative decision analytics and why.
+- [x] Addresses a wide range of articles/papers.
+- [x] Succinctly presents the findings from the review.
+- [x] Indicates that the presenter is very well versed with the topic. 
+- [x] Extensive illustration on how this problem is related to the quantitative decision analytics and why.
+
+The identification of road improvement as a suitable subject for a decision analytics problem came about as a result of the author's failure to locate information justifying the major reconstruction works being undertaken at the intersection mentioned earlier. 
+
+Attempts were made to establish the rationale for the Victorian government's decision to redevelop this road and intersection. These attempts have been fruitless; the only available information pertains to the purported benefits of the project, and a discussion of some community consultation that occurred after a commitment was already made to proceed (XXXX). 
+
+This was followed by an examination of Victorian government websites, in order to find the following:
+
+- a list of "black spot" intersections; these are intersections that are marked as particularly dangerous, which are sometimes allocated funding for improvement works by the federal government (XXXX)
+
+- any form of analysis or documentation, such as a cost-benefit analysis or a business case, that explains how and why any road project has been approved in recent years
+
+While they may be publicly available, none of these documents could be found within a reasonable amount of time. There is documentation on the processes that VicRoads, the body responsible for smaller projects like the installation of safety barriers, uses when identifying and prioritising potential targets for improvement (XXXX). These guidelines are comprehensive and include an exhaustive list of criteria and metrics by which to assess road locations. However, major redevelopments are not within the scope of VicRoads' work; therefore, it is not apparent that this document has been used in the major construction works this analysis is centred on.
+
+From the above, it is apparent that the government does provide information about the benefits of road improvement works, but only after it has committed the resources. Additionally, there is information - through VicRoads - about the processes the government might use, but no publicly available evidence of their use in specific projects.
+
+It is this absence of evidence of a methodical approach to roadwork prioritisation that motivates the present analysis. MCDM has already been validated in numerous studies on its applicability to technical projects:
+
+- 
 
 
+However, the above studies involve extensive data collection and the use of specialised equipment to take measurements to quantify specified attributes; by contrast, the author of the present study seeks to show that a desktop analysis, relying only on data that are already available, can be a capable and efficient method when resources are constrained.
 
-vicroads has a detailed benefit management framework, including an extensive list of metrics for evaluating criteria, but documentation of this being applied to specific projects is either not available to the public, or difficult to find
 
-vic big build only discusses benefits, not how the locations are chosen over others
-
-so overall, there's general discussion of how projects are chosen, but very little on how specific projects were chosen
 
 
 
