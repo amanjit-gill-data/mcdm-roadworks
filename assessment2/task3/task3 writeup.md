@@ -17,13 +17,6 @@
 
 ## Introduction
 
-- [x] Explains purpose of report
-- [x] Describes scope and limitations of report
-- [x] Describes methods/sources used to gather information
-- [x] Provides necessary background information to situate readers
-- [x] Offers a preview of the findings.
-- [x] Provides a good number of academic references from recent years while documenting the research matters.
-
 The purpose of this analysis is to assess and shortlist the most dangerous road locations in Victoria, and then to use a multi-criteria decision analytics approach to select the location that is most in need of major redevelopment.
 
 The impetus for this undertaking came from an observation that was recently made in the author's locality in Victoria. This observation was of a local road and intersection that have undergone a costly, time-consuming and disruptive reconstruction process (XXXX), only to appear, at the conclusion of these works, to have changed very little in terms of both function and appearance.
@@ -38,11 +31,6 @@ Despite these limitations, a considerable amount of relevant data have been foun
 
 
 ## Problem Identification
-
-- [x] Addresses a wide range of articles/papers.
-- [x] Succinctly presents the findings from the review.
-- [x] Indicates that the presenter is very well versed with the topic. 
-- [x] Extensive illustration on how this problem is related to the quantitative decision analytics and why.
 
 The identification of road improvement as a suitable subject for a decision analytics problem came about as a result of the author's failure to locate information justifying the major reconstruction works being undertaken at the intersection mentioned earlier. 
 
@@ -63,14 +51,6 @@ It is this absence of evidence of a methodical approach to roadwork prioritisati
 However, the aforementioned studies involve extensive data collection and the use of specialised equipment to quantify the specified attributes; by contrast, the author of the present study seeks to show that a desktop analysis, relying only on data that are already available, can be a capable and efficient stand-in when resources are constrained.
 
 ## Solution Approach
-
-- [x] Can propose the appropriate methodology to address the problem.
-- [x] Can explain why it is appropriate and other methodologies are not suitable.
-- [x] Can explain the methodology mathematically or in words.
-
-- [ ] Can suggest the possible results and outcomes.
-- [ ] Can interpret the results.
-- [x] Do have a qualitative analysis against comparing methods or approaches
 
 SMART (simple multi-attribute rating technique) has been deemed the most appropriate method for evaluating different road locations for redevelopment. This procedure provides a methodical approach that gives proportionate consideration to competing objectives, preventing a decision that overemphasises one objective to the detriment of others (XXXX). In addition, the attention paid to the selection and measurement of attributes enables a decision-making process that is transparent and defensible (XXXX), qualities that are particularly important for government accountability.
 
@@ -95,18 +75,6 @@ In addition, risk-based models like decision trees are also not appropriate, bec
 
 ## Results and Discussion
 
-- [x] Excellent documentation of the results.
-
-- [x] Different performance measures are used to validate the proposed model.
-
-- [ ] Sensitivity analysis was carried out to justify the robustness of the models.
-
-- [ ] Excellent comparison with the current practice and/or alternative methodologies.
-
-- [ ] Perfect focus on the achievements.
-
-- [ ] Detailed discussion about any possible limitations of the assumed problem.
-
 #### Shortlisting of Alternatives
 
 As aforementioned, once the decision maker (in this case, the author of the present analysis) and the problem (choosing a road location to upgrade) has been identified, the decision alternatives must be determined. There are 150,000 km of road available to general traffic in Victoria (XXXX); therefore, in order to identify the locations most in need of redevelopment, road accident statistics were obtained from VicRoads (XXXX). The six locations with the most accidents over the reporting period were chosen as decision alternatives (refer to Table XXXX).
@@ -126,7 +94,7 @@ The following attributes were chosen because they are easily measurable or quant
 
 3. Benefaction
 - This attribute seeks to capture the extent to which the local community would benefit from a road location being redeveloped, and has been decomposed into two more easily quantifiable sub-attributes, Proximity to Vulnerable Populations and Size of Local Population.
-- The closer a road location is to schools, hospitals and aged care facilities, the more there is to be gained from making that location safer. Therefore, in this analysis, locations that are very close to these facilities are preferred; the distances have been acquired from a web application (XXXX).
+- The closer a road location is to schools, hospitals and aged care facilities, the more there is to be gained from making that location safer. Therefore, in this analysis, locations that are very close to these facilities are preferred. Each location is given a weighted sum of its distance from the three categories of facility. The distances have been acquired from a web application (XXXX).
 - When a road is improved, all of the residents local to that area are potentially beneficiaries of this improvement, as they are likely to use that road. While it is difficult to estimate the number of people living directly in the vicinity of a location, it is easy to obtain data on the population of a local government area (XXXX). Therefore, in this analysis, a location within a high-population municipality is preferred.
 
 Together, these attributes are considered to contribute to the relative "exigency" of a road development project; that is, a blend of the importance and urgency of making a location safer. As shown in Figure XXXX, "costs" and "benefits" are not being measured in this analysis; rather, it is exigency that is being measured, which this is an entity that has no cost.
@@ -151,13 +119,20 @@ In order to assess the robustness of this model, three sensitivity analyses were
 
 1. Serious Accidents has the highest weight of all the attributes. Changes to this weight may have significant impacts on the final decision; this possibility needs to be either confirmed or ruled out.
 
-2. Although this is counter to the principles of public service, important government decisions - even those involving health and safety - are sometimes made for political advantage (XXXX). A government might determine that focusing on locations with high congestion and high local populations will deliver improvements that are more noticeable to more people, thereby increasing the government's chances of re-election. Therefore, it would be useful to ascertain whether this model is sensitive to changes in those two attributes.
+2. Although this is counter to the principles of public service, important government decisions - even those involving health and safety - are sometimes made for political advantage (XXXX). A government might determine that focusing on locations with high congestion and high local populations will deliver improvements that are more noticeable to more people, thereby increasing the government's chances of re-election. Therefore, it would be useful to ascertain whether this model is sensitive to changes in the weights of those two attributes.
 
-The results of these sensitivity analyses are as follows:
+Graphs for these sensitivity analyses can be found in Appendix XXXX. It is clear that if the weights of any of the three attributes of interest (Serious Accidents, Congestion and Local Population) are altered in any way, then location A will remain the preferred alternative, regardless of how low or high the altered attribute is weighted. This seems remarkable, but is not surprising when one considers that location A scored 100 on three out of five attributes, making it very difficult to dislodge as the preferred redevelopment location. 
 
+The sensitivity analyses also show that location C will always be the least-preferred alternative, regardless of how the three attributes of interest are weighted. Again, this is not entirely surprising, because this area is located on the outskirts of Melbourne, so it scored 0 on Congestion and Proximity to Vulnerable Populations, and relatively low on Local Population.
 
+#### Appraisal of the approach
 
+The stability of the analysis outcome confirms that for this problem, the decisions to use SMART over other methods, as well as to define the problem in terms of exigency rather than traditional costs and benefits, has resulted in a robust tool that can successfully be applied to road infrastructure planning activities.
 
 ## Conclusion
 
-- [ ] Conclusions and related outcomes (consequences and implications) are logical and reflect student's informed evaluation and ability to place evidence and perspectives discussed in priority order.
+This analysis used SMART, a multi-criteria decision making method, to select a road location that is most in need of improvement in terms of traffic safety. The successful application of this approach, and its robustness against changes, validates its use in the Victorian context.
+
+There are, however, limitations to consider. The available data on traffic volumes was unusable, and the "congestion ratio", which is based upon online estimates of travel time, is a crude replacement. Ideally, if this analysis were to be repeated, real traffic data would be acquired.
+
+Nevertheless, it is hoped that this analysis provides a blueprint for how the Victorian government can adopt a more methodical, transparent and defensible approach to project planning.
