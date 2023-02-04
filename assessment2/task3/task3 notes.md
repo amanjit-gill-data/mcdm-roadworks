@@ -3,14 +3,6 @@
 
 ## sources
 
-
-
-
-
-https://www.vicroads.vic.gov.au/-/media/files/documents/planning-and-projects/evaluating-investments/vicroads-benefit-management-framework-v3.ashx
-
-USED:
-
 **intro**
 
 https://bigbuild.vic.gov.au/__data/assets/pdf_file/0005/600953/NWNU-Project-Overview-Factsheet.pdf
@@ -31,9 +23,11 @@ https://investment.infrastructure.gov.au/about/local-initiatives/black-spot-prog
 
 [[VicRoads Benefit Management Framework V3.pdf]]
 
+https://www.tmr.qld.gov.au/-/media/busind/businesswithus/existing-infrastructure/smarter-solutions-mca-tool-guide.pdf?la=en
 
+https://www.infrastructureaustralia.gov.au/sites/default/files/2021-07/Assessment%20Framework%202021%20Guide%20to%20multi-criteria%20analysis.pdf
 
-
+[[rural roads in nigeria.pdf]]
 
 
 
