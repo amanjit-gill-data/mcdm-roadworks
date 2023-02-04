@@ -9,19 +9,25 @@
 ## Introduction
 
 - [x] Explains purpose of report
-- [ ] Describes scope and limitations of report
-- [ ] Describes methods/sources used to gather information
-- [ ] Provides necessary background information to situate readers
-- [ ] Offers a preview of the findings.
-- [ ] Provides a good number of academic references from recent years while documenting the research matters.
+- [x] Describes scope and limitations of report
+- [x] Describes methods/sources used to gather information
+- [x] Provides necessary background information to situate readers
+- [x] Offers a preview of the findings.
+- [x] Provides a good number of academic references from recent years while documenting the research matters.
 
 The purpose of this analysis is to assess and shortlist the most dangerous road locations in Victoria, and then to use a multi-criteria decision analytics approach to select the location that is most in need of redevelopment.
 
 The impetus for this undertaking came from an observation that was recently made in the author's locality in Victoria. This observation was of a local road and intersection that have undergone a costly, time-consuming and disruptive reconstruction process (XXXX), only to appear, at the conclusion of these works, to have changed very little in terms of both function and appearance.
 
-The road and intersection in question have never been marked by severe traffic congestion or frequent collisions. Publicly available data show that the intersection, denoted in records by the identifier 332806, was involved in only 4 collisions in the five-year period to June 2020 (XXXX). While the Victorian government has documented the purported benefits of the project (XXXX), it has not published the process by which this location was prioritised ahead of others. 
+The road and intersection in question have never been marked by severe traffic congestion or frequent collisions. Publicly available data show that the intersection, denoted in records by the identifier 332806, was involved in only 4 collisions in the five-year period to June 2020 (XXXX). While the Victorian government has documented the purported benefits of the project (XXXX), it has not published - or validated - the process by which this location was prioritised.
 
-It is hoped that this independent analysis, to identify roads that should be prioritised for redevelopment, can provide a blueprint from which the Victorian government may make sound, evidence-based, planning decisions in the future.
+By contrast, the method proposed in the present analysis, multi-criteria decision-making (MCDM), has been validated as an approach to road infrastructure planning by numerous researchers. Among them, XXXX (XXXX) demonstrates the use of the analytical heirarchy process (AHP) to assess and prioritise road surface repairs, and XXXX (XXXX) demonstrates a hybrid approach combining multi-criteria and cost-benefit analyses. In addition, XXXX (XXXX) validates the applicability of SMART (simple multi-attribute rating technique) across a broad range of technical and planning activities.
+
+The present analysis is, however, limited in that an exhaustive investigation and primary data collection cannot be done due to time and budget constraints. Because of this, care has been taken to only select attributes about which information is already available, while ensuring that the main causes of road risk are adequately covered. To this end, the author has made use of data published online by government bodies, either as downloadable data files or as interactive web applications.
+
+Despite these limitations, a considerable amount of relevant data have been found, leading to the shortlisting and subsequent selection of a road location that is most in need of redevelopment. Furthermore, the process has been found to be robust against changes. It is hoped that this analysis can provide a blueprint from which the Victorian government may make sound, evidence-based, planning decisions in the future.
+
+
 
 
 
