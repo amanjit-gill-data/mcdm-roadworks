@@ -1,5 +1,14 @@
 ![[Pasted image 20230204134955.png | 400]]
 
+- [ ] fill in references and check for XXXX
+- [ ] create tables in latex
+- [ ] check answers as I refer to results
+- [ ] create appendices
+	- [ ] raw data tables
+	- [ ] value functions
+	- [ ] 
+
+
 ## Abstract
 
 - [ ] Accurately and succinctly summarises contents of the report.
@@ -45,7 +54,7 @@ This was followed by an examination of Victorian government websites, in order t
 
 - any form of analysis or documentation, such as a cost-benefit analysis or a business case, that explains how and why any road project has been approved in recent years
 
-While they may be publicly available, none of these documents could be found within a reasonable amount of time. There is documentation on the processes that VicRoads, the body responsible for smaller projects like the installation of safety barriers, uses when identifying and prioritising potential targets for improvement (XXXX). These guidelines are comprehensive and include an exhaustive list of criteria and metrics by which to assess road locations. However, major redevelopments are not within the scope of VicRoads' work; therefore, it is not apparent that this document has been used in the major construction works this analysis is centred on.
+While they may be publicly available, none of these documents could be found within a reasonable amount of time. There is documentation on the processes that VicRoads, the body responsible for smaller projects like the installation of safety barriers, uses when identifying and prioritising potential targets for improvement (XXXX). However, it is not apparent that this has been used in major construction projects, which are outside VicRoads' scope of work.
 
 From the above, it is apparent that the government does provide information about the benefits of major improvement works, but only after it has committed the resources. Additionally, while there is some information - through VicRoads - about the processes the government might use, there is no publicly available evidence of their use in specific projects.
 
@@ -84,11 +93,11 @@ AHP (analytical heirarchy process) was also considered, but this is more appropr
 
 In addition, risk-based models like decision trees are also not appropriate, because the problem at hand is not one of probabilities and risks (the outcome of improving a dangerous road or intersection is almost certainly an increase in safety and a decrease in collisions); what is being contested is which location represents the most beneficial use of resources.
 
-## Results
+## Results and Discussion
 
-- [ ] Excellent documentation of the results.
+- [x] Excellent documentation of the results.
 
-- [ ] Different performance measures are used to validate the proposed model.
+- [x] Different performance measures are used to validate the proposed model.
 
 - [ ] Sensitivity analysis was carried out to justify the robustness of the models.
 
@@ -98,7 +107,53 @@ In addition, risk-based models like decision trees are also not appropriate, bec
 
 - [ ] Detailed discussion about any possible limitations of the assumed problem.
 
-Having identified the problem (choosing the road location that is most in need of improvement, and developed a case for selecting SMART from the available methods,   
+#### Shortlisting of Alternatives
+
+As aforementioned, once the decision maker (in this case, the author of the present analysis) and the problem (choosing a road location to upgrade) has been identified, the decision alternatives must be determined. There are 150,000 km of road available to general traffic in Victoria (XXXX); therefore, in order to identify the locations most in need of redevelopment, road accident statistics were obtained from VicRoads (XXXX). The six locations with the most accidents over the reporting period were chosen as decision alternatives (refer to Table XXXX).
+
+#### Selection of Attributes
+
+The following attributes were chosen because they are easily measurable or quantifiable; and, when taken together, they form a sufficiently broad and complete picture of the importance and urgency of a potential road development project:
+
+1. Danger
+- This is decomposed into two quantifiable sub-attributes, Severe Accidents and Other Accidents.
+- The figures for these sub-attributes are obtained from the VicRoads statistics aforementioned (XXXX), and are considered a suitable indicator of danger level.
+- A third sub-attribute, Fatal Accidents, has been removed, because there were too few fatal accidents at the shortlisted locations to impact the analysis. 
+
+2. Congestion
+- This encapsulates the high traffic volumes that often characterise hazardous driving conditions. According to one insurance company, 27% of its collision claims are for accidents that occurred between 8-9am and 3-6pm on weekdays (XXXX).
+- VicRoads has published traffic volume data (XXXX), but this is available only as a very large file that is unable to be processed by the author's data analysis equipment. Therefore, the extent of congestion at a location has been estimated with a "congestion ratio"; this is a ratio of the time it takes to travel through a 1km section, at peak and off-peak times. These travel times are obtained from a web application (XXXX).
+
+3. Benefaction
+- This attribute seeks to capture the extent to which the local community would benefit from a road location being redeveloped, and has been decomposed into two more easily quantifiable sub-attributes, Proximity to Vulnerable Populations and Size of Local Population.
+- The closer a road location is to schools, hospitals and aged care facilities, the more there is to be gained from making that location safer. Therefore, in this analysis, locations that are very close to these facilities are preferred; the distances have been acquired from a web application (XXXX).
+- When a road is improved, all of the residents local to that area are potentially beneficiaries of this improvement, as they are likely to use that road. While it is difficult to estimate the number of people living directly in the vicinity of a location, it is easy to obtain data on the population of a local government area (XXXX). Therefore, in this analysis, a location within a high-population municipality is preferred.
+
+Together, these attributes are considered to contribute to the relative "exigency" of a road development project; that is, a blend of the importance and urgency of making a location safer. As shown in Figure XXXX, "costs" and "benefits" are not being measured in this analysis; rather, it is exigency that is being measured, which this is an entity that has no cost.
+
+Tables XXXX-XXXX contain the raw data that have been collected for the six alternatives.
+
+#### Weighting of Attributes and Alternatives
+
+All of the attributes are quantifiable; therefore, a different value function has been used to scale each one (refer to Appendix XXXX). These functions are subjective in that they are based on the author's own judgements. They are created with the "bisection" method that has been described in Goodwin (XXXX); in this analysis, they all appear to be nearly linear, not following the idealised curved examples shown in the text mentioned. However, according to XXXX (XXXX), linear value functions are considered acceptable.
+
+The relative weight of each attribute has also been assessed and normalised (refer to Appendix XXXX); again, subjective judgements by the author have been used.
+
+#### Evaluation of Alternatives
+
+Each location alternative has been scored on all attributes, using the value functions. Then a weighted sum of these scores has been calculated using the attribute weights. These final evaluations can be found in Table XXXX. Based on this analysis, it is clear that location A has the most pressing need for improvement works.
+
+Unlike other SMART analyses, there is no cost attribute to model, and therefore no efficient frontier; the prevailing alternative is simply the one with the most exigency.
+
+#### Sensitivity Analysis 
+
+In order to assess the robustness of this model, three sensitivity analyses were carried out, with the following considerations in mind:
+
+1. Serious Accidents has the highest weight of all the attributes. Changes to this weight may have significant impacts on the final decision; this possibility needs to be either confirmed or ruled out.
+
+2. Although this is counter to the principles of public service, important government decisions - even those involving health and safety - are sometimes made for political advantage (XXXX). A government might determine that focusing on locations with high congestion and high local populations will deliver improvements that are more noticeable to more people, thereby increasing the government's chances of re-election. Therefore, it would be useful to ascertain whether this model is sensitive to changes in those two attributes.
+
+The results of these sensitivity analyses are as follows:
 
 
 

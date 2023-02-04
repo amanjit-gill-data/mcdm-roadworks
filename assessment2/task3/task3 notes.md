@@ -33,8 +33,23 @@ Goodwin chapter 3
 
 SMART paper by Meera Patel again
 
+https://www.vicroads.vic.gov.au/traffic-and-road-use/road-network-and-performance/victorias-road-network
 
+Five-year road crash stats again
 
+https://www.youi.com.au/youi-news/most-common-car-accidents-and-most-dangerous-times-on-the-road
+
+https://discover.data.vic.gov.au/dataset/typical-daily-traffic-volume-profile
+
+https://www.google.com/maps
+
+https://population.gov.au/data-and-forecasts/dashboards/population-local-government-areas
+
+Goodwin chapter 3 again
+
+SMART paper by Meera Patel again
+
+https://www.theguardian.com/australia-news/2023/feb/02/auditor-general-finds-nsw-labor-seats-denied-bushfire-grants-due-to-limit-set-by-john-barilaros-office
 
 
 
