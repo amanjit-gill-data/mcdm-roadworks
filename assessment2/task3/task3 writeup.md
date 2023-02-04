@@ -118,3 +118,10 @@ scenarios:
 - weight for congestion changes; important to see impact of this attribute because traffic congestion may become a political issue
 - weight for population changes; political advisors may prioritise this attribute to attract more votes by focusing investment on more populous areas
 
+copy this layout
+![[Pasted image 20230204111844.png]]
+
+- [ ] serious accidents
+- [ ] congestion
+- [ ] population
+
