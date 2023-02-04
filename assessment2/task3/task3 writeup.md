@@ -55,16 +55,34 @@ However, the aforementioned studies involve extensive data collection and the us
 
 ## Solution Approach
 
-- [ ] Can propose the appropriate methodology to address the problem.
-- [ ] Can explain why it is appropriate and other methodologies are not suitable.
-- [ ] Can explain the methodology mathematically or in words.
+- [x] Can propose the appropriate methodology to address the problem.
+- [x] Can explain why it is appropriate and other methodologies are not suitable.
+- [x] Can explain the methodology mathematically or in words.
 
 - [ ] Can suggest the possible results and outcomes.
 - [ ] Can interpret the results.
-- [ ] Do have a qualitative analysis against comparing methods or approaches
+- [x] Do have a qualitative analysis against comparing methods or approaches
 
+SMART (simple multi-attribute rating technique) has been deemed the most appropriate method for evaluating different road locations for redevelopment. This procedure provides a methodical approach that gives proportionate consideration to competing objectives, preventing a decision that overemphasises one objective to the detriment of others (XXXX). In addition, the attention paid to the selection and measurement of attributes enables a decision-making process that is transparent and defensible (XXXX), qualities that are particularly important for government accountability.
 
+The SMART approach is, as its name suggests, simple. As outlined by XXXX (XXXX), the procedure involves the following actions:
 
+1. Identify the person(s) who will make the decision.
+2. Identify the problem.
+3. Identify the decision alternatives that should be considered.
+4. Select attributes (criteria) upon which to compare the alternatives.
+5. Order the attributes from most important to least.
+6. Assign each attribute a weight that represents its importance, relative to the other attributes.
+7. Normalise the attribute weights.
+8. For each attribute, rank the alternatives such that a rank represents the degree to which the decision maker prefers this alternative to the others.
+9. For each alternative, compute a weighted sum using its own scores and the attribute weights.
+10. Make a decision - this is likely to be the alternative with the highest weighted sum.
+
+At the end of this procedure, the alternative with the highest weighted sum is considered to be the strongest candidate when the competing criteria are considered together, with proportionate consideration given to each one.
+
+AHP (analytical heirarchy process) was also considered, but this is more appropriate when many of the selected attributes are non-quantifiable. In the present case, all of the selected attributes are quantifiable, either directly or indirectly, making them good candidates for evaluation through value functions such as those used in SMART.
+
+In addition, risk-based models like decision trees are also not appropriate, because the problem at hand is not one of probabilities and risks (the outcome of improving a dangerous road or intersection is almost certainly an increase in safety and a decrease in collisions); what is being contested is which location represents the most beneficial use of resources.
 
 ## Results
 
@@ -79,6 +97,9 @@ However, the aforementioned studies involve extensive data collection and the us
 - [ ] Perfect focus on the achievements.
 
 - [ ] Detailed discussion about any possible limitations of the assumed problem.
+
+Having identified the problem (choosing the road location that is most in need of improvement, and developed a case for selecting SMART from the available methods,   
+
 
 
 

@@ -29,6 +29,12 @@ https://www.infrastructureaustralia.gov.au/sites/default/files/2021-07/Assessmen
 
 [[rural roads in nigeria.pdf]]
 
+Goodwin chapter 3
+
+SMART paper by Meera Patel again
+
+
+
 
 
 
@@ -108,6 +114,8 @@ all the attributes are <u>quantifiable</u> so should be assessed using a value f
 ![[Pasted image 20230203190313.png]]
 
 some notes on my decisions for the value functions:
+
+[[SMART_Multi_criteria_decision_making_tec.pdf]] contains reference to justification of straight line
 
 serious accidents
 - chose 10 crashes as midpoint, as this averages to 2 per year, which i arbitrarily deemed tolerable
