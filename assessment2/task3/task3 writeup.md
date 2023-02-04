@@ -1,13 +1,18 @@
 ![[Pasted image 20230204134955.png | 400]]
 
 - [ ] write tasks 1 and 2
-- [ ] fill in references and check for XXXX
+- [ ] create references and replace XXXX
+- [ ] create figures
+	- [ ] value tree
 - [ ] create tables in latex
+	- [ ] location alternatives
+	- [ ] raw data
+	- [ ] attribute weights and normalisation
+	- [ ] final weighted sums for alternatives
 - [ ] check answers as I refer to results
 - [ ] create appendices
-	- [ ] raw data tables
-	- [ ] value functions
-	- [ ] 
+	- [ ] value functions - numbers and graphs
+	- [ ] sensitivity analyses
 
 
 ## Abstract
@@ -105,9 +110,9 @@ Tables XXXX-XXXX contain the raw data that have been collected for the six alter
 
 #### Weighting of Attributes and Alternatives
 
-All of the attributes are quantifiable; therefore, a different value function has been used to scale each one (refer to Appendix XXXX). These functions are subjective in that they are based on the author's own judgements. They are created with the "bisection" method that has been described in Goodwin (XXXX); in this analysis, they all appear to be nearly linear, not following the idealised curved examples shown in the text mentioned. However, according to XXXX (XXXX), linear value functions are considered acceptable.
+All of the attributes are quantifiable; therefore, a different value function has been used to scale each one (refer to Appendix XXXX). These functions are subjective in that they are based on the author's own judgements. They are created with the "bisection" method that has been described in Goodwin (XXXX); in this analysis, they mostly appear to be nearly linear, not following the idealised curved examples shown in the text mentioned. However, according to XXXX (XXXX), linear value functions are considered acceptable.
 
-The relative weight of each attribute has also been assessed and normalised (refer to Appendix XXXX); again, subjective judgements by the author have been used.
+The relative weight of each attribute has also been assessed and normalised (refer to Table XXXX); again, subjective judgements by the author have been used.
 
 #### Evaluation of Alternatives
 
