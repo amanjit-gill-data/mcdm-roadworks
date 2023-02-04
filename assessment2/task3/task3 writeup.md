@@ -1,5 +1,6 @@
 ![[Pasted image 20230204134955.png | 400]]
 
+- [ ] write tasks 1 and 2
 - [ ] fill in references and check for XXXX
 - [ ] create tables in latex
 - [ ] check answers as I refer to results
@@ -11,9 +12,10 @@
 
 ## Abstract
 
-- [ ] Accurately and succinctly summarises contents of the report.
-- [ ] Gives the reader an excellent understanding of the report purpose and content.
-- [ ] Provides a hint of managerial implication at the bottom end of the abstract
+The Victorian government is engaged in an extensive program of public infrastructure works, with a specific focus on road and rail (XXXX). However, the process by which the government identifies, prioritises and commits to these projects is not publicly documented, and this has led to some doubt as to whether roadworks funding is being targeted in the most beneficial way. 
+
+This analysis makes the case for wider adoption of MCDM (multi-criteria decision making) methods in planning processes, and demonstrates the use of one such method, SMART, in the identification of a road location that is most in need of safety improvements. This procedure is shown to be effective and robust for such purposes, and an entreaty is made to the Victorian government to employ MCDM in a program of transparent and defensible decision making.
+
 
 ## Introduction
 

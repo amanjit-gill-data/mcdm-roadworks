@@ -25,9 +25,13 @@ google scholar! use the 'cite' feature
 ![[Pasted image 20230202030039.png | 500]]
 
 #### abstract / exec summary
-![[Pasted image 20230202025227.png | 450]]
 
 ![[Pasted image 20230202025313.png | 600]]
+
+![[Pasted image 20230202025227.png | 450]]
+
+
+
 
 #### conclusion
 ![[Pasted image 20230202025919.png | 500]]
