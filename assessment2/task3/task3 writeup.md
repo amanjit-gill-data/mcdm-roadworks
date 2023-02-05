@@ -1,18 +1,19 @@
 ![[Pasted image 20230204134955.png | 400]]
 
-- [ ] write tasks 1 and 2
+- [x] write tasks 1 and 2
 - [ ] create references and replace XXXX
-- [ ] create figures
-	- [ ] value tree
-- [ ] create tables in latex
-	- [ ] location alternatives
-	- [ ] raw data
-	- [ ] attribute weights and normalisation
-	- [ ] final weighted sums for alternatives
-- [ ] check answers as I refer to results
+- [x] create figures
+	- [x] value tree
+- [x] create tables in latex
+	- [x] location alternatives
+	- [x] raw data
+	- [x] attribute weights and normalisation
+	- [x] final weighted sums for alternatives
+- [x] check answers as I refer to results
 - [ ] create appendices
 	- [ ] value functions - numbers and graphs
 	- [ ] sensitivity analyses
+- [ ] cut down words
 
 
 ## Abstract

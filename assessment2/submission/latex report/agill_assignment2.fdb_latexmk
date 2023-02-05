@@ -1,17 +1,17 @@
 # Fdb version 3
-["biber agill_assignment2"] 1675487844 "agill_assignment2.bcf" "agill_assignment2.bbl" "agill_assignment2" 1675487850
+["biber agill_assignment2"] 1675487844 "agill_assignment2.bcf" "agill_assignment2.bbl" "agill_assignment2" 1675558603
   "ag_bib.bib" 1670810232 3596 41b2f35acf095b47e32a4532c76a8c42 ""
-  "agill_assignment2.bcf" 1675487850 107433 a4d7c5199cdb6dc1d365d887435b4188 "pdflatex"
+  "agill_assignment2.bcf" 1675558603 107433 a4d7c5199cdb6dc1d365d887435b4188 "pdflatex"
   (generated)
   "agill_assignment2.bbl"
   "agill_assignment2.blg"
-["pdflatex"] 1675487849 "c:/Users/amanj/ds_projects/unsw/decision_making_6510/assessment2/submission/latex report/agill_assignment2.tex" "agill_assignment2.pdf" "agill_assignment2" 1675487850
+["pdflatex"] 1675558602 "c:/Users/amanj/ds_projects/unsw/decision_making_6510/assessment2/submission/latex report/agill_assignment2.tex" "agill_assignment2.pdf" "agill_assignment2" 1675558603
   "3uddg6.png" 1663752936 188656 92d8c5733794cc7b559b1a0f786175c9 ""
-  "agill_assignment2.aux" 1675487850 2895 b15c00314e2c93d13d5a48bd0cf3c197 "pdflatex"
+  "agill_assignment2.aux" 1675558603 2910 8ac032e3eaaef1ea8c437aa3a1397096 "pdflatex"
   "agill_assignment2.bbl" 1675487846 18918 09ff67f7d18c13a9c4b57531513f20ce "biber agill_assignment2"
-  "agill_assignment2.run.xml" 1675487850 2442 aeabf8b38f15764e5bd12544c110d70f "pdflatex"
-  "agill_assignment2.tex" 1675487842 2194 e3e3b479942da54d0780427e68bb4548 ""
-  "c:/Users/amanj/ds_projects/unsw/decision_making_6510/assessment2/submission/latex report/agill_assignment2.tex" 1675487842 2194 e3e3b479942da54d0780427e68bb4548 ""
+  "agill_assignment2.run.xml" 1675558603 2442 aeabf8b38f15764e5bd12544c110d70f "pdflatex"
+  "agill_assignment2.tex" 1675558579 26266 ed4a5befe66701e6e66a7075ff4fce2c ""
+  "c:/Users/amanj/ds_projects/unsw/decision_making_6510/assessment2/submission/latex report/agill_assignment2.tex" 1675558579 26266 ed4a5befe66701e6e66a7075ff4fce2c ""
   "c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc" 1663052593 2405 5dcf2c1b967ee25cc46c58cd52244aed ""
   "c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc" 1663052593 2840 216e6e45ad352e2456e1149f28885bee ""
   "c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc" 1663052593 2327 9d6df24f9c4f7368395224341a95523a ""

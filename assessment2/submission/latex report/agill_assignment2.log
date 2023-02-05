@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.13)  4 FEB 2023 16:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.13)  5 FEB 2023 11:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -495,29 +495,38 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 30.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 30.
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 61.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 34.
  (c:/texlive/2022/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-<3uddg6.png, id=1, 539.01375pt x 398.48875pt>
-File: 3uddg6.png Graphic file (type png)
-<use 3uddg6.png>
-Package pdftex.def Info: 3uddg6.png  used on input line 72.
-(pdftex.def)             Requested size: 452.9679pt x 334.88028pt.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 85.
- [1
+) [1
 
 {c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 103.
+Overfull \hbox (0.58452pt too wide) in paragraph at lines 67--68
+\OT1/lmr/m/n/10.95 Danaos Cor-po-ra-tion has se-cured of-fice space at Karabar; how-ever, the Quean-Beyan and Palerang
+ []
+
+[2] [3]
+Overfull \hbox (1.91086pt too wide) in paragraph at lines 145--146
+\OT1/lmr/m/n/10.95 SMART (sim-ple multi-attribute rat-ing tech-nique) has been deemed the most ap-pro-pri-ate method
+ []
+
+[4] [5] [6] [7]
+<3uddg6.png, id=30, 539.01375pt x 398.48875pt>
+File: 3uddg6.png Graphic file (type png)
+<use 3uddg6.png>
+Package pdftex.def Info: 3uddg6.png  used on input line 258.
+(pdftex.def)             Requested size: 452.9679pt x 334.88028pt.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 271.
+LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 289.
  (c:/texlive/2022/texmf-dist/tex/latex/lm/ot1lmtt.fd
 File: ot1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-Overfull \hbox (7.28294pt too wide) in paragraph at lines 104--104
+) [8 <./3uddg6.png (PNG copy)>]
+Overfull \hbox (7.28294pt too wide) in paragraph at lines 290--290
 [][]\OT1/lmr/m/n/10.95 Frost, Jim (2017). \OT1/lmr/m/it/10.95 Choos-ing the Cor-rect Type of Re-gres-sion Anal-y-sis\OT1/lmr/m/n/10.95 . $\OT1/lmtt/m/n/10.95 https : / / statisticsbyjim .
  []
 
-[2 <./3uddg6.png (PNG copy)>] [3] (./agill_assignment2.aux)
+[9] (./agill_assignment2.aux)
 Package logreq Info: Writing requests to 'agill_assignment2.run.xml'.
 \openout1 = `agill_assignment2.run.xml'.
 
@@ -525,16 +534,16 @@ Package logreq Info: Writing requests to 'agill_assignment2.run.xml'.
 Here is how much of TeX's memory you used:
  11930 strings out of 475075
  228515 string characters out of 5783001
- 981953 words of memory out of 5000000
+ 986953 words of memory out of 5000000
  33216 multiletter control sequences out of 15000+600000
  512671 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,8n,68p,781b,1427s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 60i,8n,68p,890b,1427s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-rmtt.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on agill_assignment2.pdf (3 pages, 363236 bytes).
+Output written on agill_assignment2.pdf (9 pages, 388007 bytes).
 PDF statistics:
- 63 PDF objects out of 1000 (max. 8388607)
- 39 compressed objects within 1 object stream
+ 83 PDF objects out of 1000 (max. 8388607)
+ 53 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
