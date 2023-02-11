@@ -1,7 +1,7 @@
 ![[Pasted image 20230204134955.png | 400]]
 
 - [x] write tasks 1 and 2
-- [ ] create references and replace XXXX
+- [x] create references and replace XXXX
 - [x] create figures
 	- [x] value tree
 - [x] create tables in latex
@@ -10,9 +10,7 @@
 	- [x] attribute weights and normalisation
 	- [x] final weighted sums for alternatives
 - [x] check answers as I refer to results
-- [ ] create appendices
-	- [ ] value functions - numbers and graphs
-	- [ ] sensitivity analyses
+- [x] create appendices
 - [ ] cut down words
 
 
