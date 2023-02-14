@@ -12,6 +12,9 @@
 
 ![[Pasted image 20230211104715.png]]
 
+this youtube video describes a similar problem
+https://www.youtube.com/watch?v=OjUmQRRfsEY
+
 
 ## task 3 - report on prescriptive analytics
 
