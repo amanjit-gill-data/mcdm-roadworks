@@ -31,12 +31,16 @@ need to know:
 - [x] for private schools, total funding including fees
 - [x] SRS i.e. how much it actually costs to educate a child for a year 2020
 - [x] total number of students in 2020
-- [ ] proportion/number of poorly performing students in naplan
-
+- [ ] proportion/number of poorly performing students in naplan, for all schools public and private
+- [ ] ratio of students to non-teaching staff
 - [ ] total funding pool for new program = private funding in excess of SRS
 - [ ] ES salary
 
-
+notes:
+- some schools include primary years; no data to separate
+- removed hallam, as it's a senior college - no naplan or junior year levels to fund
+- chose to compare naplan results against all australian schools, not just similar ones
+	- wanted an absolute measure not a relative one
 
 
 
