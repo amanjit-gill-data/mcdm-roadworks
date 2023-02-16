@@ -43,6 +43,8 @@ notes:
 	- wanted an absolute measure not a relative one
 - filled in missing values with medians of rest of column
 - didn't want to completely remove these schools because it would have changed the problem - total funding pool shared among fewer schools
+- had to use 'above average' stats as all other stats aren't given as a num/% of students
+- took mean of reading and writing to create 'literacy'
 
 # IP model
 
@@ -56,20 +58,21 @@ x<sub>13</sub> = number of FTE ES staff allocated to school 3
 ### parameters
 
 use collected data to formulate parameters:
-- [ ] total available budget
-- [ ] initial ratio of enrolled students to ES staff
-- [ ] % of below average to average naplan results
-- [ ] VCE underperformance loading
+- [x] total available budget
+- [x] initial ratio of enrolled students to ES staff
+- [ ] academic progress score = aggregate of naplan and vce study scores
+	- [ ] use this to factor up/down the initial ratio of students to ES staff
+- [x] VCE performance score - just use median study score for this
 
 ### objective function
 
-maximise ratio of under-performing students to allocated ES staff
+minimise staffing cost
 
 ### constraints
 
 - total expenditure <= budget
 - final ratio of ES staff to enrolled students <= 25
-- number of assigned ES staff >= VCE underperformance loading
+- 
 
 # research
 
@@ -211,3 +214,6 @@ salary as at 1/1/23: $57,975
 
 https://www.vcaa.vic.edu.au/administration/research-and-statistics/Pages/SeniorSecondaryCompletion.aspx
 
+https://www.vcaa.vic.edu.au/curriculum/vce/vce-faqs/Pages/current-students.aspx
+
+mean study score is set at 30
