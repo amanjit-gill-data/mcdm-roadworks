@@ -1,11 +1,11 @@
 # planning
 
 introduce a <u>new</u> fund
-- two hours of ES salary per qualifying student
+- X hours of ES salary per qualifying student
 - number of qualifying students is estimated from naplan
 - justify the need for this
 	- evidence/articles on lack of support staff etc
-	- evidence on why 2 hours of salary
+	- evidence on why X hours of salary
 
 to calculate total pool of money:
 - find out how much govt funding the local private schools are getting
@@ -31,18 +31,45 @@ need to know:
 - [x] for private schools, total funding including fees
 - [x] SRS i.e. how much it actually costs to educate a child for a year 2020
 - [x] total number of students in 2020
-- [ ] proportion/number of poorly performing students in naplan, for all schools public and private
-- [ ] ratio of students to non-teaching staff
-- [ ] total funding pool for new program = private funding in excess of SRS
-- [ ] ES salary
+- [x] proportion/number of poorly performing students in naplan, for all schools public and private
+- [x] ratio of students to non-teaching staff
+- [x] total funding pool for new program = private funding in excess of SRS
+- [x] ES salary
 
 notes:
+- used 2020 data for funding and enrolments as 2020 is the most recent available for the funding, and the enrolments is going to be combined with the funding, so decided to use 2020 for that, too (despite 2022 being available)
 - some schools include primary years; no data to separate
-- removed hallam, as it's a senior college - no naplan or junior year levels to fund
 - chose to compare naplan results against all australian schools, not just similar ones
 	- wanted an absolute measure not a relative one
+- filled in missing values with medians of rest of column
+- didn't want to completely remove these schools because it would have changed the problem - total funding pool shared among fewer schools
 
+# IP model
 
+### decision variables
+
+x<sub>1</sub> = number of FTE ES staff allocated to school 1
+x<sub>2</sub> = number of FTE ES staff allocated to school 2
+...
+x<sub>13</sub> = number of FTE ES staff allocated to school 3
+
+### parameters
+
+use collected data to formulate parameters:
+- [ ] total available budget
+- [ ] initial ratio of enrolled students to ES staff
+- [ ] % of below average to average naplan results
+- [ ] VCE underperformance loading
+
+### objective function
+
+maximise ratio of under-performing students to allocated ES staff
+
+### constraints
+
+- total expenditure <= budget
+- final ratio of ES staff to enrolled students <= 25
+- number of assigned ES staff >= VCE underperformance loading
 
 # research
 
@@ -167,3 +194,20 @@ https://www.acara.edu.au/docs/default-source/default-document-library/naplan-res
 
 individualised school funding and naplan data
 https://www.myschool.edu.au/
+
+### education support salaries in vic
+
+https://www.education.vic.gov.au/hrweb/Documents/Salary-EducationSupportClass.pdf
+
+level 1, range 2-8
+10 years' experience
+salary as at 1/1/23: $68,943
+
+level 2, range 2-3
+5 years' experience
+salary as at 1/1/23: $57,975
+
+### VCE performance
+
+https://www.vcaa.vic.edu.au/administration/research-and-statistics/Pages/SeniorSecondaryCompletion.aspx
+
