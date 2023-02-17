@@ -44,7 +44,8 @@ notes:
 - filled in missing values with medians of rest of column
 - didn't want to completely remove these schools because it would have changed the problem - total funding pool shared among fewer schools
 - had to use 'above average' stats as all other stats aren't given as a num/% of students
-- took mean of reading and writing to create 'literacy'
+- took mean of reading and writing to create 'literacy' metric for % stats
+- took mean of reading, writing, spelling and grammar to create 'literacy' metric for raw scores
 
 # IP model
 
@@ -53,26 +54,39 @@ notes:
 x<sub>1</sub> = number of FTE ES staff allocated to school 1
 x<sub>2</sub> = number of FTE ES staff allocated to school 2
 ...
-x<sub>13</sub> = number of FTE ES staff allocated to school 3
+x<sub>13</sub> = number of FTE ES staff allocated to school 13
 
 ### parameters
 
 use collected data to formulate parameters:
 - [x] total available budget
 - [x] initial ratio of enrolled students to ES staff
-- [ ] academic progress score = aggregate of naplan and vce study scores
-	- [ ] use this to factor up/down the initial ratio of students to ES staff
 - [x] VCE performance score - just use median study score for this
+- [x] academic deficit score - normalised to represent a proportion of the total deficit across schools
 
 ### objective function
 
 minimise staffing cost
 
+staffing cost = 68943x<sub>1</sub> + 68943x<sub>2</sub> + ... + 68943x<sub>13</sub> 
+
+because assumed salary is the same for all schools, this can be simplified to:
+
+minimise x<sub>1</sub> + x<sub>2</sub> + ... + x<sub>13</sub>
+
 ### constraints
 
 - total expenditure <= budget
-- final ratio of ES staff to enrolled students <= 25
-- 
+
+68,943(x<sub>1</sub> + x<sub>2</sub> + ... + x<sub>13</sub>) <= 106,656,982
+
+- final ratio of non-teaching staff to enrolled students <= 25
+
+no. enrolled students / (initial no. non-teaching staff + x<sub>i</sub>) <= 25 
+
+- number of allocated staff >= normalised academic deficit score x total allocation
+
+x<sub>i</sub> >= deficit_score_normalised x (x<sub>1</sub> + x<sub>2</sub> + ... + x<sub>13</sub>)
 
 # research
 
