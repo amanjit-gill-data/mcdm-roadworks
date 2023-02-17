@@ -86,7 +86,7 @@ no. enrolled students / (initial no. non-teaching staff + x<sub>i</sub>) <= 25
 
 - number of allocated staff >= normalised academic deficit score x total allocation
 
-x<sub>i</sub> >= deficit_score_normalised x (x<sub>1</sub> + x<sub>2</sub> + ... + x<sub>13</sub>)
+x<sub>i</sub> >= deficit_score_normalised \* (x<sub>1</sub> + x<sub>2</sub> + ... + x<sub>13</sub>)
 
 # research
 
