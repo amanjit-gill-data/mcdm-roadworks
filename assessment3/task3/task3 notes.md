@@ -35,6 +35,7 @@ need to know:
 - [x] ratio of students to non-teaching staff
 - [x] total funding pool for new program = private funding in excess of SRS
 - [x] ES salary
+- [ ] total number of staff
 
 notes:
 - used 2020 data for funding and enrolments as 2020 is the most recent available for the funding, and the enrolments is going to be combined with the funding, so decided to use 2020 for that, too (despite 2022 being available)
