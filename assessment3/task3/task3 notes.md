@@ -1,11 +1,21 @@
-# planning
 
-introduce a <u>new</u> fund
-- X hours of ES salary per qualifying student
-- number of qualifying students is estimated from naplan
-- justify the need for this
-	- evidence/articles on lack of support staff etc
-	- evidence on why X hours of salary
+# advice from webinar
+
+- assignment advice
+	- include title page!!
+	- mostly similar instructions to assignment 2
+	- use <u>applied research</u>, not <u>basic research</u>
+	- if task3 problem involves uncertainty, must use simulations (week 6)
+	- model = objective function, decision variables, constraints clearly defined
+	- recommend using only parts 1 and 2 of the submission thing
+		- i.e. report in part 1, spreadsheet in part 2
+		- then nothing in parts 3 and 4
+	- justify why it's a prescriptive analytics problem and why it needs linear programming or whatever method i chose
+
+re lit review
+![[Pasted image 20230210024453.png | 600]]
+
+# planning
 
 to calculate total pool of money:
 - find out how much govt funding the local private schools are getting
@@ -17,11 +27,9 @@ design decisions - justify each one
 - why secondary schools only
 - why target private schools for redistribution of funds
 
-constraints - justify each one
-- minimum allocation per school = XXXX
-- sum of money allocated to all schools <= total funding pool
-- state funding + fed funding + new ES funding <= SRS (maybe don't include this; see how it plays out)
-
+for future consideration:
+- goal programming for the entire system, not just ES allocation
+	- multiple competing goals
 
 # data collection
 
@@ -35,7 +43,7 @@ need to know:
 - [x] ratio of students to non-teaching staff
 - [x] total funding pool for new program = private funding in excess of SRS
 - [x] ES salary
-- [ ] total number of staff
+- [x] total number of staff
 
 notes:
 - used 2020 data for funding and enrolments as 2020 is the most recent available for the funding, and the enrolments is going to be combined with the funding, so decided to use 2020 for that, too (despite 2022 being available)
@@ -44,9 +52,7 @@ notes:
 	- wanted an absolute measure not a relative one
 - filled in missing values with medians of rest of column
 - didn't want to completely remove these schools because it would have changed the problem - total funding pool shared among fewer schools
-- had to use 'above average' stats as all other stats aren't given as a num/% of students
-- took mean of reading and writing to create 'literacy' metric for % stats
-- took mean of reading, writing, spelling and grammar to create 'literacy' metric for raw scores
+- took mean of reading, writing, spelling and grammar to create 'literacy' metric
 
 # IP model
 
@@ -99,8 +105,6 @@ https://www.vic.gov.au/find-your-schools-funding
 so demographic data are mostly used?
 would using actual performance data affect the allocation?
 
-![[Pasted image 20230215050032.png | 600]]
-constraints
 
 ### govt guide on funding allocation
 
@@ -118,6 +122,7 @@ would it make a difference to take the latest NAPLAN instead?
 ![[Pasted image 20230215053256.png | 600]]
 this is a pull-out-of-class program
 but there is a shortage of ES staff working with kids in their normal classes
+does pulling kids out of class actually help them, or put them further behind?
 that's why my idea is different to the TLI
 
 funding for ES staff is currently part of the PSD (program for students with disabilities)
@@ -130,6 +135,7 @@ but the issues with the PSD are:
 - PSD is for students with high needs, but there are lots and lots of students who wouldn't qualify but who are regularly underperforming and behind
 	- strict criteria with diagnoses [[psdguidelines.docx]]
 	- but i know my school was stretching the ES staff for the funded kids across the unfunded ones too
+	- even if school gets more than the SRS amount, it's still not enough if it doesn't account for the learning problems not covered by the disability loading
 - schools with PSD funding get less catch-up funding
 
 my idea can improve things because it focuses on performance, to capture all kids who need support, not the just ones with a moderate-severe diagnosis, due to
@@ -232,3 +238,95 @@ https://www.vcaa.vic.edu.au/administration/research-and-statistics/Pages/SeniorS
 https://www.vcaa.vic.edu.au/curriculum/vce/vce-faqs/Pages/current-students.aspx
 
 mean study score is set at 30
+
+
+# additional research
+
+find papers on:
+
+- [x] lack of support staff at schools; saloviita
+- [x] does pulling kids out of class actually help them, or put them further behind?
+- [x] how many kids with special needs miss out on funding?
+	- [x] percentage of kids with adhd
+	- [x] how adhd affects school performance
+	- if some of these kids don't have comorbid ASD, they won't get funding
+- [x] how trauma affects executive function, concentration, school performance etc; psychnet
+- [x] are schools funded for enough ES? i know mine wasn't - just use my own experience
+- [x] how education funding is currently allocated in victoria; vic govt docs
+- [ ] how LP, IP are used for funding allocation
+	- [ ] in schools
+	- [ ] elsewhere
+- [ ] alternative methods and why they do/don't apply here
+
+
+https://psycnet.apa.org/doiLanding?doi=10.1037%2Fspq0000256
+
+
+https://pursuit.unimelb.edu.au/articles/making-a-case-for-teacher-aides
+
+![[Pasted image 20230218154236.png | 650]]
+
+![[Pasted image 20230218154251.png | 400]]
+
+employing more TAs will allow them the preparation time they need according to this article
+![[Pasted image 20230218154726.png | 400]]
+
+[[Research in Spec Educ Needs - 2019 - Saloviita - Teacher attitudes towards the inclusion of students with support needs.pdf]]
+citation: [[pericles_1471380220.bib]]
+
+![[Pasted image 20230218155656.png | 400]]
+![[Pasted image 20230218155704.png | 400]]
+
+
+https://www.semanticscholar.org/paper/Outcomes-for-Students-with-Learning-Disabilities-in-Rea-McLaughlin/9d4142919a8fad611cf84a00bc41c09525f0c6ad
+citation: [[rea.bib]]
+
+![[Pasted image 20230218162741.png]]
+
+[[Classroom pull-out_ helping or hurting students_ self-concepts an.pdf]]
+citation: [[pull-out.bib]]
+
+![[Pasted image 20230218163618.png]]
+
+[[1-s2.0-S014976342100049X-main.pdf]]
+citation: [[adhd.bib]]
+
+![[Pasted image 20230218164423.png | 500]]
+
+### validating my approach
+
+[[2021_07-ITcon-Shehab.pdf]]
+
+![[Pasted image 20230218165626.png]]
+
+[[opre.50.1.42.17798.pdf]]
+citation: [[dantzig.bib]]
+![[Pasted image 20230218170823.png | 450]]
+
+[[s11294-008-9137-z.pdf]]
+citation: [[chakraborty.bib]]
+
+defines cost inefficiency - makes my case for redistribution
+![[Pasted image 20230218172046.png | 650]]
+
+they used very similar inputs to me
+![[Pasted image 20230218172733.png | 650]]
+but they used the model for descriptive, rather than prescriptive, purposes
+
+[[12526-15727-1-PB.pdf]]
+citation: [[goyal.bib]]
+
+library funds allocation - very similar to my own model
+![[Pasted image 20230218173811.png | 300]]
+
+[[ren paper.pdf]]
+citation: [[ren.bib]]
+
+uses data cleaning and AHP to formulate parameters
+then IP to select schools
+![[Pasted image 20230218175151.png]]
+
+
+
+
+
