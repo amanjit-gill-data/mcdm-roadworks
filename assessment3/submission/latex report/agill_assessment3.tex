@@ -4,8 +4,11 @@
 \usepackage{lmodern}
 \fontfamily{lmdh}\selectfont
 
+\usepackage{amsfonts} 
+
 \usepackage{graphicx}
 \graphicspath{{../}}
+
 
 \usepackage{titlesec}
 \titleformat*{\section}{\Large\bfseries}
@@ -59,11 +62,10 @@
 
     \begin{equation}
         total\_cost = 0.35x_1 + 0.5x_2 + 0.2x_3
-        \label{obj_func}
+        \label{obj_func1}
     \end{equation}
     
-
-    This quantity should be \textit{minimised}. However, there is not just the cost to consider. Peanut for Life must also ensure the product is commercially viable; it can do this by composing the product in such a way that it is both nutritionally balanced and attractive to consumers. To this end, the following constraints on the final composition are given:
+    The objective is to \textit{minimise} this quantity. However, there is not just the cost to consider. Peanut for Life must also ensure the product is commercially viable; it can do this by composing the product in such a way that it is both nutritionally balanced and attractive to consumers. To this end, the following constraints on the final composition are given:
 
     \begin{itemize}
         \item The chanachur package must hold between 3 and 4 cups of product.
@@ -73,7 +75,7 @@
         \item No more than 15\% of the product weight may comprise nuts.
     \end{itemize}
 
-    Using the nutritional information provided in Table \ref{nutrients}, these constraints may be modelled mathematically as inequalities \ref{first_constraint} to \ref{last_constraint}, presented in \textit{canonical form}.
+    Using the nutritional information provided in Table \ref{nutrients}, these constraints may be modelled mathematically as inequalities \ref{first_constraint1} to \ref{last_constraint1}, presented in \textit{canonical form}.
 
     \begin{table}[!ht]
         \centering
@@ -90,7 +92,7 @@
 
     \begin{equation}
         -0.25x_1 - 0.375x_2 - x_3 \leq -3
-        \label{first_constraint}
+        \label{first_constraint1}
     \end{equation}
 
     \begin{equation}
@@ -111,17 +113,17 @@
 
     \begin{equation}
         -0.15x_1 + 0.85x_2 - 0.15x_3 \leq 0
-        \label{last_constraint}
+        \label{last_constraint1}
     \end{equation}
 
     One additional constraint is required; that is, a nonnegativity constraint for the weight of each ingredient:
 
     \begin{equation}
         x_i \geq 0 \textrm{, where } i \in \{1, 2, 3\}
-        \label{nonneg_constraint}
+        \label{nonneg_constraint1}
     \end{equation}
 
-    Equation \ref{obj_func}, together with inequations \ref{first_constraint} to \ref{nonneg_constraint}, completely define the linear programming model for optimising the composition of the new chanachur product. However, when it is solved using the Simplex algorithm, the optimal solution does not include any nuts at all. This is likely due to the high fat and energy content of the nut mixture (as shown in Table \ref{nutrients}) encouraging the solver to favour the less nutritionally dense puffed rice and cereal mixtures.
+    Equation \ref{obj_func1}, together with inequations \ref{first_constraint1} to \ref{nonneg_constraint1}, completely define the linear programming model for optimising the composition of the new chanachur product. However, when it is solved using the Simplex algorithm, the optimal solution does not include any nuts at all. This is likely due to the high fat and energy content of the nut mixture (as shown in Table \ref{nutrients}) encouraging the solver to favour the less nutritionally dense puffed rice and cereal mixtures.
 
     From a marketability standpoint, this is an unacceptable result, as nuts cannot be excluded from a commercially viable chanachur product. For this reason, a minimum amount of nut mixture must be enforced through an additional constraint. A cursory examination of popular chanachur recipes reveals that most small batches contain between 0.5 and 1.0 cups of nuts; approximately 75-113 grams. Therefore, for the present exercise, a nominal minimum of 100 grams has been chosen, and represented by inequation \ref{nut_min} in \textit{canonical form}.
 
@@ -130,7 +132,7 @@
         \label{nut_min}
     \end{equation}
 
-    When the model is solved with this new constraint, a more suitable composition is achieved. This is given in Table \ref{results}. The corresponding minimal cost per package is \$1.36.
+    When the model is solved with this new constraint, a more suitable composition is achieved. This is given in Table \ref{results1}. The corresponding minimal cost per package is \$1.36.
 
     \begin{table}[!ht]
         \centering
@@ -142,7 +144,7 @@
             Nut mix ($x_2$)             & 0.1                   \\ \hline
             Cereal mix ($x_3$)          & 2.363                 \\ \hline          
         \end{tabular}
-        \label{results}
+        \label{results1}
     \end{table}
 
     Appendix XXXX contains the model construction in Microsoft Excel.
@@ -164,8 +166,8 @@
             3       & Tues and Wed  & 920          \\ \hline
             4       & Wed and Thu   & 860          \\ \hline
             5       & Thu and Fri   & 780          \\ \hline
-            5       & Fri and Sat   & 910          \\ \hline
-            6       & Sat and Sun   & 850          \\ \hline
+            6       & Fri and Sat   & 910          \\ \hline
+            7       & Sat and Sun   & 850          \\ \hline
         \end{tabular}
         \label{shifts}
     \end{table}
@@ -187,8 +189,84 @@
         \label{workers_needed}
     \end{table}
 
-    
+    Mr Stokes sees that a linear programming approach is ideally suited to this scenario. To this end, if $x_{1}$ represents the number of employees assigned to shift 1, $x_{2}$ represents the number of employees assigned to shift 2, and so on, then the total salary cost for one week would be:
 
+    \begin{equation}
+        total\_salary = 900x_1 + 850x_2 + 920x_3 + 860x_4 + 780x_5 + 910x_6 + 850x_7
+        \label{obj_func2}
+    \end{equation}
+
+    The objective is to \textit{minimise} this cost while ensuring that the staff requirement for every day is met. This can be done by representing the number of workers required every day, given in Table \ref{workers_needed}, as a set of constraints. These manifest themselves as inequations \ref{first_constraint2} to \ref{last_constraint2}.
+
+    \begin{equation}
+        x_2 + x_3 + x_4 + x_5 + x_6 \geq 18   
+        \label{first_constraint2}     
+    \end{equation}
+
+    \begin{equation}
+        x_3 + x_4 + x_5 + x_6 + x_7 \geq 13
+    \end{equation}
+
+    \begin{equation}
+        x_1 + x_4 + x_5 + x_6 + x_7 \geq 15 
+    \end{equation}
+
+    \begin{equation}
+        x_1 + x_2 + x_5 + x_6 + x_7 \geq 18
+    \end{equation}
+
+    \begin{equation}
+        x_1 + x_2 + x_3 + x_6 + x_7 \geq 21
+    \end{equation}
+
+    \begin{equation}
+        x_1 + x_2 + x_3 + x_4 + x_7 \geq 18
+    \end{equation}
+
+    \begin{equation}
+        x_1 + x_2 + x_3 + x_4 + x_5 \geq 21
+        \label{last_constraint2}
+    \end{equation}
+
+    There are additional constraints; namely, that each five-day shift must be assigned at least one worker, and that the number of workers assigned to each shift is a nonnegative integer. While part-time assignments are possible in other scenarios, Orient states that its employees are entitled to two days off per week, implying that its entire staff body works full time i.e. five days per week.
+
+    The additional constraints are represented by inequations \ref{atleast_one} and \ref{int_constraint}. It is also conventional to explicitly require nonnegativity (see inequation \ref{nonneg_constraint2}) but inequation \ref{atleast_one} is sufficiently restrictive.
+
+    \begin{equation}
+        x_i \geq 1 \textrm{, where } i \in \{1, 2, .., 7\}
+        \label{atleast_one}
+    \end{equation}
+
+    \begin{equation}
+        x_i \in \mathbb{Z} \textrm{, where } i \in \{1, 2, .., 7\}
+        \label{int_constraint}
+    \end{equation}
+
+    \begin{equation}
+        x_i \geq 0 \textrm{, where } i \in \{1, 2, .., 7\}
+        \label{nonneg_constraint2}
+    \end{equation}
+
+    The objective function, given by equation \ref{obj_func2}, together with these constraints form a complete mathematical model suitable for linear programming. When this model is solved, an optimal number of employees working each five-day shift is obtained (see Table \ref{results2}). The corresponding minimal salary cost is \$22,410. 
+
+    \begin{table}[!ht]
+        \centering
+        \caption{Optimal shift allocation.}
+        \begin{tabular}{|l|l|}
+            \hline
+            Shift   & Optimal allocation    \\ \hline
+            1       & 5                     \\ \hline
+            2       & 8                     \\ \hline
+            3       & 3                     \\ \hline
+            4       & 1                     \\ \hline
+            5       & 4                     \\ \hline
+            6       & 2                     \\ \hline
+            7       & 3                     \\ \hline
+        \end{tabular}
+        \label{results2}
+    \end{table}
+
+    See Appendix XXXX for the model construction in Microsoft Excel.
 
 \end{document}
 
