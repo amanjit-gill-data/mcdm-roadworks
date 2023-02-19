@@ -1,9 +1,9 @@
 [0] Config.pm:306> INFO - This is Biber 2.18
 [0] Config.pm:309> INFO - Logfile is 'agill_assessment3.blg'
 [108] biber-MSWIN32:340> INFO - === 
-[150] Biber.pm:418> INFO - Reading 'agill_assessment3.bcf'
-[258] Biber.pm:978> INFO - Found 0 citekeys in bib section 0
-[273] bbl.pm:654> INFO - Writing 'agill_assessment3.bbl' with encoding 'UTF-8'
-[273] bbl.pm:757> INFO - Output to agill_assessment3.bbl
-[273] Biber.pm:130> WARN - The file 'agill_assessment3.bcf' does not contain any citations!
-[273] Biber.pm:132> INFO - WARNINGS: 1
+[158] Biber.pm:418> INFO - Reading 'agill_assessment3.bcf'
+[277] Biber.pm:978> INFO - Found 0 citekeys in bib section 0
+[291] bbl.pm:654> INFO - Writing 'agill_assessment3.bbl' with encoding 'UTF-8'
+[291] bbl.pm:757> INFO - Output to agill_assessment3.bbl
+[292] Biber.pm:130> WARN - The file 'agill_assessment3.bcf' does not contain any citations!
+[292] Biber.pm:132> INFO - WARNINGS: 1

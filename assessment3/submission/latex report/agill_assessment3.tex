@@ -8,7 +8,8 @@
 \graphicspath{{../}}
 
 \usepackage{titlesec}
-\titleformat*{\section}{\large\bfseries}
+\titleformat*{\section}{\Large\bfseries}
+\titleformat*{\subsection}{\large\bfseries}
 
 \usepackage{caption}
 
@@ -22,39 +23,47 @@
 
 \usepackage[section]{placeins}
 
-\title{\Large\bfseries ZZCA6510 3: Quantitative Decision Analysis}
-\author{\large Amanjit Gill}
-\date{\small \today}
+\title{\LARGE\bfseries ZZCA6510 3: Quantitative Decision Analysis}
+\author{\Large Amanjit Gill}
+\date{\normalsize \today}
 
 \begin{document}
     
     \maketitle
 
+    \thispagestyle{empty}
+
     \newpage
 
-    \section{Linear Programming}
+    \addtocounter{page}{-1}
 
-    Peanut for Life, a food manufacturer, seeks to produce a chanachur snack product comprising three mixtures: puffed rice, nuts and cereal. Each ingredient mixture has a different cost per kilogram (see Table \ref{t1}); therefore, Peanut for Life is aiming to minimise the total cost of each package of chanachur by formulating a linear programming model. 
+    \section{Product Composition}
+
+    Peanut for Life, a food manufacturer, seeks to produce a chanachur snack product comprising three mixtures: puffed rice, nuts and cereal. Each ingredient mixture has a different cost per kilogram (see Table \ref{costs}); therefore, Peanut for Life is aiming to minimise the total cost of each package of chanachur by formulating a linear programming model. 
     
     \begin{table}[!ht]
         \centering
+        \caption{Cost of each ingredient.}
         \begin{tabular}{|l|l|}
             \hline
-            ~ & Cost (\$/kg) \\ \hline
-            Puffed rice mix& 0.35 \\ \hline
+            Ingredient & Cost (\$/kg) \\ \hline
+            Puffed rice mix & 0.35 \\ \hline
             Nut mix & 0.50 \\ \hline
             Cereal mix & 0.20 \\ \hline          
         \end{tabular}
-        \caption{Cost of each ingredient}
-        \label{t1}
+        \label{costs}
     \end{table}
     
     
     If $x_{1}$, $x_{2}$ and $x_{3}$ represent the weight (in kilograms) of puffed rice, nuts and cereal respectively, then the total cost of one package of chanachur would be:
 
-    $$ 0.35x_1 + 0.5x_2 + 0.2x_3 $$
+    \begin{equation}
+        total\_cost = 0.35x_1 + 0.5x_2 + 0.2x_3
+        \label{obj_func}
+    \end{equation}
+    
 
-    However, there is not just the cost to consider. Peanut for Life must also ensure the product is commercially viable; it can do this by composing the product in such a way that it is both nutritionally balanced and attractive to consumers. To this end, the following constraints on the final composition are given:
+    This quantity should be \textit{minimised}. However, there is not just the cost to consider. Peanut for Life must also ensure the product is commercially viable; it can do this by composing the product in such a way that it is both nutritionally balanced and attractive to consumers. To this end, the following constraints on the final composition are given:
 
     \begin{itemize}
         \item The chanachur package must hold between 3 and 4 cups of product.
@@ -64,16 +73,83 @@
         \item No more than 15\% of the product weight may comprise nuts.
     \end{itemize}
 
-    Using the nutritional information provided in Table \ref{t2}, these constraints may be modelled mathematically as the following inequalities, presented in \textit{canonical form}:
+    Using the nutritional information provided in Table \ref{nutrients}, these constraints may be modelled mathematically as inequalities \ref{first_constraint} to \ref{last_constraint}, presented in \textit{canonical form}.
 
-    $$-0.25x_1 - 0.375x_2 - x_3 <= -3$$
-    $$0.25x_1 + 0.375x_2 + 1x_3 <= 4$$
-    $$150x_1 + 400x_2 + 50x_3 <= 1000$$
-    $$10x_2 + 1x_3 <= 25$$
-    $$-0.2x_1 + 0.075x_2 + 0.2x_3 <= 0$$
-    $$-0.15x_1 + 0.85x_2 - 0.15x_3 <= 0$$
+    \begin{table}[!ht]
+        \centering
+        \caption{Nutritional information per kg.}
+        \begin{tabular}{|l|l|l|l|}
+            \hline
+            Ingredient      & Volume (cups)     & Fat (g)   & Calories  \\ \hline
+            Puffed rice mix & 0.25              & 0         & 150       \\ \hline
+            Nut mix         & 0.375             & 10        & 400       \\ \hline
+            Cereal mix      & 1.0               & 1         & 50        \\ \hline          
+        \end{tabular}
+        \label{nutrients}
+    \end{table}
 
+    \begin{equation}
+        -0.25x_1 - 0.375x_2 - x_3 \leq -3
+        \label{first_constraint}
+    \end{equation}
+
+    \begin{equation}
+        0.25x_1 + 0.375x_2 + 1x_3 \leq 4
+    \end{equation}
     
+    \begin{equation}
+        150x_1 + 400x_2 + 50x_3 \leq 1000
+    \end{equation}
+
+    \begin{equation}
+        10x_2 + 1x_3 \leq 25
+    \end{equation}
+
+    \begin{equation}
+        -0.2x_1 + 0.075x_2 + 0.2x_3 \leq 0
+    \end{equation}
+
+    \begin{equation}
+        -0.15x_1 + 0.85x_2 - 0.15x_3 \leq 0
+        \label{last_constraint}
+    \end{equation}
+
+    One additional constraint is required; that is, a nonnegativity constraint for the weight of each ingredient:
+
+    \begin{equation}
+        x_i \geq 0
+        \label{nonneg_constraint}
+    \end{equation}
+
+    Equation \ref{obj_func}, together with inequations \ref{first_constraint} to \ref{nonneg_constraint}, completely define the linear programming model for optimising the composition of the new chanachur product. However, when it is solved using the Simplex algorithm, the optimal solution does not include any nuts at all. This is likely due to the high fat and energy content of the nut mixture (as shown in Table \ref{nutrients}) encouraging the solver to favour the less nutritionally dense puffed rice and cereal mixtures.
+
+    From a marketability standpoint, this is an unacceptable result, as nuts cannot be excluded from a commercially viable chanachur product. For this reason, a minimum amount of nut mixture must be enforced through an additional constraint. A cursory examination of popular chanachur recipes reveals that most small batches contain between 0.5 and 1.0 cups of nuts; approximately 75-113 grams. Therefore, for the present exercise, a nominal minimum of 100 grams has been chosen, and represented by inequation \ref{nut_min} in \textit{canonical form}.
+
+    \begin{equation}
+        -x_2 \leq -0.1
+        \label{nut_min}
+    \end{equation}
+
+    When the model is solved with this new constraint, a more suitable composition is achieved. This is given in Table \ref{results}. The corresponding minimal cost per package is \$1.36.
+
+    \begin{table}[!ht]
+        \centering
+        \caption{Optimal composition of chanachur.}
+        \begin{tabular}{|l|l|}
+            \hline
+            Ingredient                  & Optimal weight (kg)   \\ \hline
+            Puffed rice mix ($x_1$)     & 2.4                   \\ \hline
+            Nut mix ($x_2$)             & 0.1                   \\ \hline
+            Cereal mix ($x_3$)          & 2.363                 \\ \hline          
+        \end{tabular}
+        \label{results}
+    \end{table}
+
+    Appendix XXXX contains the model construction in Microsoft Excel.
+
+    \newpage
+
+    \section{Staff Scheduling}
 
 
 \end{document}
