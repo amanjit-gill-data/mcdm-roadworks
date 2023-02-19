@@ -480,7 +480,6 @@ INPUT c:/texlive/2022/texmf-dist/tex/latex/lm/ts1lmr.fd
 INPUT c:/texlive/2022/texmf-dist/tex/latex/lm/ts1lmr.fd
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/lm/ts1-lmr10.tfm
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/lm/rm-lmri10.tfm
-INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/lm/rm-lmbx12.tfm
 INPUT agill_assessment3.aux
 INPUT agill_assessment3.run.xml
 OUTPUT agill_assessment3.run.xml

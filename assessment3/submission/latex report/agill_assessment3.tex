@@ -117,7 +117,7 @@
     One additional constraint is required; that is, a nonnegativity constraint for the weight of each ingredient:
 
     \begin{equation}
-        x_i \geq 0
+        x_i \geq 0 \textrm{, where } i \in \{1, 2, 3\}
         \label{nonneg_constraint}
     \end{equation}
 
@@ -150,6 +150,44 @@
     \newpage
 
     \section{Staff Scheduling}
+
+    Chris Stokes, the rostering manager at Orient Computer Manufacturer, has been tasked with developing a staff schedule that minimises the total weekly cost of salary payments. Employees at Orient work in weekly shifts that include two days off, and their weekly salary depends on which days they are rostered on, as shown in Table \ref{shifts}. In addition, Mr Stokes has estimated the number of workers required on the factory floor every day of the week; this is shown in Table \ref{workers_needed}. 
+
+    \begin{table}[!ht]
+        \centering
+        \caption{Weekly salary per shift.}
+        \begin{tabular}{|l|l|l|}
+            \hline
+            Shift   & Days off      & Salary (\$)  \\ \hline
+            1       & Sun and Mon   & 900          \\ \hline
+            2       & Mon and Tue   & 850          \\ \hline
+            3       & Tues and Wed  & 920          \\ \hline
+            4       & Wed and Thu   & 860          \\ \hline
+            5       & Thu and Fri   & 780          \\ \hline
+            5       & Fri and Sat   & 910          \\ \hline
+            6       & Sat and Sun   & 850          \\ \hline
+        \end{tabular}
+        \label{shifts}
+    \end{table}
+
+    \begin{table}[!ht]
+        \centering
+        \caption{Workers required per day.}
+        \begin{tabular}{|l|l|}
+            \hline
+            Day     & No. workers required  \\ \hline
+            Sun     & 18                    \\ \hline
+            Mon     & 13                    \\ \hline
+            Tue     & 15                    \\ \hline
+            Wed     & 18                    \\ \hline
+            Thu     & 21                    \\ \hline
+            Fri     & 18                    \\ \hline
+            Sat     & 21                    \\ \hline     
+        \end{tabular}
+        \label{workers_needed}
+    \end{table}
+
+    
 
 
 \end{document}
