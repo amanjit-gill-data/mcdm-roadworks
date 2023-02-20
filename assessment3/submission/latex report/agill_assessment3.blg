@@ -1,20 +1,20 @@
 [0] Config.pm:306> INFO - This is Biber 2.18
 [0] Config.pm:309> INFO - Logfile is 'agill_assessment3.blg'
-[105] biber-MSWIN32:340> INFO - === 
-[150] Biber.pm:418> INFO - Reading 'agill_assessment3.bcf'
-[267] Biber.pm:978> INFO - Found 3 citekeys in bib section 0
-[282] Biber.pm:4401> INFO - Processing section 0
-[295] Biber.pm:4592> INFO - Looking for bibtex file 'ag_bib.bib' for section 0
-[359] bibtex.pm:1713> INFO - LaTeX decoding ...
-[376] bibtex.pm:1518> INFO - Found BibTeX data source 'ag_bib.bib'
-[422] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[422] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[422] Biber.pm:4221> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
-[422] Biber.pm:4227> INFO - No sort tailoring available for locale 'en-US'
-[425] bbl.pm:654> INFO - Writing 'agill_assessment3.bbl' with encoding 'UTF-8'
-[427] bbl.pm:757> INFO - Output to agill_assessment3.bbl
-[427] Biber.pm:130> WARN - BibTeX subsystem: C:\Users\amanj\AppData\Local\Temp\biber_tmp_i149\84d578f5f049616ebdbf1b23c65b7c18_12008.utf8, line 3, warning: 22 characters of junk seen at toplevel
-[427] Biber.pm:130> WARN - BibTeX subsystem: C:\Users\amanj\AppData\Local\Temp\biber_tmp_i149\84d578f5f049616ebdbf1b23c65b7c18_12008.utf8, line 13, warning: 6 characters of junk seen at toplevel
-[427] Biber.pm:130> WARN - BibTeX subsystem: C:\Users\amanj\AppData\Local\Temp\biber_tmp_i149\84d578f5f049616ebdbf1b23c65b7c18_12008.utf8, line 23, warning: 16 characters of junk seen at toplevel
-[427] Biber.pm:130> WARN - BibTeX subsystem: C:\Users\amanj\AppData\Local\Temp\biber_tmp_i149\84d578f5f049616ebdbf1b23c65b7c18_12008.utf8, line 36, warning: 62 characters of junk seen at toplevel
-[427] Biber.pm:132> INFO - WARNINGS: 4
+[103] biber-MSWIN32:340> INFO - === 
+[145] Biber.pm:418> INFO - Reading 'agill_assessment3.bcf'
+[258] Biber.pm:978> INFO - Found 7 citekeys in bib section 0
+[272] Biber.pm:4401> INFO - Processing section 0
+[284] Biber.pm:4592> INFO - Looking for bibtex file 'ag_bib.bib' for section 0
+[357] bibtex.pm:1713> INFO - LaTeX decoding ...
+[380] bibtex.pm:1518> INFO - Found BibTeX data source 'ag_bib.bib'
+[502] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[502] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[502] Biber.pm:4221> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[502] Biber.pm:4227> INFO - No sort tailoring available for locale 'en-US'
+[513] bbl.pm:654> INFO - Writing 'agill_assessment3.bbl' with encoding 'UTF-8'
+[564] bbl.pm:757> INFO - Output to agill_assessment3.bbl
+[564] Biber.pm:130> WARN - BibTeX subsystem: C:\Users\amanj\AppData\Local\Temp\biber_tmp__UNg\84d578f5f049616ebdbf1b23c65b7c18_15536.utf8, line 3, warning: 22 characters of junk seen at toplevel
+[565] Biber.pm:130> WARN - BibTeX subsystem: C:\Users\amanj\AppData\Local\Temp\biber_tmp__UNg\84d578f5f049616ebdbf1b23c65b7c18_15536.utf8, line 13, warning: 6 characters of junk seen at toplevel
+[565] Biber.pm:130> WARN - BibTeX subsystem: C:\Users\amanj\AppData\Local\Temp\biber_tmp__UNg\84d578f5f049616ebdbf1b23c65b7c18_15536.utf8, line 23, warning: 16 characters of junk seen at toplevel
+[565] Biber.pm:130> WARN - BibTeX subsystem: C:\Users\amanj\AppData\Local\Temp\biber_tmp__UNg\84d578f5f049616ebdbf1b23c65b7c18_15536.utf8, line 36, warning: 62 characters of junk seen at toplevel
+[565] Biber.pm:132> INFO - WARNINGS: 4

@@ -23,40 +23,45 @@ re lit review
 - [ ] Provide a hint of managerial implication at the bottom end of the abstract.
 
 #### introduction 500
-- [ ] Explains purpose of report
+- [x] Explains purpose of report
 	- [x] algorithm for allocating funding for more support for kids struggling at school
-- [ ] Describes scope and limitations of report
+- [x] Describes scope and limitations of report
 	- [x] only my local area, otherwise too many schools
-	- [ ] only high schools or p-12s; data can't be separated which skews the analysis
 	- [x] also there is a lot of variation between LGAs so keeping it to Casey removes that
-	- [ ] limitation is that certain data isn't publicly available e.g. proportion of kids falling behind at each school; may be available by application but time constraints
-- [ ] Describes methods/sources used to gather information
-	- [ ] govt policies and guidelines, federal and state
-	- [ ] govt funding data per school
-	- [ ] research into whether ES has an impact and is worth funding more
-- [ ] Provides necessary background information to situate readers
+	- [x] limitation is that certain data isn't publicly available e.g. proportion of kids falling behind at each school; may be available by application but time constraints
+	- [x] another limitation is missing values
+	- [x] another limitation is inability to separate primary from secondary data in p-12 schools
+- [x] Describes methods/sources used to gather information
+	- [x] govt policies and guidelines, federal and state
+	- [x] govt funding data per school
+	- [x] research into whether ES has an impact and is worth funding more
+- [x] Provides necessary background information to situate readers
 	- [x] teaching staff to student ratio is same, but non-teaching staff to student ratio is very different
-	- [ ] this shows that public funding of ES might not be keeping up with demand
+	- [x] this shows that public funding of ES might not be keeping up with demand
 		- [x] how funding works
-		- [ ] some students aren't covered e.g. adhd, ACEs
-		- [ ] ACEs --> executive functioning problems, school performance impacts
-		- [ ] adhd --> severe impacts on education
-		- [ ] so they need more ES 
-		- [ ] there's the TLI but research shows negative impact; better to have ES embedded in classrooms
-		- [ ] to that end, i have this funding idea
-	- [ ] in my local area, public schools' naplan performance is clearly worse
-	- [ ] vce study score is lower
-- [ ] Offers a preview of the findings
-	- [ ] increased support can be provided at a very low cost compared to the excess funding provided to private schools
+		- [x] some students aren't covered e.g. adhd, ACEs
+		- [x] ACEs --> executive functioning problems, school performance impacts
+		- [x] adhd --> severe impacts on education
+- [x] Offers a preview of the findings
+	- [x] increased support can be provided at a very low cost compared to the excess funding provided to private schools
 
 #### problem definition 600
 - [ ] Addresses a wide range of articles/papers.
+	- [ ] PSD is anadequate because it misses a bunch of kids as discussed in intro
+	- [ ] there's the TLI but research shows negative impact; better to have ES embedded in classrooms
+	- [ ] private schools have more non-teaching staff
+	- [ ] govts insist on equality, not equity, hence the funding excess for private schools
+	- [ ] all this is why there's a problem
 - [ ] Succinctly presents the findings from the review
 - [ ] Indicates that the presenter is very well versed with the topic.
 - [ ] Extensive illustration on how this problem is related to the Prescriptive decision analytics and why.
 
 #### solution approach 400
 - [ ] Can propose the appropriate methodology to address the problem.
+	- [ ] no data on proportion of students who need more support
+	- [ ] but in my local area, public schools' naplan performance is clearly worse
+	- [ ] and vce study score is lower
+	- [ ] so i can use this to assess the schools on their need
 - [ ] Can explain why it is appropriate and other methodologies are not suitable.
 - [ ] Can explain the methodology mathematically or in words.
 - [ ] Can suggest the possible results and outcomes.

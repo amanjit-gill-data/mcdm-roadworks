@@ -244,7 +244,7 @@ find papers on:
 - [x] how LP, IP are used for funding allocation
 	- [x] in schools
 	- [x] elsewhere
-- [ ] alternative methods and why they do/don't apply here
+- [x] alternative methods and why they do/don't apply here
 
 
 

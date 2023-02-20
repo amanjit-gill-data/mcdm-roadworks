@@ -2354,6 +2354,14 @@
     <bcf:citekey order="1" intorder="1">acara_profiles</bcf:citekey>
     <bcf:citekey order="2" intorder="1">srs_background</bcf:citekey>
     <bcf:citekey order="3" intorder="1">srs_2020</bcf:citekey>
+    <bcf:citekey order="4" intorder="1">srs_2020</bcf:citekey>
+    <bcf:citekey order="5" intorder="1">srp_vic</bcf:citekey>
+    <bcf:citekey order="6" intorder="1">psd_guidelines</bcf:citekey>
+    <bcf:citekey order="7" intorder="1">psd_guidelines</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">adhd</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">adhd</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">aces</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">aces</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">
