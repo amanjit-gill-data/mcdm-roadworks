@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.13)  20 FEB 2023 16:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.13)  20 FEB 2023 21:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -528,28 +528,28 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 52.
  (c:/texlive/2022/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [1] [2] [3] [4] [5] [6] [7]
-LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 352.
+) [1] [2] [3] [4] [5] [6] [7] [8]
+LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 363.
  (c:/texlive/2022/texmf-dist/tex/latex/lm/ot1lmtt.fd
 File: ot1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [8] (./agill_assessment3.aux)
+) [9] (./agill_assessment3.aux)
 Package logreq Info: Writing requests to 'agill_assessment3.run.xml'.
 \openout1 = `agill_assessment3.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 12132 strings out of 475075
- 232466 string characters out of 5783001
- 987947 words of memory out of 5000000
- 33395 multiletter control sequences out of 15000+600000
+ 12175 strings out of 475075
+ 233711 string characters out of 5783001
+ 988433 words of memory out of 5000000
+ 33438 multiletter control sequences out of 15000+600000
  508425 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,9n,68p,843b,1485s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 60i,9n,68p,1121b,1486s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-rmtt.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmtt10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on agill_assessment3.pdf (9 pages, 194498 bytes).
+Output written on agill_assessment3.pdf (10 pages, 203107 bytes).
 PDF statistics:
- 92 PDF objects out of 1000 (max. 8388607)
- 59 compressed objects within 1 object stream
+ 95 PDF objects out of 1000 (max. 8388607)
+ 61 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

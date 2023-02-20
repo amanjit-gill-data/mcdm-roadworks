@@ -46,15 +46,14 @@ re lit review
 	- [x] increased support can be provided at a very low cost compared to the excess funding provided to private schools
 
 #### problem definition 600
-- [ ] Addresses a wide range of articles/papers.
-	- [ ] PSD is anadequate because it misses a bunch of kids as discussed in intro
-	- [ ] there's the TLI but research shows negative impact; better to have ES embedded in classrooms
-	- [ ] private schools have more non-teaching staff
-	- [ ] govts insist on equality, not equity, hence the funding excess for private schools
-	- [ ] all this is why there's a problem
-- [ ] Succinctly presents the findings from the review
-- [ ] Indicates that the presenter is very well versed with the topic.
-- [ ] Extensive illustration on how this problem is related to the Prescriptive decision analytics and why.
+- [x] Addresses a wide range of articles/papers.
+	- [x] PSD is anadequate because it misses a bunch of kids as discussed in intro
+	- [x] there's the TLI but research shows negative impact; better to have ES embedded in classrooms
+	- [x] private schools have more non-teaching staff
+	- [x] all this is why there's a problem
+- [x] Succinctly presents the findings from the review
+- [x] Indicates that the presenter is very well versed with the topic.
+- [x] Extensive illustration on how this problem is related to the Prescriptive decision analytics and why.
 
 #### solution approach 400
 - [ ] Can propose the appropriate methodology to address the problem.

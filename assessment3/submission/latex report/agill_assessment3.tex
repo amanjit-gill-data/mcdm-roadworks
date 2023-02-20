@@ -276,9 +276,9 @@
 
 
 
-    \subsection{Introduction}
+    \subsection{Introduction} \label{intro}
 
-    The purpose of this analysis is to formulate a new method by which funding can be allocated to public schools, in such a manner that emphasises support for students who underperform academically due to disability or social factors. 
+    The purpose of this analysis is to formulate a new method, involving linear programming principles, by which funding can be allocated to public schools, in such a manner that emphasises support for students who underperform academically due to disability or social factors. 
     
     This study specifically focuses on public secondary schools in a single municipality, the City of Casey in Victoria. The scope has been such limited for the following reasons:
 
@@ -327,17 +327,26 @@
     \begin{itemize}
         \item There is no publicly available data on what proportion of students are underperforming at schools. Data from standardised testing reveal the percentage of students at every school whose two-year progress is ``above average'', but there is no information on the percentage of students whose progress is below average or poor \parencite{naplan}. Because of this, it is difficult to estimate the number of children at a school who might need support but who fall outside the strict PSD criteria. 
         \item A small number of secondary schools in Casey service both primary and secondary year levels \parencite{casey_schools}. There is no readily accessible data on what proportion of these schools' total enrolment comprises secondary students. This means that current funding estimates for these schools are likely to be inaccurate, because the federal government's SRS base amount is different for primary and secondary students \parencite{srs_2020}.
-        \item A small number of secondary schools in the catchment areas for this study have only recently opened, so there is no NAPLAN (National Assessment Program – Literacy and Numeracy) data available for them. In addition, a small number schools do not offer VCE (Victorian Certificate of Education) classes, meaning there is no VCE performance data for them.
+        \item A small number of secondary schools in the catchment areas for this study have only recently opened, so there is no NAPLAN (National Assessment Program – Literacy and Numeracy) data available for them. In addition, a small number of schools do not offer VCE (Victorian Certificate of Education) classes, meaning there is no VCE performance data for them.
     \end{itemize}
 
-    These limitations have been mitigated as described in Section \ref{problem_identification}, but will inevitably impact upon the accuracy of the figures. Nevertheless, the results of the analysis suggest that linear programming is a valid, efficient, tool for allocation of funding in narrow contexts such as disability support, and that significant cost savings are possible if education funding is applied in a more targeted way.  
+    These limitations have been mitigated as described in Section \ref{solution_approach}, but will inevitably impact upon the accuracy of the figures. Nevertheless, the results of the analysis suggest that linear programming is a valid, efficient, tool for allocation of funding in narrow contexts such as disability support, and that significant cost savings are possible if education funding is applied in a more targeted way.  
 
-    \subsection{Problem Identification} \label{problem_identification}
+    \subsection{Problem Identification}
 
+    As discussed in Section \ref{intro}, the ratio of enrolled students to non-teaching staff at government schools is much higher than at non-government schools \parencite{acara_profiles}. This, combined with the aforementioned evidence that students with ADHD and ACEs are likely to be underserviced by the PSD, suggests that provision of Education Support staff is inadequate at public schools, and that this is not limited to individual schools; rather, it may be a system-level deficiency requiring a system-level response.
 
+    In addition to the PSD, the Victorian government has conceived the TLI (Tutor Learning Initiative) to address concerns that students have fallen behind due to schooling disruptions during the COVID-19 pandemic \parencite{tli}. This program provides a minimum of \$25,000 to every government school per year, and this amount is only permitted to be used for on-campus tuition services. 
 
+    The state government encourages schools to use the TLI funding for small-group tuition, which usually involves children being sent out of their regular classes to attend tuition sessions. Research such as that by \Citeauthor{pullout_rea} (\citedate{pullout_rea}) shows that ``pull-out'' programs are not as beneficial as programs in which students are offered additional support to remain in their regular classes. Pull-out programs may cause students to fall further behind due to their absence from mainstream classes; by constrast, more inclusive programs are associated with higher academic achievement and fewer behavioural issues \parencite{pullout_rea}.
+    
+    These findings are supported by \Citeauthor{pullout_trinity} (\citedate{pullout_trinity}), whose study indicates that pull-out programs have a negative influence on students' self-concept and test scores. Therefore, it is proposed that the TLI is not a sufficient response to students falling behind, and that a separate program, emphasising the use of ES staff to support students in mainstream classrooms, is required in addition to - or instead of - the TLI. 
 
-    \subsection{Solution Approach}
+    A potential barrier to this proposal is that some teachers may have a negative attitude to inclusive practices. While there is very little objection to the principle of inclusion, research shows that teachers who are underresourced resent the perceived complication that coordination with another educator might add to their daily work \parencite{teacher_attitudes}. In addition, ES workers themselves complain of lacking confidence in the curriculum material they are expected to help children to learn, due to a lack of support and training \parencite{unimelb_aides}. These observations are not arguments against an increased investment in Education Support; rather, they are arguments supporting the provision of time and funding to maximise the value of ES workers to both teachers and students.
+
+    Having established that existing measures - such as the PSD and TLI - are not adequately supporting students, and that investment in ES workers should be increased, the issue of funding allocation (that is, how much money should be given to each school for this purpose) manifests itself as a problem in prescriptive analytics. This third phase of analytics, the first two being descriptive and predictive \parencite{analytics}, centres on conducting analysis that culminates in the recommendation of a specific decision (or decisions) to optimise some stated objective. In the present case, the allocation of ES funding to schools must be done in such a way as to be financially sustainable, meaning there is an objective to meet students' needs for support while \textit{minimising} the cost to taxpayers. In Section \ref{solution_approach}, it shall be shown how this prescriptive analytics problem can be expressed validly as a linear program.
+
+    \subsection{Solution Approach} \label{solution_approach}
 
 
 

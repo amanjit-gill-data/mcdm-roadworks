@@ -19,6 +19,31 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global}
+    \entry{naplan}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=2e34b2dce542de758073506fba8faa44}{%
+           family={{Australian Curriculum, Assessment and Reporting Authority}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{2e34b2dce542de758073506fba8faa44}
+      \strng{fullhash}{2e34b2dce542de758073506fba8faa44}
+      \strng{bibnamehash}{2e34b2dce542de758073506fba8faa44}
+      \strng{authorbibnamehash}{2e34b2dce542de758073506fba8faa44}
+      \strng{authornamehash}{2e34b2dce542de758073506fba8faa44}
+      \strng{authorfullhash}{2e34b2dce542de758073506fba8faa44}
+      \field{extraname}{1}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.myschool.edu.au/}}
+      \field{note}{[Accessed on 13-02-2023]}
+      \field{title}{{My School}}
+      \field{year}{2022}
+    \endentry
     \entry{acara_profiles}{misc}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=2e34b2dce542de758073506fba8faa44}{%
@@ -31,8 +56,10 @@
       \strng{authorbibnamehash}{2e34b2dce542de758073506fba8faa44}
       \strng{authornamehash}{2e34b2dce542de758073506fba8faa44}
       \strng{authorfullhash}{2e34b2dce542de758073506fba8faa44}
+      \field{extraname}{2}
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradate}{2}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -123,6 +150,29 @@
       \field{year}{2018}
       \field{pages}{137\bibrangedash 146}
       \range{pages}{10}
+    \endentry
+    \entry{casey_schools}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a1c1e833e61ff0689cb7da093fd66d13}{%
+           family={{City of Casey}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{a1c1e833e61ff0689cb7da093fd66d13}
+      \strng{fullhash}{a1c1e833e61ff0689cb7da093fd66d13}
+      \strng{bibnamehash}{a1c1e833e61ff0689cb7da093fd66d13}
+      \strng{authorbibnamehash}{a1c1e833e61ff0689cb7da093fd66d13}
+      \strng{authornamehash}{a1c1e833e61ff0689cb7da093fd66d13}
+      \strng{authorfullhash}{a1c1e833e61ff0689cb7da093fd66d13}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://data.casey.vic.gov.au/explore/dataset/primary-and-secondary-schools/}}
+      \field{note}{[Accessed on 13-02-2023]}
+      \field{title}{{Open Data Exchange - Primary and Secondary Schools in City of Casey}}
+      \field{year}{2021}
     \endentry
     \entry{adhd}{article}{}
       \name{author}{80}{}{%
@@ -626,6 +676,148 @@
       \field{pages}{789\bibrangedash 818}
       \range{pages}{30}
     \endentry
+    \entry{unimelb_aides}{misc}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=669cda1a093604ae5c4e349dd2e2e40c}{%
+           family={Poed},
+           familyi={P\bibinitperiod},
+           given={Shiralee},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=029ca962539023a102b47dc5f53db49e}{%
+           family={Graham},
+           familyi={G\bibinitperiod},
+           given={Lorraine},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f56201a3914844a3c8824a7a2a9b3dc3}{%
+           family={Berman},
+           familyi={B\bibinitperiod},
+           given={Jeanette},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1732c26e915bf673aaf21fd08bca8e04}{%
+           family={McKay-Brown},
+           familyi={M\bibinithyphendelim B\bibinitperiod},
+           given={Lisa},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a93000b1a31888d4af84b818fec57337}
+      \strng{fullhash}{420fb9f6ff0cc63c006e50005e0c796b}
+      \strng{bibnamehash}{a93000b1a31888d4af84b818fec57337}
+      \strng{authorbibnamehash}{a93000b1a31888d4af84b818fec57337}
+      \strng{authornamehash}{a93000b1a31888d4af84b818fec57337}
+      \strng{authorfullhash}{420fb9f6ff0cc63c006e50005e0c796b}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://pursuit.unimelb.edu.au/articles/making-a-case-for-teacher-aides}}
+      \field{note}{[Accessed on 13-02-2023]}
+      \field{title}{{Making a Case for Teacher Aides}}
+      \field{year}{2016}
+    \endentry
+    \entry{pullout_rea}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=2a248b1a8b88389803429d30363f767d}{%
+           family={Rea},
+           familyi={R\bibinitperiod},
+           given={Patricia\bibnamedelima Jordan},
+           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6cebf3caecf835a4defd55845b00aaf3}{%
+           family={McLaughlin},
+           familyi={M\bibinitperiod},
+           given={Virginia\bibnamedelima L.},
+           giveni={V\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=50c8ac0179fbf42bed3be5133caac764}{%
+           family={Walther-Thomas},
+           familyi={W\bibinithyphendelim T\bibinitperiod},
+           given={Chriss},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{581af82986b927f1bfe501fae3274f12}
+      \strng{fullhash}{581af82986b927f1bfe501fae3274f12}
+      \strng{bibnamehash}{581af82986b927f1bfe501fae3274f12}
+      \strng{authorbibnamehash}{581af82986b927f1bfe501fae3274f12}
+      \strng{authornamehash}{581af82986b927f1bfe501fae3274f12}
+      \strng{authorfullhash}{581af82986b927f1bfe501fae3274f12}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Exceptional Children}
+      \field{title}{Outcomes for Students with Learning Disabilities in Inclusive and Pullout Programs}
+      \field{volume}{68}
+      \field{year}{2002}
+      \field{pages}{203\bibrangedash 222}
+      \range{pages}{20}
+    \endentry
+    \entry{pullout_trinity}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e72d35d68d6ece24b6c9af3737c52fe1}{%
+           family={Reifler},
+           familyi={R\bibinitperiod},
+           given={Allie},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Trinity College, Hartford Connecticut}%
+      }
+      \strng{namehash}{e72d35d68d6ece24b6c9af3737c52fe1}
+      \strng{fullhash}{e72d35d68d6ece24b6c9af3737c52fe1}
+      \strng{bibnamehash}{e72d35d68d6ece24b6c9af3737c52fe1}
+      \strng{authorbibnamehash}{e72d35d68d6ece24b6c9af3737c52fe1}
+      \strng{authornamehash}{e72d35d68d6ece24b6c9af3737c52fe1}
+      \strng{authorfullhash}{e72d35d68d6ece24b6c9af3737c52fe1}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Senior Theses}
+      \field{title}{Classroom pull-out: helping or hurting students’ self-concepts and academic success?}
+      \field{volume}{Spring}
+      \field{year}{2021}
+    \endentry
+    \entry{teacher_attitudes}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c5debc7939dd94861d6e138b620c2024}{%
+           family={Saloviita},
+           familyi={S\bibinitperiod},
+           given={Timo},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c5debc7939dd94861d6e138b620c2024}
+      \strng{fullhash}{c5debc7939dd94861d6e138b620c2024}
+      \strng{bibnamehash}{c5debc7939dd94861d6e138b620c2024}
+      \strng{authorbibnamehash}{c5debc7939dd94861d6e138b620c2024}
+      \strng{authornamehash}{c5debc7939dd94861d6e138b620c2024}
+      \strng{authorfullhash}{c5debc7939dd94861d6e138b620c2024}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Research in Special Educational Needs}
+      \field{number}{1}
+      \field{title}{Teacher attitudes towards the inclusion of students with support needs}
+      \field{volume}{20}
+      \field{year}{2020}
+      \field{pages}{64\bibrangedash 73}
+      \range{pages}{10}
+    \endentry
     \entry{psd_guidelines}{misc}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=ff91e70b10737016ac42182c2fa0bed7}{%
@@ -641,6 +833,7 @@
       \field{extraname}{1}
       \field{sortinit}{V}
       \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradate}{1}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -648,7 +841,7 @@
       \field{title}{Program for Students with Disabilities - Operational Guidelines for School Applications Submitted in 2022}
       \field{year}{2022}
     \endentry
-    \entry{srp_vic}{misc}{}
+    \entry{tli}{misc}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=ff91e70b10737016ac42182c2fa0bed7}{%
            family={{Victorian Department of Education}},
@@ -663,12 +856,63 @@
       \field{extraname}{2}
       \field{sortinit}{V}
       \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www2.education.vic.gov.au/pal/tutor-learning-initiative/policy}}
+      \field{note}{[Accessed on 20-02-2023]}
+      \field{title}{{School Operations - Tutor Learning Initiative}}
+      \field{year}{2022}
+    \endentry
+    \entry{srp_vic}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ff91e70b10737016ac42182c2fa0bed7}{%
+           family={{Victorian Department of Education}},
+           familyi={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{ff91e70b10737016ac42182c2fa0bed7}
+      \strng{fullhash}{ff91e70b10737016ac42182c2fa0bed7}
+      \strng{bibnamehash}{ff91e70b10737016ac42182c2fa0bed7}
+      \strng{authorbibnamehash}{ff91e70b10737016ac42182c2fa0bed7}
+      \strng{authornamehash}{ff91e70b10737016ac42182c2fa0bed7}
+      \strng{authorfullhash}{ff91e70b10737016ac42182c2fa0bed7}
+      \field{extraname}{3}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{2023 Indicative Student Resource Package Guide}
       \field{year}{2023}
+    \endentry
+    \entry{analytics}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=aeabf0613f55c0bd8a4e3d13bf9f9605}{%
+           family={Vigliarolo},
+           familyi={V\bibinitperiod},
+           given={Brandon},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{aeabf0613f55c0bd8a4e3d13bf9f9605}
+      \strng{fullhash}{aeabf0613f55c0bd8a4e3d13bf9f9605}
+      \strng{bibnamehash}{aeabf0613f55c0bd8a4e3d13bf9f9605}
+      \strng{authorbibnamehash}{aeabf0613f55c0bd8a4e3d13bf9f9605}
+      \strng{authornamehash}{aeabf0613f55c0bd8a4e3d13bf9f9605}
+      \strng{authorfullhash}{aeabf0613f55c0bd8a4e3d13bf9f9605}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.techrepublic.com/article/prescriptive-analytics-a-cheat-sheet/}}
+      \field{note}{[Accessed on 20-02-2023]}
+      \field{title}{{Prescriptive analytics: A cheat sheet}}
+      \field{year}{2019}
     \endentry
   \enddatalist
 \endrefsection

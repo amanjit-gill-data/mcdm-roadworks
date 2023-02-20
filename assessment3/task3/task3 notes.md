@@ -85,6 +85,7 @@ x<sub>i</sub> >= deficit_score_normalised \* (x<sub>1</sub> + x<sub>2</sub> + ..
 overall picture
 ![[Pasted image 20230220104431.png]]
 
+https://www.education.vic.gov.au/Documents/about/department/summarystatssnapshot.pdf
 
 ### overview and school search
 
@@ -248,7 +249,7 @@ find papers on:
 
 
 
-
+ACEs - adverse childhood experiences
 https://psycnet.apa.org/doiLanding?doi=10.1037%2Fspq0000256
 
 
@@ -284,6 +285,12 @@ citation: [[adhd.bib]]
 ![[Pasted image 20230218164423.png | 500]]
 
 ### validating my approach
+
+https://www.techrepublic.com/article/prescriptive-analytics-a-cheat-sheet/
+
+![[Pasted image 20230220210616.png]]
+
+
 
 [[2021_07-ITcon-Shehab.pdf]]
 
