@@ -16,5 +16,77 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{acara_profiles}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=2e34b2dce542de758073506fba8faa44}{%
+           family={{Australian Curriculum, Assessment and Reporting Authority}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{2e34b2dce542de758073506fba8faa44}
+      \strng{fullhash}{2e34b2dce542de758073506fba8faa44}
+      \strng{bibnamehash}{2e34b2dce542de758073506fba8faa44}
+      \strng{authorbibnamehash}{2e34b2dce542de758073506fba8faa44}
+      \strng{authornamehash}{2e34b2dce542de758073506fba8faa44}
+      \strng{authorfullhash}{2e34b2dce542de758073506fba8faa44}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.acara.edu.au/contact-us/acara-data-access}}
+      \field{note}{[Accessed on 17-02-2023]}
+      \field{title}{{School Profile 2008-2021}}
+      \field{year}{2022}
+    \endentry
+    \entry{srs_background}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=734e6d66a02ff7b3f52405568d4b6d40}{%
+           family={{Australian Government Department of Education}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{734e6d66a02ff7b3f52405568d4b6d40}
+      \strng{fullhash}{734e6d66a02ff7b3f52405568d4b6d40}
+      \strng{bibnamehash}{734e6d66a02ff7b3f52405568d4b6d40}
+      \strng{authorbibnamehash}{734e6d66a02ff7b3f52405568d4b6d40}
+      \strng{authornamehash}{734e6d66a02ff7b3f52405568d4b6d40}
+      \strng{authorfullhash}{734e6d66a02ff7b3f52405568d4b6d40}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.education.gov.au/recurrent-funding-schools/schooling-resource-standard}}
+      \field{note}{[Accessed on 13-02-2023]}
+      \field{title}{{Schooling Resource Standard}}
+      \field{year}{2023}
+    \endentry
+    \entry{srs_2020}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=78e96865990b4b67bac1a5d4ca2a7e1b}{%
+           family={{Australian Government Department of Education, Skills and Employment}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{78e96865990b4b67bac1a5d4ca2a7e1b}
+      \strng{fullhash}{78e96865990b4b67bac1a5d4ca2a7e1b}
+      \strng{bibnamehash}{78e96865990b4b67bac1a5d4ca2a7e1b}
+      \strng{authorbibnamehash}{78e96865990b4b67bac1a5d4ca2a7e1b}
+      \strng{authornamehash}{78e96865990b4b67bac1a5d4ca2a7e1b}
+      \strng{authorfullhash}{78e96865990b4b67bac1a5d4ca2a7e1b}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Australian Government Schools Funding - 2014 to 2020 Funding Years}
+      \field{year}{2021}
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 

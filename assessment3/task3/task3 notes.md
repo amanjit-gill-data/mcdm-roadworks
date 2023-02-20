@@ -1,19 +1,4 @@
 
-# advice from webinar
-
-- assignment advice
-	- include title page!!
-	- mostly similar instructions to assignment 2
-	- use <u>applied research</u>, not <u>basic research</u>
-	- if task3 problem involves uncertainty, must use simulations (week 6)
-	- model = objective function, decision variables, constraints clearly defined
-	- recommend using only parts 1 and 2 of the submission thing
-		- i.e. report in part 1, spreadsheet in part 2
-		- then nothing in parts 3 and 4
-	- justify why it's a prescriptive analytics problem and why it needs linear programming or whatever method i chose
-
-re lit review
-![[Pasted image 20230210024453.png | 600]]
 
 # planning
 
@@ -97,6 +82,10 @@ x<sub>i</sub> >= deficit_score_normalised \* (x<sub>1</sub> + x<sub>2</sub> + ..
 
 # research
 
+overall picture
+![[Pasted image 20230220104431.png]]
+
+
 ### overview and school search
 
 https://www.vic.gov.au/find-your-schools-funding
@@ -172,7 +161,6 @@ private schools get *over* 100%
 https://www.education.gov.au/recurrent-funding-schools/schooling-resource-standard
 
 ![[Pasted image 20230215061324.png | 600]]
-this is shocking
 
 [[ESE21-0486 AG Schools Funding Report_ACC.pdf]]
 ![[Pasted image 20230215132614.png | 650]]
@@ -253,10 +241,12 @@ find papers on:
 - [x] how trauma affects executive function, concentration, school performance etc; psychnet
 - [x] are schools funded for enough ES? i know mine wasn't - just use my own experience
 - [x] how education funding is currently allocated in victoria; vic govt docs
-- [ ] how LP, IP are used for funding allocation
-	- [ ] in schools
-	- [ ] elsewhere
+- [x] how LP, IP are used for funding allocation
+	- [x] in schools
+	- [x] elsewhere
 - [ ] alternative methods and why they do/don't apply here
+
+
 
 
 https://psycnet.apa.org/doiLanding?doi=10.1037%2Fspq0000256
