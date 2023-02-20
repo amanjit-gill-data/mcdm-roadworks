@@ -818,7 +818,171 @@
       \field{pages}{64\bibrangedash 73}
       \range{pages}{10}
     \endentry
-    \entry{psd_guidelines}{misc}{}
+    \entry{equity}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=310733f03d57251f57c7b36351f0b4b3}{%
+           family={Shehab},
+           familyi={S\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e09f06445d392d5eea0fedeb1d6f5efd}{%
+           family={Haghighat},
+           familyi={H\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1c2919db8989f572e67df6efab5f9bab}{%
+           family={Sajjan},
+           familyi={S\bibinitperiod},
+           given={K.\bibnamedelimi K.},
+           giveni={K\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=244c395d733b4aa2366e9922631361e6}{%
+           family={Balali},
+           familyi={B\bibinitperiod},
+           given={V.},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{797916ff752078d7f2845ee6a00c821e}
+      \strng{fullhash}{3fa544023964a654f2a62b4926126ab1}
+      \strng{bibnamehash}{797916ff752078d7f2845ee6a00c821e}
+      \strng{authorbibnamehash}{797916ff752078d7f2845ee6a00c821e}
+      \strng{authornamehash}{797916ff752078d7f2845ee6a00c821e}
+      \strng{authorfullhash}{3fa544023964a654f2a62b4926126ab1}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ITcon}
+      \field{title}{Prioritization of K-12 School Maintenance Construction Projects Using Genetic Algorithm and Dynamic Programming Models}
+      \field{volume}{26}
+      \field{year}{2021}
+      \field{pages}{112\bibrangedash 127}
+      \range{pages}{16}
+    \endentry
+    \entry{goal_prog}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=ee309c0a32d7d0b61a05fde4695cc0dd}{%
+           family={Tamiz},
+           familyi={T\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6f5b59ba54dc8fd6aadd209fb46554e8}{%
+           family={Jones},
+           familyi={J\bibinitperiod},
+           given={D.\bibnamedelimi F.},
+           giveni={D\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c4f2eaed0e543cce1afeb1d67c534775}{%
+           family={El-Darzi},
+           familyi={E\bibinithyphendelim D\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{870083b173f276f3190fe9d6cf3eb6ed}
+      \strng{fullhash}{870083b173f276f3190fe9d6cf3eb6ed}
+      \strng{bibnamehash}{870083b173f276f3190fe9d6cf3eb6ed}
+      \strng{authorbibnamehash}{870083b173f276f3190fe9d6cf3eb6ed}
+      \strng{authornamehash}{870083b173f276f3190fe9d6cf3eb6ed}
+      \strng{authorfullhash}{870083b173f276f3190fe9d6cf3eb6ed}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Annals of Operations Research}
+      \field{number}{1}
+      \field{title}{A review of goal programming and its applications}
+      \field{volume}{58}
+      \field{year}{1995}
+      \field{pages}{39\bibrangedash 53}
+      \range{pages}{15}
+    \endentry
+    \entry{binary_prog}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=1637f0e3d63a37eca7480a15bc4336b5}{%
+           family={Tripathy},
+           familyi={T\bibinitperiod},
+           given={Arabinda},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1637f0e3d63a37eca7480a15bc4336b5}
+      \strng{fullhash}{1637f0e3d63a37eca7480a15bc4336b5}
+      \strng{bibnamehash}{1637f0e3d63a37eca7480a15bc4336b5}
+      \strng{authorbibnamehash}{1637f0e3d63a37eca7480a15bc4336b5}
+      \strng{authornamehash}{1637f0e3d63a37eca7480a15bc4336b5}
+      \strng{authorfullhash}{1637f0e3d63a37eca7480a15bc4336b5}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Management Science}
+      \field{number}{12}
+      \field{title}{School Timetabling — A Case in Large Binary Integer Linear Programming}
+      \field{volume}{30}
+      \field{year}{1984}
+      \field{pages}{1473\bibrangedash 1489}
+      \range{pages}{17}
+    \endentry
+    \entry{vce_scores}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=57f8b361f1b3e85b8dae089d9757cabf}{%
+           family={{Victorian Curriculum and Assessment Authority}},
+           familyi={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{57f8b361f1b3e85b8dae089d9757cabf}
+      \strng{fullhash}{57f8b361f1b3e85b8dae089d9757cabf}
+      \strng{bibnamehash}{57f8b361f1b3e85b8dae089d9757cabf}
+      \strng{authorbibnamehash}{57f8b361f1b3e85b8dae089d9757cabf}
+      \strng{authornamehash}{57f8b361f1b3e85b8dae089d9757cabf}
+      \strng{authorfullhash}{57f8b361f1b3e85b8dae089d9757cabf}
+      \field{extraname}{1}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.vcaa.vic.edu.au/administration/research-and-statistics/Pages/SeniorSecondaryCompletion.aspx}}
+      \field{note}{[Accessed on 13-02-2023]}
+      \field{title}{{Senior Secondary Completion and Achievement Information}}
+      \field{year}{2022}
+    \endentry
+    \entry{vce_info}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=57f8b361f1b3e85b8dae089d9757cabf}{%
+           family={{Victorian Curriculum and Assessment Authority}},
+           familyi={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{57f8b361f1b3e85b8dae089d9757cabf}
+      \strng{fullhash}{57f8b361f1b3e85b8dae089d9757cabf}
+      \strng{bibnamehash}{57f8b361f1b3e85b8dae089d9757cabf}
+      \strng{authorbibnamehash}{57f8b361f1b3e85b8dae089d9757cabf}
+      \strng{authornamehash}{57f8b361f1b3e85b8dae089d9757cabf}
+      \strng{authorfullhash}{57f8b361f1b3e85b8dae089d9757cabf}
+      \field{extraname}{2}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.vcaa.vic.edu.au/curriculum/vce/vce-faqs/Pages/current-students.aspx}}
+      \field{note}{[Accessed on 13-02-2023]}
+      \field{title}{{VCE FAQ - Current Students}}
+      \field{year}{2023}
+    \endentry
+    \entry{salary}{misc}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=ff91e70b10737016ac42182c2fa0bed7}{%
            family={{Victorian Department of Education}},
@@ -838,10 +1002,12 @@
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Program for Students with Disabilities - Operational Guidelines for School Applications Submitted in 2022}
+      \field{howpublished}{\url{https://www.education.vic.gov.au/hrweb/Documents/Salary-EducationSupportClass.pdf}}
+      \field{note}{[Accessed on 13-02-2023]}
+      \field{title}{{Education Support Class Salaries in Victorian Government Schools}}
       \field{year}{2022}
     \endentry
-    \entry{tli}{misc}{}
+    \entry{psd_guidelines}{misc}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=ff91e70b10737016ac42182c2fa0bed7}{%
            family={{Victorian Department of Education}},
@@ -857,6 +1023,29 @@
       \field{sortinit}{V}
       \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
       \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Program for Students with Disabilities - Operational Guidelines for School Applications Submitted in 2022}
+      \field{year}{2022}
+    \endentry
+    \entry{tli}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ff91e70b10737016ac42182c2fa0bed7}{%
+           family={{Victorian Department of Education}},
+           familyi={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{ff91e70b10737016ac42182c2fa0bed7}
+      \strng{fullhash}{ff91e70b10737016ac42182c2fa0bed7}
+      \strng{bibnamehash}{ff91e70b10737016ac42182c2fa0bed7}
+      \strng{authorbibnamehash}{ff91e70b10737016ac42182c2fa0bed7}
+      \strng{authornamehash}{ff91e70b10737016ac42182c2fa0bed7}
+      \strng{authorfullhash}{ff91e70b10737016ac42182c2fa0bed7}
+      \field{extraname}{3}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradate}{3}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -878,7 +1067,7 @@
       \strng{authorbibnamehash}{ff91e70b10737016ac42182c2fa0bed7}
       \strng{authornamehash}{ff91e70b10737016ac42182c2fa0bed7}
       \strng{authorfullhash}{ff91e70b10737016ac42182c2fa0bed7}
-      \field{extraname}{3}
+      \field{extraname}{4}
       \field{sortinit}{V}
       \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
       \field{extradatescope}{labelyear}

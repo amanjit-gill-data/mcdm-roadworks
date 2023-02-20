@@ -2375,6 +2375,20 @@
     <bcf:citekey order="22" intorder="1">teacher_attitudes</bcf:citekey>
     <bcf:citekey order="23" intorder="1">unimelb_aides</bcf:citekey>
     <bcf:citekey order="24" intorder="1">analytics</bcf:citekey>
+    <bcf:citekey order="25" intorder="1">goal_prog</bcf:citekey>
+    <bcf:citekey order="26" intorder="1">goal_prog</bcf:citekey>
+    <bcf:citekey order="27" intorder="1">binary_prog</bcf:citekey>
+    <bcf:citekey order="28" intorder="1">salary</bcf:citekey>
+    <bcf:citekey order="29" intorder="1">salary</bcf:citekey>
+    <bcf:citekey order="30" intorder="1">naplan</bcf:citekey>
+    <bcf:citekey order="31" intorder="1">srs_2020</bcf:citekey>
+    <bcf:citekey order="32" intorder="1">equity</bcf:citekey>
+    <bcf:citekey order="33" intorder="1">equity</bcf:citekey>
+    <bcf:citekey order="34" intorder="1">naplan</bcf:citekey>
+    <bcf:citekey order="35" intorder="1">naplan</bcf:citekey>
+    <bcf:citekey order="36" intorder="1">naplan</bcf:citekey>
+    <bcf:citekey order="37" intorder="1">vce_scores</bcf:citekey>
+    <bcf:citekey order="38" intorder="1">vce_info</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

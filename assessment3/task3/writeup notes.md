@@ -56,29 +56,44 @@ re lit review
 - [x] Extensive illustration on how this problem is related to the Prescriptive decision analytics and why.
 
 #### solution approach 400
-- [ ] Can propose the appropriate methodology to address the problem.
-	- [ ] no data on proportion of students who need more support
-	- [ ] but in my local area, public schools' naplan performance is clearly worse
-	- [ ] and vce study score is lower
-	- [ ] so i can use this to assess the schools on their need
-- [ ] Can explain why it is appropriate and other methodologies are not suitable.
-- [ ] Can explain the methodology mathematically or in words.
-- [ ] Can suggest the possible results and outcomes.
-- [ ] Can interpret the results.
-- [ ] Do have a qualitative analysis against comparing methods or approaches
+- [x] Can propose the appropriate methodology to address the problem.
+	- [x] no data on proportion of students who need more support
+	- [x] but in my local area, public schools' naplan performance is clearly worse
+	- [x] and vce study score is lower
+	- [x] so i can use this to assess the schools on their need
+- [x] Can explain why it is appropriate and other methodologies are not suitable.
+	- [x] goal programming not appropriate as this a limited-scope problem - funding for only one program; if it were the whole education budget it would potentially be a goal programming problem
+	- [x] binary programming not suitable as it doesn't differentiate between high and low needs.
+- [x] Can explain the methodology mathematically or in words.
+- [x] Can suggest the possible results and outcomes.
+- [x] Can interpret the results.
+- [x] Do have a qualitative analysis against comparing methods or approaches
 
 #### interpretation of results 850
-- [ ] Excellent documentation of the results.
-- [ ] Different performance measures are used to validate the proposed model.
+- [x] Excellent documentation of the results.
+- [ ] Different performance measures are used to validate the proposed model
+	- [ ] does it fully meet the constraints? sub optimal solution into constraints to check
+	- [ ] how much smaller cost than budgeted
+	- [ ] 
 - [ ] Sensitivity analysis was carried out to justify the robustness of the model.
+	- [ ] check sensitivity to different staff facilities limit, ES staff ratio, academic deficit score
 - [ ] Excellent comparison with the current practice and/or alternative methodologies.
+	- [ ] current practice doesn't allocate to adhd, aces; uses a loading system that seems good but still falls short
+	- [ ] current practice doesn't specifically fund ES - it's part of a pool of money the school can use for whatever
 - [ ] Perfect focus on the achievements.
 - [ ] Detailed discussion about any possible limitations of the assumed problem.
+	- [ ] only focuses on a narrow part of the entire funding model
+	- [ ] normal equity funding has numerous categories that probably interplay with this problem
+	- [ ] doesn't provision extra collaboration time between teachers and ES as advocated for my study
+	- [ ] so a second iteration of the analysis could work in extra planning allotments for ES, and perhaps slightly reduced workload for teachers so they can liaise with ES, and more funding for training ES and issuing them equipment, which isn't guaranteed
+	- [ ] 
+
+
 
 #### conclusion 200
 - [ ] Conclusions and related outcomes (consequences and implications) are logical and reflect student’s informed evaluation and ability to place evidence and perspectives discussed in priority order.
 
 #### references
-- [ ] The report follows a referencing style that complies with the Harvard style, and the in-text citations are made purposefully.
-- [ ] Reference list is completely accurate with no errors.
+- [x] The report follows a referencing style that complies with the Harvard style, and the in-text citations are made purposefully.
+- [x] Reference list is completely accurate with no errors.
 

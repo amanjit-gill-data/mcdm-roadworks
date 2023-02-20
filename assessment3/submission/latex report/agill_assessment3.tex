@@ -5,6 +5,7 @@
 \fontfamily{lmdh}\selectfont
 
 \usepackage{amsfonts} 
+\usepackage{amsmath}
 
 \usepackage{graphicx}
 \graphicspath{{../}}
@@ -147,8 +148,6 @@
         \label{results1}
     \end{table}
 
-    Appendix XXXX contains the model construction in Microsoft Excel.
-
     \newpage
 
     \section{Staff Scheduling}
@@ -266,8 +265,6 @@
         \label{results2}
     \end{table}
 
-    See Appendix XXXX for the model construction in Microsoft Excel.
-
     \newpage
 
     \section{Independent Analysis}
@@ -325,14 +322,14 @@
     In collecting data for this analysis, a number of limitations have revealed themselves:
 
     \begin{itemize}
-        \item There is no publicly available data on what proportion of students are underperforming at schools. Data from standardised testing reveal the percentage of students at every school whose two-year progress is ``above average'', but there is no information on the percentage of students whose progress is below average or poor \parencite{naplan}. Because of this, it is difficult to estimate the number of children at a school who might need support but who fall outside the strict PSD criteria. 
-        \item A small number of secondary schools in Casey service both primary and secondary year levels \parencite{casey_schools}. There is no readily accessible data on what proportion of these schools' total enrolment comprises secondary students. This means that current funding estimates for these schools are likely to be inaccurate, because the federal government's SRS base amount is different for primary and secondary students \parencite{srs_2020}.
-        \item A small number of secondary schools in the catchment areas for this study have only recently opened, so there is no NAPLAN (National Assessment Program – Literacy and Numeracy) data available for them. In addition, a small number of schools do not offer VCE (Victorian Certificate of Education) classes, meaning there is no VCE performance data for them.
+        \item There is no publicly available data on what proportion of students are underperforming at schools. Data from standardised testing reveal the percentage of students at every school whose two-year progress is ``above average'', but there is no information on the percentage of students whose progress is below average or poor \parencite{naplan}. Because of this, it is difficult to estimate the number of children at a school who might need support but who fall outside the strict PSD criteria. An alternative measure has been formulated - an ``academic deficit'' score for each school (see Section \ref{solution_approach}).
+        \item A small number of secondary schools in Casey service both primary and secondary year levels \parencite{casey_schools}. There is no readily accessible data on what proportion of these schools' total enrolment comprises secondary students. The federal government's SRS base amount is different for primary and secondary \parencite{srs_2020}, so an assumption has been made that \textit{all} of the students at these schools attract the SRS base amount for secondary students, regardless of their age. This means that funding estimates for these schools are likely to be inaccurate.
+        \item A small number of secondary schools in the catchment area for this study have only recently opened, so there is no NAPLAN (National Assessment Program – Literacy and Numeracy) data available for them. In addition, a small number of schools do not offer VCE (Victorian Certificate of Education) classes, meaning there is no VCE performance data for them. This has been addressed by filling in these missing values with medians calculated from the other schools. This is preferable to removing the schools from the dataset; there are only 13 government secondary schools in Casey, so removing even one or two may significantly alter the funding allocated to the remaining schools.
     \end{itemize}
 
-    These limitations have been mitigated as described in Section \ref{solution_approach}, but will inevitably impact upon the accuracy of the figures. Nevertheless, the results of the analysis suggest that linear programming is a valid, efficient, tool for allocation of funding in narrow contexts such as disability support, and that significant cost savings are possible if education funding is applied in a more targeted way.  
+    These limitations have been mitigated as described above, but will inevitably impact upon the accuracy of the figures. Nevertheless, the results of the analysis suggest that linear programming is a valid, efficient, tool for allocation of funding in narrow contexts such as disability support, and that significant cost savings are possible if education funding is applied in a more targeted way.  
 
-    \subsection{Problem Identification}
+    \subsection{Problem Identification} \label{problem_id}
 
     As discussed in Section \ref{intro}, the ratio of enrolled students to non-teaching staff at government schools is much higher than at non-government schools \parencite{acara_profiles}. This, combined with the aforementioned evidence that students with ADHD and ACEs are likely to be underserviced by the PSD, suggests that provision of Education Support staff is inadequate at public schools, and that this is not limited to individual schools; rather, it may be a system-level deficiency requiring a system-level response.
 
@@ -348,9 +345,177 @@
 
     \subsection{Solution Approach} \label{solution_approach}
 
+    Linear programming has been confirmed as the preferred prescriptive analytics approach because it allows the requirements of the schools seeking disability support staff to be balanced with the imperative to allocate public funds in a fiscally responsible way. Other potential approaches were considered and rejected on the following grounds:
 
+    \begin{itemize}
+        \item For a large-scale project in which funding is allocated for a number of different uses, goal programming would be an ideal candidate, because it allows for multiple competing imperatives to be balanced against one another. For example, it may be used to distribute funding across different priorities such as sports equipment, musical instruments and art supplies. Its applicability to academic resource planning also been noted by \Citeauthor{goal_prog} (\citedate{goal_prog}). However, given that the present study focuses on only one goal - Education Support assistance for underperforming students - goal programming is not considered a suitable method.
+        \item Some consideration has been given to binary programming, a stricter form of linear programming in which each school would either be allocated funding or not, depending on a determination of need. While binary programming has been validated for other uses in education, such as timetabling \parencite{binary_prog}, this would not be a suitable approach for the present problem because it would not differentiate between schools requiring large and small investments; every chosen school would be designated a value of `1' or `0', regardless of its degree of need. By contrast, linear programming in its original form (even when constrained to produce integer results) offers the opportunity to differentiate between schools with high needs and low needs.
+    \end{itemize}
+
+    With a linear programming approach confirmed as most suitable, one can proceed with developing a mathematical model. Firstly, the City of Casey has thirteen public secondary schools; each one is assigned a decision variable representing the number of additional ES workers that have been allocated to it. These variables are given in Table \ref{dec_vars}.
+
+    \begin{table}[!ht]
+        \centering
+        \caption{Government secondary schools in Casey.}
+        \begin{tabular}{|l|l|}
+            \hline
+            School & Variable \\ \hline
+            Alkira Secondary College & $x_1$ \\ \hline
+            Berwick Secondary College & $x_2$ \\ \hline
+            Cranbourne East Secondary School & $x_3$ \\ \hline
+            Cranbourne West Secondary College & $x_4$ \\ \hline
+            Doveton College & $x_5$ \\ \hline
+            Fountain Gate Secondary College & $x_6$ \\ \hline
+            Gleneagles Secondary College & $x_7$ \\ \hline
+            Hallam Secondary College & $x_8$ \\ \hline
+            Hampton Park Secondary College & $x_9$ \\ \hline
+            Kambrya College & $x_{10}$ \\ \hline
+            Lyndhurst Secondary College & $x_{11}$ \\ \hline
+            Narre Warren South P-12 College & $x_{12}$ \\ \hline
+            Timbarra P-9 College & $x_{13}$ \\ \hline
+        \end{tabular}
+        \label{dec_vars}
+    \end{table}
+    
+    As stated in Section \ref{problem_id}, the objective of the present exercise is to allocate ES workers to public schools in such a way as to \textit{minimise} the total salary cost. According to \Citeauthor{salary} (\citedate{salary}), the salary for an Education Support worker with ten years' experience is \$68,943 as at 1 January, 2023.
+
+    The linear program can be substantially simplified by assuming that all assigned ES workers will be paid this salary; that is, an assumption can be made that all hired workers will have ten years' experience. Then the objective function is to minimise the total cost given by:
+
+    \begin{equation}
+        total\_cost = 68,943 \times \sum_{i=1}^{13} x_i
+    \end{equation}
+
+    Because the salary is identical for each theoretical ES worker, the objective could also be expressed as a minimisation of the \textit{number} of hired workers:
+
+    \begin{equation}
+        total\_num\_hired = \sum_{i=1}^{13} x_i
+    \end{equation}
+
+    In order for the linear program to produce a fiscally responsible solution, the following constraints are required:
+
+    \begin{itemize}
+        \item The total expenditure must be below some nominated budget. In order to determine what this bound should be, the recurrent funding available to non-government schools in the City of Casey in 2020 has been obtained from the My School website \parencite{naplan} and compared against the funding required according to the 2020 SRS \parencite{srs_2020}. Table \ref{private_funding} shows that in 2020, non-government schools received more than \$106 million in excess funds. Given the significant underservicing of government schools, these surplus funds should be redistributed to the public system. This approach is validated by the observation made by \Citeauthor{equity} (\citedate{equity}) that governments should consider equity rather equality; that is, they should abort their insistence upon providing large amounts of public funds to privately educated students regardless of need. With this in mind, the nominated budget for the present analysis is set at \$106,656,982.
+        \item In order to avoid a large influx of new workers causing a school's staffrooms to become overcrowded (and thus introducing new problems pertaining to amenity and safety), the number of new ES workers allocated to a school should be limited to 25\% of the initial number of employees at the school. The staffing figures have been obtained from \Citeauthor{naplan} (\citedate{naplan}).
+        \item Regardless of whether or not a school needs additional support, the final ratio of enrolled students to non-teaching staff should be below 40. While this is still much higher than the median ratio of 21 as shown in Table \ref{es_staff_ratios} for non-government schools, this bound represents a reasonable short-term improvement for four out of thirteen government schools; the Victorian government should thereafter continue to drive the ratio downwards over time.
+        \item In order to allocate ES resources fairly, each school should be assigned a \textit{deficit score}; that is, a numerical representation of the extent to which students at the school require additional Education Support funding. This deficit score should be normalised so it represents the school's share of the overall ``academic deficit'' in Casey. Then, the school's share of the total allocated ES funding should \textit{at least} equal the school's share of the academic deficit.
+    \end{itemize}
+
+    \begin{table}[!ht]
+        \centering
+        \caption{Funding of non-government schools in Casey in 2020.}
+        \begin{tabular}{|l|l|l|l|l|}
+        \hline
+            School & Per Student (\$) & Total (\$) & Required (\$)  & Surplus (\$)  \\ \hline
+            Beaconhills & 16,755 & 49,058,640 & 43,220,208 & 5,838,432  \\ \hline
+            Casey Grammar & 19,602 & 19,072,746 & 14,362,453 & 4,710,293  \\ \hline
+            Haileybury & 30,336 & 127,593,216 & 62,084,766 & 65,508,450  \\ \hline
+            Heritage & 19,788 & 8,172,444 & 6,096,293 & 2,076,151  \\ \hline
+            Hillcrest & 17,303 & 31,474,157 & 26,850,259 & 4,623,898  \\ \hline
+            Maranatha & 19,182 & 13,101,306 & 10,081,763 & 3,019,543  \\ \hline
+            St Francis Xavier & 15,834 & 52,188,864 & 48,652,256 & 3,536,608  \\ \hline
+            St Margaret's & 27,162 & 21,512,304 & 11,690,712 & 9,821,592  \\ \hline
+            St Peter's & 19,356 & 31,685,772 & 24,163,757 & 7,522,015  \\ \hline
+            ~ & ~ & ~ & Total Surplus: & 106,656,982  \\ \hline
+        \end{tabular}
+        \label{private_funding}
+    \end{table}
+
+    In addition to these operational constraints, a nonnegativity constraint applies to all thirteen decision variables, as is mandatory for all linear programs. An integer constraint has also been applied, to simplify interpretation of the results by limiting the recommended funding allocations to whole multiples of a full-time salary. 
+
+    The final operational constraints are given by inequations \ref{first_constraint3} to \ref{last_constraint3}. The data used to compute the constants are given in Table \ref{params}. Note that the ``academic deficit'' score for each school has been computed by applying the following procedure to NAPLAN data \parencite{naplan} and VCE data \parencite{vce_scores}:
+
+    \begin{enumerate}
+        \item Obtain the Year 9 raw NAPLAN scores for reading, writing, spelling and grammar. Compute the mean of these four figures to obtain a single figure for `literacy'. Compute the difference between this figure and the national average. 
+        \item Also obtain the Year 9 raw NAPLAN score for numeracy; compute the difference between this figure and the national average score for numeracy.
+        \item Obtain the median VCE study score for the school. Compute the difference between this and the mean, which is always set to 30 every year \parencite{vce_info}.
+        \item Add up the differences computed in Steps 1 to 3. This is the school's ``academic deficit''. Note that a school with no deficit (effectively an ``academic surplus'') is assigned a score of 0.
+        \item Add up all the schools' academic deficits; divide each school's deficit by this sum, yielding a normalised figure representing the school's share of the overall academic deficit.
+    \end{enumerate}
+
+    \begin{table}[!ht]
+        \centering
+        \caption{Parameters for each school.}
+        \begin{tabular}{|l|l|l|l|l|l|l|l|}
+            \hline
+                School & 1 & 2 & 3 & 4 & 5 & 6 & 7 \\ \hline
+                Enrolments & 1482 & 1640 & 1539 & 204 & 706 & 1345 & 1488 \\ \hline
+                Teaching staff & 97 & 126.3 & 117 & 19.2 & 53.4 & 105.7 & 114.4 \\ \hline
+                Non-teaching staff & 25.6 & 33.5 & 44.5 & 7.4 & 55.8 & 42.1 & 35.5 \\ \hline
+                Academic deficit (norm) & 0.05 & 0.04 & 0.04 & 0.03 & 0.18 & 0.12 & 0.02 \\ \hline
+                ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ \\ \hline
+                School & 8 & 9 & 10 & 11 & 12 & 13 & ~ \\ \hline
+                Enrolments & 632 & 1143 & 1609 & 609 & 2459 & 745 & ~ \\ \hline
+                Teaching staff & 55.4 & 90.2 & 112.9 & 46.8 & 166.8 & 49 & ~ \\ \hline
+                Non-teaching staff & 27.9 & 53.6 & 47.3 & 22.9 & 70.7 & 16.6 & ~ \\ \hline
+                Academic deficit (norm) & 0.04 & 0.15 & 0.00 & 0.10 & 0.06 & 0.05 & ~ \\ \hline
+        \end{tabular}
+        \label{params}
+    \end{table}
+
+    \begin{equation}
+        68,943\sum_{i=1}^{13} x_i \leq 106,656,982
+        \label{first_constraint3}
+    \end{equation}
+
+    \begin{equation}
+        \frac{s_i}{n_i + x_i} \leq 40
+    \end{equation}
+
+    \begin{equation}
+        x_i \geq d_i\sum_{i=1}^{13} x_i
+    \end{equation}
+
+    \begin{equation}
+        x_i \leq 0.25(t_i + n_i)
+        \label{last_constraint3}
+    \end{equation}
+
+    \begin{gather}
+        i \in \{1, 2, .., 13\} \\
+        x_i \geq 0 \\
+        x_i \in \mathbb{Z}            
+    \end{gather}
+
+    Note that:
+
+    \begin{itemize}
+        \item $s_i = \textrm{enrolled students}$
+        \item $n_i = \textrm{non-teaching staff}$
+        \item $t_i = \textrm{teaching staff}$
+        \item $d_i = \textrm{academic deficit (normalised)}$
+    \end{itemize}
+
+    It is anticipated that these constraints will yield an optimal salary cost, ensuring schools are granted support that is proportional to their needs, while keeping workforce growth sustainable to ensure that existing school buildings are capable of supporting an increase in staff numbers. It is also anticipated that the total salary cost will be well below the very large \$106 million nominal budget, showing that emphasising support for underperforming students need not be an expensive exercise relative to other government programs.
 
     \subsection{Results and Discussion}
+
+    When the mathematical model from Section \ref{solution_approach} is solved using the Simplex algorithm, the optimal number of Education Support workers allocated to each of the thirteen schools is as shown in Table \ref{results3}.
+
+    \begin{table}[!ht]
+        \centering
+        \caption{Optimal allocations.}
+        \begin{tabular}{|l|l|l|}
+            \hline
+            School & Variable & Optimal No. ES Staff        \\ \hline
+            Alkira Secondary College & $x_1$ & 12             \\ \hline
+            Berwick Secondary College & $x_2$ & 8          \\ \hline
+            Cranbourne East Secondary School & $x_3$ & 5            \\ \hline
+            Cranbourne West Secondary College & $x_4$ & 3          \\ \hline
+            Doveton College & $x_5$ & 19                        \\ \hline
+            Fountain Gate Secondary College & $x_6$ & 13             \\ \hline
+            Gleneagles Secondary College & $x_7$ & 2           \\ \hline
+            Hallam Secondary College & $x_8$ & 4               \\ \hline
+            Hampton Park Secondary College & $x_9$ & 17             \\ \hline
+            Kambrya College & $x_{10}$ & 0                     \\ \hline
+            Lyndhurst Secondary College & $x_{11}$ & 11                 \\ \hline
+            Narre Warren South P-12 College & $x_{12}$ & 7                 \\ \hline
+            Timbarra P-9 College & $x_{13}$ & 6                    \\ \hline
+        \end{tabular}
+        \label{results3}
+    \end{table}
+
+    The corresponding minimal salary cost is \$7,376,901, which is two orders of magnitude smaller than the budget made available to it. 
+
 
 
 
