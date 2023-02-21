@@ -1,16 +1,16 @@
 # Fdb version 3
-["biber agill_assessment3"] 1676919735 "agill_assessment3.bcf" "agill_assessment3.bbl" "agill_assessment3" 1676923507
+["biber agill_assessment3"] 1676919735 "agill_assessment3.bcf" "agill_assessment3.bbl" "agill_assessment3" 1676935962
   "ag_bib.bib" 1676915398 8390 1675abca3fda252552f336856ca8054f ""
-  "agill_assessment3.bcf" 1676923507 109759 149f8c2d72ab1f07c83965e6a2f591b5 "pdflatex"
+  "agill_assessment3.bcf" 1676935962 109759 149f8c2d72ab1f07c83965e6a2f591b5 "pdflatex"
   (generated)
   "agill_assessment3.bbl"
   "agill_assessment3.blg"
-["pdflatex"] 1676923506 "c:/Users/amanj/ds_projects/unsw/decision_making_6510/assessment3/submission/latex report/agill_assessment3.tex" "agill_assessment3.pdf" "agill_assessment3" 1676923507
-  "agill_assessment3.aux" 1676923507 8230 89a08a98e026b16b2fe774c3c78a66c0 "pdflatex"
+["pdflatex"] 1676935960 "c:/Users/amanj/ds_projects/unsw/decision_making_6510/assessment3/submission/latex report/agill_assessment3.tex" "agill_assessment3.pdf" "agill_assessment3" 1676935962
+  "agill_assessment3.aux" 1676935962 9095 186941ae7a9857bda1b5c9cf6f7f88fa "pdflatex"
   "agill_assessment3.bbl" 1676919737 47868 67338dd1e4df54fda723bdb4f4739b0c "biber agill_assessment3"
-  "agill_assessment3.run.xml" 1676923507 2442 502584c800d7d6c700323da72d46ad58 "pdflatex"
-  "agill_assessment3.tex" 1676923498 38650 964ed2ff7ccfe4cd4ccdde15c2ad231d ""
-  "c:/Users/amanj/ds_projects/unsw/decision_making_6510/assessment3/submission/latex report/agill_assessment3.tex" 1676923498 38650 964ed2ff7ccfe4cd4ccdde15c2ad231d ""
+  "agill_assessment3.run.xml" 1676935962 2442 502584c800d7d6c700323da72d46ad58 "pdflatex"
+  "agill_assessment3.tex" 1676935944 42833 c1f7c1d0be5bd1044cd4828f92f08034 ""
+  "c:/Users/amanj/ds_projects/unsw/decision_making_6510/assessment3/submission/latex report/agill_assessment3.tex" 1676935944 42833 c1f7c1d0be5bd1044cd4828f92f08034 ""
   "c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc" 1663052593 3486 c7eadf5dcc57b3b2d11736679f6636ba ""
   "c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc" 1663052593 2405 5dcf2c1b967ee25cc46c58cd52244aed ""
   "c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc" 1663052593 2840 216e6e45ad352e2456e1149f28885bee ""
@@ -31,6 +31,7 @@
   "c:/texlive/2022/texmf-dist/fonts/tfm/public/lm/lmsy10.tfm" 1663052593 1308 02cc510f9dd6012e5815d0c0ffbf6869 ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/public/lm/lmsy6.tfm" 1663052593 1300 b0605d44c16c22d99dc001808e4f24ea ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/public/lm/lmsy8.tfm" 1663052593 1304 cdc9a17df9ef0d2dc320eff37bbab1c4 ""
+  "c:/texlive/2022/texmf-dist/fonts/tfm/public/lm/rm-lmbx10.tfm" 1663052593 11880 35fcf136a2198418dfc53c83e9e2a07f ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/public/lm/rm-lmbx12.tfm" 1663052593 11880 ea60d06924270684e6f852f3141c992b ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/public/lm/rm-lmdunh10.tfm" 1663052593 11896 8e9f55d153d41069b21b382a3381b0c0 ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/public/lm/rm-lmr10.tfm" 1663052593 11868 4f81e9b6033c032bdaf9884f4d7ef412 ""
@@ -42,6 +43,7 @@
   "c:/texlive/2022/texmf-dist/fonts/tfm/public/lm/rm-lmtt10.tfm" 1663052593 1340 adaa94f9add991a099a6fc98bbb5f02c ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/public/lm/ts1-lmr10.tfm" 1663052593 1556 b86d923e6b2f9aab2e313098a95cb0b8 ""
   "c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1663050707 34694 870c211f62cb72718a00e353f14f254d ""
+  "c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmbx10.pfb" 1663052593 121021 836464b5fe0c782d94085eb083550ccc ""
   "c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmbx12.pfb" 1663052593 116908 9a7a12d1e4df280ea0ab4aad83cdef88 ""
   "c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmex10.pfb" 1663052593 23055 2e5b42921de910eaa97b85df04ca4891 ""
   "c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmmi10.pfb" 1663052593 30388 702fae6a5f0e6e9c48a1d872b442ffcf ""

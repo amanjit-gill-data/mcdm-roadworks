@@ -1,18 +1,7 @@
-## advice from webinar
-
-- assignment advice
-	- include title page!!
-	- mostly similar instructions to assignment 2
-	- use <u>applied research</u>, not <u>basic research</u>
-	- if task3 problem involves uncertainty, must use simulations (week 6)
-	- model = objective function, decision variables, constraints clearly defined
-	- recommend using only parts 1 and 2 of the submission thing
-		- i.e. report in part 1, spreadsheet in part 2
-		- then nothing in parts 3 and 4
-	- justify why it's a prescriptive analytics problem and why it needs linear programming or whatever method i chose
-
-re lit review
-![[Pasted image 20230210024453.png | 600]]
+- [ ] check task 1
+- [ ] check task 2
+- [ ] check task 3
+- [ ] check report
 
 
 ## report checklist
@@ -71,10 +60,9 @@ re lit review
 
 #### interpretation of results 850
 - [x] Excellent documentation of the results.
-- [ ] Different performance measures are used to validate the proposed model
-	- [ ] does it fully meet the constraints? sub optimal solution into constraints to check
-	- [ ] how much smaller cost than budgeted
-	- [ ] 
+- [x] Different performance measures are used to validate the proposed model
+	- [x] how much smaller cost than budgeted
+
 - [ ] Sensitivity analysis was carried out to justify the robustness of the model.
 	- [ ] check sensitivity to different staff facilities limit, ES staff ratio, academic deficit score
 - [ ] Excellent comparison with the current practice and/or alternative methodologies.
@@ -86,7 +74,7 @@ re lit review
 	- [ ] normal equity funding has numerous categories that probably interplay with this problem
 	- [ ] doesn't provision extra collaboration time between teachers and ES as advocated for my study
 	- [ ] so a second iteration of the analysis could work in extra planning allotments for ES, and perhaps slightly reduced workload for teachers so they can liaise with ES, and more funding for training ES and issuing them equipment, which isn't guaranteed
-	- [ ] 
+
 
 
 

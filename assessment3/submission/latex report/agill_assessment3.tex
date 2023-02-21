@@ -395,7 +395,7 @@
 
     \begin{itemize}
         \item The total expenditure must be below some nominated budget. In order to determine what this bound should be, the recurrent funding available to non-government schools in the City of Casey in 2020 has been obtained from the My School website \parencite{naplan} and compared against the funding required according to the 2020 SRS \parencite{srs_2020}. Table \ref{private_funding} shows that in 2020, non-government schools received more than \$106 million in excess funds. Given the significant underservicing of government schools, these surplus funds should be redistributed to the public system. This approach is validated by the observation made by \Citeauthor{equity} (\citedate{equity}) that governments should consider equity rather equality; that is, they should abort their insistence upon providing large amounts of public funds to privately educated students regardless of need. With this in mind, the nominated budget for the present analysis is set at \$106,656,982.
-        \item In order to avoid a large influx of new workers causing a school's staffrooms to become overcrowded (and thus introducing new problems pertaining to amenity and safety), the number of new ES workers allocated to a school should be limited to 25\% of the initial number of employees at the school. The staffing figures have been obtained from \Citeauthor{naplan} (\citedate{naplan}).
+        \item In order to avoid a large influx of new workers causing a school's staffrooms to become overcrowded (and thus introducing new problems pertaining to amenity and safety), the growth of new ES workers at a school should be limited to 25\% of the initial number of employees at the school. The initial staffing figures have been obtained from \Citeauthor{naplan} (\citedate{naplan}).
         \item Regardless of whether or not a school needs additional support, the final ratio of enrolled students to non-teaching staff should be below 40. While this is still much higher than the median ratio of 21 as shown in Table \ref{es_staff_ratios} for non-government schools, this bound represents a reasonable short-term improvement for four out of thirteen government schools; the Victorian government should thereafter continue to drive the ratio downwards over time.
         \item In order to allocate ES resources fairly, each school should be assigned a \textit{deficit score}; that is, a numerical representation of the extent to which students at the school require additional Education Support funding. This deficit score should be normalised so it represents the school's share of the overall ``academic deficit'' in Casey. Then, the school's share of the total allocated ES funding should \textit{at least} equal the school's share of the academic deficit.
     \end{itemize}
@@ -489,6 +489,8 @@
 
     \subsection{Results and Discussion}
 
+    \subsubsection{Numerical Output}
+
     When the mathematical model from Section \ref{solution_approach} is solved using the Simplex algorithm, the optimal number of Education Support workers allocated to each of the thirteen schools is as shown in Table \ref{results3}.
 
     \begin{table}[!ht]
@@ -514,7 +516,75 @@
         \label{results3}
     \end{table}
 
-    The corresponding minimal salary cost is \$7,376,901, which is two orders of magnitude smaller than the budget made available to it. 
+    The corresponding minimal salary cost is \$7,376,901, which is two orders of magnitude smaller than the surplus funding available to non-government schools in Casey. This linear programming model thus easily achieves an optimal salary cost that is modest enough in comparison to other government initiatives to be worthy of consideration for future adaptation and inclusion into funding allocation activities.
+
+    \subsubsection{Validation of Design}
+
+    In order to validate the solution, the recommended values for all the decision variables have been examined to ensure they are realistic and feasible. The observations one may make about these results are:
+    
+    \begin{itemize}
+        \item Kambrya College has an academic deficit score of 0, because the academic performance of its students is keeping up with national averages. The linear program has sensibly assigned no ES workers to Kambrya College, showing that the model is correctly directing resources away from schools that do not require them.
+        \item Schools with very high academic deficit scores, such as Doveton College and Hampton Park Secondary College, have been assigned higher numbers of ES workers. Conversely, schools with very low academic deficit scores such as Gleneagles Secondary College have been assigned only a few additional ES workers. Therefore it is evident that the model is behaving as expected, prioritising those schools whose performance is below average.
+        \item No school has been allocated an unrealistically large number of additional ES workers. If a school had been allocated 40 or 50 teachers, for example, this would be problematic in that it would likely cause the school's staffrooms to become overcrowded, and would necessitate substantial expenditure on capital works. The results show that the constraint that has been designed to keep staff growth sustainable is working as intended.
+    \end{itemize}
+
+    These observations show that the model functions in accordance with intentions; that is, by directing resources away from schools that do not need them, and towards schools that do need them, while keeping workforce growth manageable and affordable.
+
+    \subsubsection{Sensitivity to Changes}    
+    
+    The software application that has been used to solve the linear program does not produce a sensitivity analysis for programs with an integer constraint, such as the one in the present analysis. Nevertheless, there are some exercises that can be undertaken to understand the sensitivity of the model to changes in inputs. To this end, experimental changes have been made to a number of stimuli one at a time, and the results recorded as shown in Tables \ref{sens1} to \ref{sens3}.
+
+    \begin{table}[!ht]
+        \centering
+        \caption{Sensitivity to Staff Growth Limit.}
+        \begin{tabular}{|l|l|}
+        \hline
+            Change Made & Outcome \\ \hline
+            0.4 & no change \\ \hline
+            0.35 & no change \\ \hline
+            0.3 & no change \\ \hline
+            0.25 & baseline \\ \hline
+            0.2 & no change \\ \hline
+            0.15 & no solution \\ \hline
+        \end{tabular}
+        \label{sens1}
+    \end{table}
+
+    \begin{table}[!ht]
+        \centering
+        \caption{Sensitivity to ES Staff Ratio.}
+        \begin{tabular}{|l|l|l|}
+        \hline
+            Change Made & No. ES Staff & Salary Cost \\ \hline
+            55 & 37 & 2,550,891 \\ \hline
+            50 & 56 & 3,860,808 \\ \hline
+            45 & 77 & 5,308,611 \\ \hline 
+            40 (baseline) & 107 & 7,376,901 \\ \hline
+            35 & no solution & ~ \\ \hline
+        \end{tabular}
+        \label{sens2}
+    \end{table}
+
+    \begin{table}[!ht]
+        \centering
+        \caption{Sensitivity to Academic Deficit.}
+        \begin{tabular}{|l|l|l|}
+        \hline
+            Change Made & No. ES Staff & Salary Cost \\ \hline
+            remove highest & 88 & 6,066,984 \\ \hline
+            remove 2 highest & 70 & 4,826,010 \\ \hline
+        \end{tabular}
+        \label{sens3}
+    \end{table}
+
+    These results indicate that:
+
+    \begin{itemize}
+        \item The model is not sensitive to increases in the staff growth limit; this is unsurprising, because an increase in this limit represents a loosening of the constraint, and the solver has no incentive to shift from its original solution. If the staff growth limit is \textit{decreased} by a small amount (to 0.2), then there is likewise no change. However, too large a decrease causes the solver to fail to report a solution at all.
+        \item When the target ratio of students to ES workers is progressively increased, this constraint is loosened, and the solver allocates fewer and fewer staff, yielding a smaller and smaller salary cost. By constrast, the model is highly sensitive to even a modest \textit{decrease} in the target staff ratio, and will not converge on a solution. Therefore the model is not flexible enough to deliver a smaller staff ratio if this is ever needed. This is likely because the staff ratio constraint competes with the staff growth limit constraint - so when the target staff ratio is tightened, the solver cannot meet the growth limit.
+        \item When the worst-performing school - that is, the school with the highest academic deficit score - is removed from the analysis, its normalised score is transferred to other schools, and there is a modest saving in salary cost due to a net decrease in absolute underperformance across Casey. When the two worst-performing schools are removed, a further cost saving occurs, of a similar magnitude. This is likely to be because the two highest deficit scores are fairly similar in magnitude (75 and 65), indicating a certain degree of linearity in the model's behaviour in response to changes in academic performance data.
+    \end{itemize}
+    
 
 
 

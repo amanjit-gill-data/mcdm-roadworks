@@ -567,6 +567,7 @@ INPUT c:/texlive/2022/texmf-dist/tex/latex/lm/ts1lmr.fd
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/lm/ts1-lmr10.tfm
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/lm/rm-lmri10.tfm
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/lm/rm-lmbx12.tfm
+INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/lm/rm-lmbx10.tfm
 INPUT c:/texlive/2022/texmf-dist/tex/latex/lm/ot1lmtt.fd
 INPUT c:/texlive/2022/texmf-dist/tex/latex/lm/ot1lmtt.fd
 INPUT c:/texlive/2022/texmf-dist/tex/latex/lm/ot1lmtt.fd
@@ -576,11 +577,12 @@ INPUT agill_assessment3.aux
 INPUT agill_assessment3.run.xml
 OUTPUT agill_assessment3.run.xml
 INPUT c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-rmtt.enc
+INPUT c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc
 INPUT c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc
 INPUT c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc
 INPUT c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc
-INPUT c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc
 INPUT c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc
+INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmbx10.pfb
 INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmbx12.pfb
 INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmex10.pfb
 INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmmi10.pfb
