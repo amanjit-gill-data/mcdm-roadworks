@@ -271,11 +271,13 @@
 
     \subsection{Executive Summary}
 
-
+    
 
     \subsection{Introduction} \label{intro}
 
-    The purpose of this analysis is to formulate a new method, involving linear programming principles, by which funding can be allocated to public schools, in such a manner that emphasises support for students who underperform academically due to disability or social factors. 
+    The purpose of this analysis is to formulate a new method, using linear programming principles, by which funding can be allocated to public schools, in such a manner that emphasises support for students who underperform academically due to disability or social factors.
+
+    Variations of this approach have previously been explored by resarchers, making the case for its inclusion in governmental decision-making. For example, \Citeauthor{library_funding} (\citedate{library_funding}) uses linear programming to allocate funding to different college libraries, and \Citeauthor{school_funding} (\citedate{school_funding}) used a mixed-integer model to select schools for funding. 
     
     This study specifically focuses on public secondary schools in a single municipality, the City of Casey in Victoria. The scope has been such limited for the following reasons:
 
@@ -532,11 +534,11 @@
 
     \subsubsection{Sensitivity to Changes}    
     
-    The software application that has been used to solve the linear program does not produce a sensitivity analysis for programs with an integer constraint, such as the one in the present analysis. Nevertheless, there are some exercises that can be undertaken to understand the sensitivity of the model to changes in inputs. To this end, experimental changes have been made to a number of stimuli one at a time, and the results recorded as shown in Tables \ref{sens1} to \ref{sens3}.
+    The software application that has been used to solve the linear program does not produce a sensitivity analysis for programs with an integer constraint, such as the one in the present analysis. Nevertheless, there are exercises that can be undertaken to understand the sensitivity of the model to changes in inputs. To this end, experimental changes have been made to the model stimuli, and the results recorded as shown in Tables \ref{sens1} and \ref{sens2}.
 
     \begin{table}[!ht]
         \centering
-        \caption{Sensitivity to Staff Growth Limit.}
+        \caption{Sensitivity to staff growth limit.}
         \begin{tabular}{|l|l|}
         \hline
             Change Made & Outcome \\ \hline
@@ -552,7 +554,7 @@
 
     \begin{table}[!ht]
         \centering
-        \caption{Sensitivity to ES Staff Ratio.}
+        \caption{Sensitivity to ES staff ratio.}
         \begin{tabular}{|l|l|l|}
         \hline
             Change Made & No. ES Staff & Salary Cost \\ \hline
@@ -565,33 +567,36 @@
         \label{sens2}
     \end{table}
 
-    \begin{table}[!ht]
-        \centering
-        \caption{Sensitivity to Academic Deficit.}
-        \begin{tabular}{|l|l|l|}
-        \hline
-            Change Made & No. ES Staff & Salary Cost \\ \hline
-            remove highest & 88 & 6,066,984 \\ \hline
-            remove 2 highest & 70 & 4,826,010 \\ \hline
-        \end{tabular}
-        \label{sens3}
-    \end{table}
-
     These results indicate that:
 
     \begin{itemize}
         \item The model is not sensitive to increases in the staff growth limit; this is unsurprising, because an increase in this limit represents a loosening of the constraint, and the solver has no incentive to shift from its original solution. If the staff growth limit is \textit{decreased} by a small amount (to 0.2), then there is likewise no change. However, too large a decrease causes the solver to fail to report a solution at all.
         \item When the target ratio of students to ES workers is progressively increased, this constraint is loosened, and the solver allocates fewer and fewer staff, yielding a smaller and smaller salary cost. By constrast, the model is highly sensitive to even a modest \textit{decrease} in the target staff ratio, and will not converge on a solution. Therefore the model is not flexible enough to deliver a smaller staff ratio if this is ever needed. This is likely because the staff ratio constraint competes with the staff growth limit constraint - so when the target staff ratio is tightened, the solver cannot meet the growth limit.
-        \item When the worst-performing school - that is, the school with the highest academic deficit score - is removed from the analysis, its normalised score is transferred to other schools, and there is a modest saving in salary cost due to a net decrease in absolute underperformance across Casey. When the two worst-performing schools are removed, a further cost saving occurs, of a similar magnitude. This is likely to be because the two highest deficit scores are fairly similar in magnitude (75 and 65), indicating a certain degree of linearity in the model's behaviour in response to changes in academic performance data.
     \end{itemize}
     
+    Overall, the sensitivity analysis shows that the model exhibits behaviour that would be expected of a linear program, except when the target staff ratio is tightened. If there manifests a need to reduce the target staff ratio, then the interplay between the model conditions would need to be examined and the constraints possibly reconfigured.
 
+    \subsubsection{Comparison with Current Practice}
 
+    As discussed in Section \ref{intro}, the current practice in funding of Victorian schools is deficient in that there is no coverage for children with ADHD or ACEs (adverse childhood experiences), despite a well-established relationship between these factors and poor educational outcomes, as noted in the aforementioned papers by \Citeauthor{adhd} (\citedate{adhd}) and \Citeauthor{aces} (\citedate{aces}). 
+    
+    In addition, the Victorian government's current response to students falling behind, the TLI (Tutor Learning Initiative), may exacerbate students' poor performance by causing them to miss their regular classes, as discussed in Section \ref{problem_id}.
 
+    It should also be noted that the state government's PSD (Program for Students with Disabilities) has no specific allocation for Education Support staff. When students attract equity funding due to their disabilities, the school may spend these funds in any way it chooses \parencite{srp_vic}. Therefore, qualification for funding under the PSD is no guarantee of support within the classroom. 
+
+    Both the PSD and TLI are inadequate responses to students' needs, especially for those students who do not exhibit severe enough impairments to attract funding; therefore a new approach, not wholly reliant on medical diagnoses or obvious extreme behavioural issues, such as that proposed in this study, is required. While the present analysis has a limited geographical scope, and there are limitations pertaining to data collection as discussed in Section \ref{intro}, it serves as a proof of concept in that it validates prescriptive analytics as an equitable way to direct funds where they are most needed.
+
+    In addition to the aforementioned limitations, completion of this analysis has revealed another potential deficiency; namely, that the model does not address complaints by ES workers that they require more training and more collaboration with classroom teachers (as mentioned in Section \ref{problem_id}). If this model is developed further, then the allocation of collaboration time and training should be built into the next iteration. 
+
+    There is thus potential for the scope of this study to expand beyond the provision of Education Support staff, to funding a wide range of competing programs and priorities. To that end, the alternative methodologies discussed in Section \ref{solution_approach} would be worth consideration. They were not used for the present analysis because the narrow scope made them unsuitable, but for a wider scope involving the allocation of varying amounts of funding to competing causes, goal programming would likely prove effective. By contrast, for the allocation of fixed-size grants, binary programming would likely prove useful.
+
+    However, for a scenario in which a single pool of money, for a single purpose, is distributed among competing recipients, linear programming has shown itself to be powerful and effective at minimising costs while balancing other imperatives such as sustainable staff growth.
 
     \subsection{Conclusion}
 
+    The purpose of this study was to validate linear programming as an improved method by which limited funds can be distributed to schools. This proof of concept has focused on support for students with higher needs but has applicability across the entire education sector. 
 
+    Despite some limitations on the publicly available data on student performance, linear programming has been shown to be effective at minimising costs in a multi-factorial environment, yet powerful enough to make recommendations within the context of competing constraints. 
 
     \newpage
 

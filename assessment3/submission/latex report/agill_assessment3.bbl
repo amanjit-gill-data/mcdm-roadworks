@@ -676,6 +676,35 @@
       \field{pages}{789\bibrangedash 818}
       \range{pages}{30}
     \endentry
+    \entry{library_funding}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4b5ce8d6da9fd5139d318788c05f5184}{%
+           family={Goyal},
+           familyi={G\bibinitperiod},
+           given={SK},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4b5ce8d6da9fd5139d318788c05f5184}
+      \strng{fullhash}{4b5ce8d6da9fd5139d318788c05f5184}
+      \strng{bibnamehash}{4b5ce8d6da9fd5139d318788c05f5184}
+      \strng{authorbibnamehash}{4b5ce8d6da9fd5139d318788c05f5184}
+      \strng{authornamehash}{4b5ce8d6da9fd5139d318788c05f5184}
+      \strng{authorfullhash}{4b5ce8d6da9fd5139d318788c05f5184}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{College \& Research Libraries}
+      \field{number}{3}
+      \field{title}{Allocation of library funds to different departments of a university--an operational research approach}
+      \field{volume}{34}
+      \field{year}{1973}
+      \field{pages}{219\bibrangedash 222}
+      \range{pages}{4}
+    \endentry
     \entry{unimelb_aides}{misc}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=669cda1a093604ae5c4e349dd2e2e40c}{%
@@ -788,6 +817,45 @@
       \field{title}{Classroom pull-out: helping or hurting students’ self-concepts and academic success?}
       \field{volume}{Spring}
       \field{year}{2021}
+    \endentry
+    \entry{school_funding}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=bd494adb4180a946ac247f6a1b178975}{%
+           family={Ren},
+           familyi={R\bibinitperiod},
+           given={Jingze},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ffaceb6578285e6d69d5a9fed50ca6a9}{%
+           family={Run},
+           familyi={R\bibinitperiod},
+           given={Haonan},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b7567123ad8063ff975519a285490851}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Kai},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7d6efa58732d5d43f8326aa618bd5d7c}
+      \strng{fullhash}{7d6efa58732d5d43f8326aa618bd5d7c}
+      \strng{bibnamehash}{7d6efa58732d5d43f8326aa618bd5d7c}
+      \strng{authorbibnamehash}{7d6efa58732d5d43f8326aa618bd5d7c}
+      \strng{authornamehash}{7d6efa58732d5d43f8326aa618bd5d7c}
+      \strng{authorfullhash}{7d6efa58732d5d43f8326aa618bd5d7c}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{UMAP Journal}
+      \field{number}{3}
+      \field{title}{An Educational Funding Mechanism Based on Data Insight.}
+      \field{volume}{37}
+      \field{year}{2016}
     \endentry
     \entry{teacher_attitudes}{article}{}
       \name{author}{1}{}{%

@@ -63,23 +63,22 @@
 - [x] Different performance measures are used to validate the proposed model
 	- [x] how much smaller cost than budgeted
 
-- [ ] Sensitivity analysis was carried out to justify the robustness of the model.
-	- [ ] check sensitivity to different staff facilities limit, ES staff ratio, academic deficit score
-- [ ] Excellent comparison with the current practice and/or alternative methodologies.
-	- [ ] current practice doesn't allocate to adhd, aces; uses a loading system that seems good but still falls short
-	- [ ] current practice doesn't specifically fund ES - it's part of a pool of money the school can use for whatever
-- [ ] Perfect focus on the achievements.
-- [ ] Detailed discussion about any possible limitations of the assumed problem.
-	- [ ] only focuses on a narrow part of the entire funding model
-	- [ ] normal equity funding has numerous categories that probably interplay with this problem
-	- [ ] doesn't provision extra collaboration time between teachers and ES as advocated for my study
-	- [ ] so a second iteration of the analysis could work in extra planning allotments for ES, and perhaps slightly reduced workload for teachers so they can liaise with ES, and more funding for training ES and issuing them equipment, which isn't guaranteed
+- [x] Sensitivity analysis was carried out to justify the robustness of the model.
+	- [x] check sensitivity to different staff facilities limit, ES staff ratio, academic deficit score
+- [x] Excellent comparison with the current practice and/or alternative methodologies.
+	- [x] current practice doesn't allocate to adhd, aces; uses a loading system that seems good but still falls short
+	- [x] current practice doesn't specifically fund ES - it's part of a pool of money the school can use for whatever
+- [x] Perfect focus on the achievements.
+- [x] Detailed discussion about any possible limitations of the assumed problem.
+
+	- [x] doesn't provision extra collaboration time between teachers and ES as advocated for my study
+	- [x] so a second iteration of the analysis could work in extra planning allotments for ES, and perhaps slightly reduced workload for teachers so they can liaise with ES, and more funding for training ES and issuing them equipment, which isn't guaranteed
 
 
 
 
 #### conclusion 200
-- [ ] Conclusions and related outcomes (consequences and implications) are logical and reflect student’s informed evaluation and ability to place evidence and perspectives discussed in priority order.
+- [x] Conclusions and related outcomes (consequences and implications) are logical and reflect student’s informed evaluation and ability to place evidence and perspectives discussed in priority order.
 
 #### references
 - [x] The report follows a referencing style that complies with the Harvard style, and the in-text citations are made purposefully.
