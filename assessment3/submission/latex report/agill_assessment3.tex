@@ -43,7 +43,7 @@
 
     \section{Product Composition}
 
-    Peanut for Life, a food manufacturer, seeks to produce a chanachur snack product comprising three mixtures: puffed rice, nuts and cereal. Each ingredient mixture has a different cost per kilogram (see Table \ref{costs}); therefore, Peanut for Life is aiming to minimise the total cost of each package of chanachur by formulating a linear programming model. 
+    Peanut for Life, a food manufacturer, seeks to produce a chanachur snack product comprising three mixtures: puffed rice, nuts and cereal. Each mixture has a different cost per kilogram (see Table \ref{costs}); therefore, Peanut for Life is aiming to minimise the total cost of each package of chanachur by formulating a linear programming model. 
     
     \begin{table}[!ht]
         \centering
@@ -66,7 +66,7 @@
         \label{obj_func1}
     \end{equation}
     
-    The objective is to \textit{minimise} this quantity. However, there is not just the cost to consider. Peanut for Life must also ensure the product is commercially viable; it can do this by composing the product in such a way that it is both nutritionally balanced and attractive to consumers. To this end, the following constraints on the final composition are given:
+    The objective is to \textit{minimise} this quantity. However, there is not just the cost to consider. Peanut for Life must also ensure the product is commercially viable by ensuring it is both nutritionally balanced and attractive to consumers. To this end, the following constraints on the final composition are given:
 
     \begin{itemize}
         \item The chanachur package must hold between 3 and 4 cups of product.
@@ -76,7 +76,7 @@
         \item No more than 15\% of the product weight may comprise nuts.
     \end{itemize}
 
-    Using the nutritional information provided in Table \ref{nutrients}, these constraints may be modelled mathematically as inequalities \ref{first_constraint1} to \ref{last_constraint1}, presented in \textit{canonical form}.
+    Using the nutritional information provided in Table \ref{nutrients}, these constraints may be modelled mathematically as inequalities \ref{first_constraint1} to \ref{last_constraint1}.
 
     \begin{table}[!ht]
         \centering
@@ -117,7 +117,7 @@
         \label{last_constraint1}
     \end{equation}
 
-    One additional constraint is required; that is, a nonnegativity constraint for the weight of each ingredient:
+    A nonnegativity constraint is also required for the weight of each ingredient:
 
     \begin{equation}
         x_i \geq 0 \textrm{, where } i \in \{1, 2, 3\}
@@ -126,7 +126,7 @@
 
     Equation \ref{obj_func1}, together with inequations \ref{first_constraint1} to \ref{nonneg_constraint1}, completely define the linear programming model for optimising the composition of the new chanachur product. However, when it is solved using the Simplex algorithm, the optimal solution does not include any nuts at all. This is likely due to the high fat and energy content of the nut mixture (as shown in Table \ref{nutrients}) encouraging the solver to favour the less nutritionally dense puffed rice and cereal mixtures.
 
-    From a marketability standpoint, this is an unacceptable result, as nuts cannot be excluded from a commercially viable chanachur product. For this reason, a minimum amount of nut mixture must be enforced through an additional constraint. A cursory examination of popular chanachur recipes reveals that most small batches contain between 0.5 and 1.0 cups of nuts; approximately 75-113 grams. Therefore, for the present exercise, a nominal minimum of 100 grams has been chosen, and represented by inequation \ref{nut_min} in \textit{canonical form}.
+    This is an unacceptable result, as nuts cannot be excluded from a commercially viable chanachur product. For this reason, a minimum amount of nut mixture must be enforced through an additional constraint. Popular homemade chanachur recipes contain between 0.5 and 1.0 cups of nuts; approximately 75-113 grams. Therefore, for the present exercise, a nominal minimum of 100 grams has been chosen, and represented by inequation \ref{nut_min}.
 
     \begin{equation}
         -x_2 \leq -0.1
@@ -152,7 +152,7 @@
 
     \section{Staff Scheduling}
 
-    Chris Stokes, the rostering manager at Orient Computer Manufacturer, has been tasked with developing a staff schedule that minimises the total weekly cost of salary payments. Employees at Orient work in weekly shifts that include two days off, and their weekly salary depends on which days they are rostered on, as shown in Table \ref{shifts}. In addition, Mr Stokes has estimated the number of workers required on the factory floor every day of the week; this is shown in Table \ref{workers_needed}. 
+    Chris Stokes, the rostering manager at Orient Computer Manufacturer, has been tasked with developing a staff schedule that minimises the total weekly cost of salary payments. Employees at Orient work in weekly shifts that include two days off, and their salary depends on which days they are rostered on, as shown in Table \ref{shifts}. In addition, Mr Stokes has estimated the number of workers required on the factory floor every day of the week; this is shown in Table \ref{workers_needed}. 
 
     \begin{table}[!ht]
         \centering
@@ -188,7 +188,7 @@
         \label{workers_needed}
     \end{table}
 
-    Mr Stokes sees that a linear programming approach is ideally suited to this scenario. To this end, if $x_{1}$ represents the number of employees assigned to shift 1, $x_{2}$ represents the number of employees assigned to shift 2, and so on, then the total salary cost for one week would be:
+    Mr Stokes has chosen a linear programming approach. To this end, if $x_{1}$ represents the number of employees assigned to shift 1, $x_{2}$ represents the number of employees assigned to shift 2, and so on, then the total salary cost for one week would be:
 
     \begin{equation}
         total\_salary = 900x_1 + 850x_2 + 920x_3 + 860x_4 + 780x_5 + 910x_6 + 850x_7
@@ -227,9 +227,9 @@
         \label{last_constraint2}
     \end{equation}
 
-    There are additional constraints; namely, that each five-day shift must be assigned at least one worker, and that the number of workers assigned to each shift is a nonnegative integer. While part-time assignments are possible in other scenarios, Orient states that its employees are entitled to two days off per week, implying that its entire staff body works full time i.e. five days per week.
+    There are additional constraints; namely, that each five-day shift must be assigned at least one worker, and that the number of workers assigned to each shift is a nonnegative integer. While part-time assignments are possible in other scenarios, Orient states that its employees are entitled to two days off per week, implying that its entire staff body works five days per week.
 
-    The additional constraints are represented by inequations \ref{atleast_one} and \ref{int_constraint}. It is also conventional to explicitly require nonnegativity (see inequation \ref{nonneg_constraint2}) but inequation \ref{atleast_one} is sufficiently restrictive.
+    These constraints are represented by inequations \ref{atleast_one} and \ref{int_constraint}. It is also conventional to explicitly require nonnegativity (see inequation \ref{nonneg_constraint2}) but inequation \ref{atleast_one} is sufficiently restrictive.
 
     \begin{equation}
         x_i \geq 1 \textrm{, where } i \in \{1, 2, .., 7\}
@@ -246,7 +246,7 @@
         \label{nonneg_constraint2}
     \end{equation}
 
-    The objective function, given by equation \ref{obj_func2}, together with these constraints form a complete mathematical model suitable for linear programming. When this model is solved, an optimal number of employees working each five-day shift is obtained (see Table \ref{results2}). The corresponding minimal salary cost is \$22,410. 
+    The objective function, given by equation \ref{obj_func2}, together with these constraints form a complete linear programming model. When this model is solved, an optimal number of employees working each five-day shift is obtained (see Table \ref{results2}). The corresponding minimal salary cost is \$22,410. 
 
     \begin{table}[!ht]
         \centering
@@ -271,25 +271,25 @@
 
     \subsection{Executive Summary}
 
-    Funding for Victorian schools comes from both the state and federal governments. Both levels of government place an emphasis on equality; the idea that all children should receive a similar amount of public funding, regardless of their attendance at government or non-government schools. They both also apply loadings to the funding they offer schools, in order to support disadvantaged students. However, in Victoria's case, many public schools remain understaffed and underresourced, and support for students with disabilities is particularly deficient. 
+    Funding for Victorian schools comes from both the state and federal governments. Both levels of government place an emphasis on equality; the idea that all children should receive public funding, regardless of their attendance at government or non-government schools. They both also apply loadings to the funding they offer schools, in order to support disadvantaged students. However, in Victoria's case, many public schools remain understaffed and underresourced, and support for students with disabilities is particularly deficient. 
 
     This study seeks to explore and understand how funding is currently allocated to schools in Victoria, with a view to proposing a better methodology that more closely matches the needs of students. The proposed model is a prescriptive analytics treatment using a linear program that will both demonstrate the efficacy of linear programming and validate its applicability to the context of education funding.
 
     \subsection{Introduction} \label{intro}
 
-    The purpose of this analysis is to formulate a new method, using linear programming principles, by which funding can be allocated to public schools, in such a manner that emphasises support for students who underperform academically due to disability or social factors.
+    The purpose of this analysis is to formulate a new method, using linear programming, by which funding can be allocated to public schools in such a manner that emphasises support for students who underperform academically due to disability or social factors.
 
-    Variations of this approach have previously been explored by resarchers, making the case for its inclusion in governmental decision-making. For example, \Citeauthor{library_funding} (\citedate{library_funding}) uses linear programming to allocate funding to different college libraries, and \Citeauthor{school_funding} (\citedate{school_funding}) used a mixed-integer model to select schools for funding. 
+    Variations of this approach have previously been explored by resarchers. For example, \Citeauthor{library_funding} (\citedate{library_funding}) uses linear programming to allocate funding to different college libraries, and \Citeauthor{school_funding} (\citedate{school_funding}) uses a mixed-integer model to select schools for funding. 
     
     This study specifically focuses on public secondary schools in a single municipality, the City of Casey in Victoria. The scope has been such limited for the following reasons:
 
     \begin{itemize}
         \item Because this study aims to function as a proof of concept, it is desirable to limit its scope to a small subset of schools, as this allows the efficacy of the proposed methodology to be demonstrated without the complexity inherent in larger scale modelling.
-        \item Eliminating primary schools from the analysis removes the possibility that uncontrolled differences between the primary and secondary school systems might affect the results and conclusions.
-        \item Confining the analysis to a single municipality, the City of Casey, eliminates any possible influence of demographic differences between municipalities.  
+        \item Eliminating primary schools from the analysis removes the possibility of uncontrolled differences between the primary and secondary systems affecting the results.
+        \item Confining the analysis to a single municipality eliminates any influence of demographic differences between municipalities.  
     \end{itemize}
 
-    Students who require extra support at school are sometimes provided access to Education Support (ES) workers. These roles are filled by paraprofessionals who do not perform a teaching role and who are usually not degree-qualified educators. Because of this, they are counted among ``non-teaching staff''. Publicly available data from ACARA \parencite{acara_profiles} show that for non-government schools, the median ratio of enrolled students to non-teaching staff is much lower than for government schools. Table \ref{es_staff_ratios} shows these ratios for the City of Casey.
+    Students who require extra support at school are sometimes provided access to Education Support (ES) workers. These roles are filled by paraprofessionals who do not perform a teaching role. Because of this, they are counted among ``non-teaching staff''. Publicly available data from ACARA \parencite{acara_profiles} show that students at non-government schools may be better-serviced by non-teaching staff than those in government schools. Table \ref{es_staff_ratios} shows these statistics for the City of Casey. In order to understand why this may be happening, it is instructive to examine how schools in Victoria are funded.
 
     \begin{table}[!ht]
         \centering
@@ -303,57 +303,55 @@
         \label{es_staff_ratios}
     \end{table}
 
-    These figures suggest that in the public education sector, funding and provision of non-teaching staff, including ES workers, may be falling short of demand, and that students at non-government schools may be better-serviced than those in government schools. In order to understand why this may be happening, it is instructive to examine how schools in Victoria - and Australia generally - are funded.
+    Each year, the federal government calculates the SRS (Schooling Resource Standard), which is the amount it costs to educate a child for one year \parencite{srs_background}. In 2020, the base SRS amount was \$14,761 for secondary students \parencite{srs_2020}.
 
-    State governments are largely responsible for funding public schools, although the federal government also contributes a smaller amount. Each year, the federal government calculates the SRS (Schooling Resource Standard), which is the amount it costs to educate a child for one year \parencite{srs_background}. In 2020, the base SRS amount was \$14,761 for secondary students \parencite{srs_2020}.
+    After adjusting for school-specific ``loadings'' \parencite{srs_2020}, the federal government provides 20\% of the SRS amount to government schools, and 80\% of it to non-government schools. The Victorian government is thus responsible for providing the remaining 80\% to government schools.
 
-    After adjusting for school-specific ``loadings'' \parencite{srs_2020}, the federal government provides 20\% of the SRS amount to government schools, and 80\% of it to non-government schools. The Victorian government is thus responsible for providing 80\% of the SRS amount to government schools, and 20\% to non-government schools. 
-
-    In practice, the Victorian government divides its funding burden into two categories: the core student learning allocation (that is, the basic amount allocated to every student) and equity funding \parencite{srp_vic}. The amount of equity funding a school receives depends on the specific demographic and academic profile of the school, and takes into account the academic needs of individual students. One type of equity funding comes from the PSD (Program for Students with Disabilities). To attract PSD funding to a school, a student must meet specific disability criteria, and the allocated amount varies with the severity of the disability \parencite{psd_guidelines}.
+    In practice, the Victorian government divides its funding into two categories: the core student learning allocation (that is, the basic amount allocated to every student) and equity funding \parencite{srp_vic}. The amount of equity funding a school receives depends on demographics and takes into account the academic needs of individual students. One type of equity funding is the PSD (Program for Students with Disabilities). To attract PSD funding to a school, a student must meet specific criteria, and the allocated amount depends on the severity of the disability \parencite{psd_guidelines}.
 
     While this is a sound model in principle, it is problematic for the following reasons:
 
     \begin{itemize}
-        \item Students with ADHD (Attention Deficit Hyperactivity Disorder) do not qualify for extra funding \parencite{psd_guidelines}. According to \Citeauthor{adhd} (\citedate{adhd}), school functioning is strongly impaired by ADHD, a condition common to 5.9\% of youths. This means that no children with ADHD, who do not meet other criteria under the PSD guidelines, receive any support at school, despite conclusive evidence of severe impacts to educational attainment.
-        \item Research such as that by \Citeauthor{aces} (\citedate{aces}) shows that children with a high number of ACEs (adverse childhood experiences) are more likely to suffer poor school attendance and poor academic achievement. Unless such children exhibit behavioural problems severe enough to meet PSD funding criteria, their underachievement will go unnoticed and unaddressed.
-        \item Even children whose diagnoses meet the PSD criteria are often unable to attract sufficient funding. At one school within the City of Casey, a student whose executive functioning was severely impaired by Autism Spectrum Disorder was allocated an ES worker for only one mathematics lesson per week, meaning he was unable to make any progress for the remaining four lessons every week. The lack of access to support for this student, despite a confirmed urgent need, indicates that current funding provisions are either inadequate or misapplied.
+        \item Students with ADHD (Attention Deficit Hyperactivity Disorder) do not qualify for extra funding \parencite{psd_guidelines}. According to \Citeauthor{adhd} (\citedate{adhd}), school functioning is strongly impaired by ADHD, a condition common to 5.9\% of youths. Despite this, no children with ADHD receive support at school unless they have another disability that qualifies.
+        \item Research such as that by \Citeauthor{aces} (\citedate{aces}) shows that children with a high number of ACEs (adverse childhood experiences) are more likely to suffer poor academic outcomes. Unless such children exhibit behavioural problems severe enough to attract attention, their underachievement will go unaddressed.
+        \item Even children whose diagnoses meet the PSD criteria are often unable to attract sufficient funding. At one school within the City of Casey, a student who was severely impaired by Autism Spectrum Disorder was allocated an ES worker for only one mathematics lesson per week. This lack of access to support, despite a confirmed need, indicates that current funding provisions are either inadequate or misapplied.
     \end{itemize}
 
-    These observations about the shortcomings of the Victorian government's PSD are the foundation of the present study. They make the case that a more inclusive, targeted, funding model is required; one that captures students who would otherwise fail to meet funding criteria, and one that provides support that is more proportionate to the needs of students who are severely impacted by disabilities.
+    These shortcomings of the Victorian government's PSD are the foundation of the present study. They make the case that a more inclusive funding model is required; one that captures students who would otherwise fail to qualify, and one that provides more support for severely impacted students than they are currently receiving.
 
-    School-specific data required for this work have been obtained from government websites, while information about state and federal funding models has been obtained from the extensive guidelines and documentation published by government education departments. This context-specific information has been supplemented by examining research articles about educational practices (especially in the context of students with higher needs) and also about the applicability of linear programming in funding allocation scenarios.
+    School-specific data required for this work have been obtained from government websites, while information about state and federal funding models has been obtained from government education departments. This context-specific information has been supplemented by research articles on education and disability, and also on the applicability of linear programming in funding allocation scenarios.
 
     In collecting data for this analysis, a number of limitations have revealed themselves:
 
     \begin{itemize}
-        \item There is no publicly available data on what proportion of students are underperforming at schools. Data from standardised testing reveal the percentage of students at every school whose two-year progress is ``above average'', but there is no information on the percentage of students whose progress is below average or poor \parencite{naplan}. Because of this, it is difficult to estimate the number of children at a school who might need support but who fall outside the strict PSD criteria. An alternative measure has been formulated - an ``academic deficit'' score for each school (see Section \ref{solution_approach}).
-        \item A small number of secondary schools in Casey service both primary and secondary year levels \parencite{casey_schools}. There is no readily accessible data on what proportion of these schools' total enrolment comprises secondary students. The federal government's SRS base amount is different for primary and secondary \parencite{srs_2020}, so an assumption has been made that \textit{all} of the students at these schools attract the SRS base amount for secondary students, regardless of their age. This means that funding estimates for these schools are likely to be inaccurate.
-        \item A small number of secondary schools in the catchment area for this study have only recently opened, so there is no NAPLAN (National Assessment Program – Literacy and Numeracy) data available for them. In addition, a small number of schools do not offer VCE (Victorian Certificate of Education) classes, meaning there is no VCE performance data for them. This has been addressed by filling in these missing values with medians calculated from the other schools. This is preferable to removing the schools from the dataset; there are only 13 government secondary schools in Casey, so removing even one or two may significantly alter the funding allocated to the remaining schools.
+        \item There is no publicly available data on what proportion of students are underperforming at schools. Data from standardised testing reveal the percentage of students at every school whose progress is ``above average'', but there is no information on the percentage of students whose progress is average or below average \parencite{naplan}. Because of this, it is difficult to estimate the number of children at a school who might need support but who fall outside the strict PSD criteria. An alternative measure is to formulate an ``academic deficit'' score for each school (see Section \ref{solution_approach}).
+        \item A small number of secondary schools in Casey service both primary and secondary year levels \parencite{casey_schools}. There is no data on what proportion of these schools' total enrolment comprises secondary students. The federal government's SRS base amount is different for primary and secondary \parencite{srs_2020}, so an assumption has been made that \textit{all} of the students at these schools attract the SRS funding for secondary students. This means that funding estimates for these schools are likely to be inaccurate.
+        \item A small number of secondary schools in Casey have only recently opened, so they are missing either NAPLAN (National Assessment Program – Literacy and Numeracy) data or VCE (Victorian Certificate of Education) data. This has been addressed by filling in the missing values with medians calculated from the other schools. This is preferable to removing the schools from the dataset; there are only 13 government secondary schools in Casey, so removing even one or two may significantly alter the funding allocated to the remaining schools.
     \end{itemize}
 
     These limitations have been mitigated as described above, but will inevitably impact upon the accuracy of the figures. Nevertheless, the results of the analysis suggest that linear programming is a valid, efficient, tool for allocation of funding in narrow contexts such as disability support, and that significant cost savings are possible if education funding is applied in a more targeted way.  
 
     \subsection{Problem Identification} \label{problem_id}
 
-    As discussed in Section \ref{intro}, the ratio of enrolled students to non-teaching staff at government schools is much higher than at non-government schools \parencite{acara_profiles}. This, combined with the aforementioned evidence that students with ADHD and ACEs are likely to be underserviced by the PSD, suggests that provision of Education Support staff is inadequate at public schools, and that this is not limited to individual schools; rather, it may be a system-level deficiency requiring a system-level response.
+    As discussed in Section \ref{intro}, the ratio of enrolled students to non-teaching staff at government schools is much higher than at non-government schools \parencite{acara_profiles}. This, combined with the aforementioned evidence about students with ADHD and ACEs, suggests that access to Education Support staff may be inadequate at a system level.
 
-    In addition to the PSD, the Victorian government has conceived the TLI (Tutor Learning Initiative) to address concerns that students have fallen behind due to schooling disruptions during the COVID-19 pandemic \parencite{tli}. This program provides a minimum of \$25,000 to every government school per year, and this amount is only permitted to be used for on-campus tuition services. 
+    In addition to the PSD, the Victorian government has conceived the TLI (Tutor Learning Initiative) to address concerns that students have fallen behind during the COVID-19 pandemic \parencite{tli}. This program provides funding that is only permitted to be used for on-campus tuition services. 
 
-    The state government encourages schools to use the TLI funding for small-group tuition, which usually involves children being sent out of their regular classes to attend tuition sessions. Research such as that by \Citeauthor{pullout_rea} (\citedate{pullout_rea}) shows that ``pull-out'' programs are not as beneficial as programs in which students are offered additional support to remain in their regular classes. Pull-out programs may cause students to fall further behind due to their absence from mainstream classes; by constrast, more inclusive programs are associated with higher academic achievement and fewer behavioural issues \parencite{pullout_rea}.
+    The state government encourages schools to use the TLI funding for small-group tuition, which usually involves children being sent out of their regular classes to attend sessions. Research such as that by \Citeauthor{pullout_rea} (\citedate{pullout_rea}) shows that ``pull-out'' programs are not as beneficial as programs in which students are offered support to remain in their regular classes. Pull-out programs may cause students to fall further behind due to absence from mainstream classes; by constrast, more inclusive programs are associated with higher academic achievement and fewer behavioural issues \parencite{pullout_rea}.
     
-    These findings are supported by \Citeauthor{pullout_trinity} (\citedate{pullout_trinity}), whose study indicates that pull-out programs have a negative influence on students' self-concept and test scores. Therefore, it is proposed that the TLI is not a sufficient response to students falling behind, and that a separate program, emphasising the use of ES staff to support students in mainstream classrooms, is required in addition to - or instead of - the TLI. 
+    These findings are supported by \Citeauthor{pullout_trinity} (\citedate{pullout_trinity}), whose study indicates that pull-out programs have a negative influence on students' self-concept and test scores. Therefore, it is probable that the TLI is not a sufficient response to students falling behind, and that a separate program, employing ES staff to support students in mainstream classrooms, is required.
 
-    A potential barrier to this proposal is that some teachers may have a negative attitude to inclusive practices. While there is very little objection to the principle of inclusion, research shows that teachers who are underresourced resent the perceived complication that coordination with another educator might add to their daily work \parencite{teacher_attitudes}. In addition, ES workers themselves complain of lacking confidence in the curriculum material they are expected to help children to learn, due to a lack of support and training \parencite{unimelb_aides}. These observations are not arguments against an increased investment in Education Support; rather, they are arguments supporting the provision of time and funding to maximise the value of ES workers to both teachers and students.
+    A potential barrier to this proposal is that some teachers may have a sceptical attitude to inclusive practices. Research shows that teachers who are underresourced resent the perceived complication that coordination with another educator might add to their daily work \parencite{teacher_attitudes}. In addition, ES workers themselves complain of lacking confidence in the material they are expected to help children to learn, due to a lack of support and training \parencite{unimelb_aides}. These observations are not arguments against an increased investment in Education Support; rather, they are arguments supporting the provision of time and funding to maximise the value of ES workers.
 
-    Having established that existing measures - such as the PSD and TLI - are not adequately supporting students, and that investment in ES workers should be increased, the issue of funding allocation (that is, how much money should be given to each school for this purpose) manifests itself as a problem in prescriptive analytics. This third phase of analytics, the first two being descriptive and predictive \parencite{analytics}, centres on conducting analysis that culminates in the recommendation of a specific decision (or decisions) to optimise some stated objective. In the present case, the allocation of ES funding to schools must be done in such a way as to be financially sustainable, meaning there is an objective to meet students' needs for support while \textit{minimising} the cost to taxpayers. In Section \ref{solution_approach}, it shall be shown how this prescriptive analytics problem can be expressed validly as a linear program.
+    Having established that existing measures are not adequately supporting students, and that investment in ES workers should be increased, the issue of funding allocation manifests itself as a problem in prescriptive analytics. This third phase of analytics, the first two being descriptive and predictive \parencite{analytics}, centres on conducting analysis that culminates in the recommendation of a specific decision to optimise some stated objective. In the present case, the allocation of ES funding to schools must be done in a financially sustainable way, meaning there is an imperative to meet students' needs for support while \textit{minimising} the cost to taxpayers. In Section \ref{solution_approach}, it shall be shown how this prescriptive analytics problem can be expressed as a linear program.
 
     \subsection{Solution Approach} \label{solution_approach}
 
     Linear programming has been confirmed as the preferred prescriptive analytics approach because it allows the requirements of the schools seeking disability support staff to be balanced with the imperative to allocate public funds in a fiscally responsible way. Other potential approaches were considered and rejected on the following grounds:
 
     \begin{itemize}
-        \item For a large-scale project in which funding is allocated for a number of different uses, goal programming would be an ideal candidate, because it allows for multiple competing imperatives to be balanced against one another. For example, it may be used to distribute funding across different priorities such as sports equipment, musical instruments and art supplies. Its applicability to academic resource planning also been noted by \Citeauthor{goal_prog} (\citedate{goal_prog}). However, given that the present study focuses on only one goal - Education Support assistance for underperforming students - goal programming is not considered a suitable method.
-        \item Some consideration has been given to binary programming, a stricter form of linear programming in which each school would either be allocated funding or not, depending on a determination of need. While binary programming has been validated for other uses in education, such as timetabling \parencite{binary_prog}, this would not be a suitable approach for the present problem because it would not differentiate between schools requiring large and small investments; every chosen school would be designated a value of `1' or `0', regardless of its degree of need. By contrast, linear programming in its original form (even when constrained to produce integer results) offers the opportunity to differentiate between schools with high needs and low needs.
+        \item Goal programming would be an ideal candidate for problems involving multiple competing imperatives. For example, it may be used to distribute funding across different priorities such as sports equipment, musical instruments and art supplies. Its applicability to academic resource planning has also been noted by \Citeauthor{goal_prog} (\citedate{goal_prog}). However, given that the present study focuses on only one goal - Education Support - goal programming is not considered a suitable method.
+        \item Some consideration has been given to binary programming, a stricter form of linear programming in which each school would either be allocated funding or not. While binary programming has been validated for other uses in education, such as timetabling \parencite{binary_prog}, this would not be a suitable approach for the present problem because it would not differentiate between schools requiring large and small investments. By contrast, linear programming in its original form (even when constrained to produce integer results) offers the opportunity to differentiate high needs from low needs.
     \end{itemize}
 
     With a linear programming approach confirmed as most suitable, one can proceed with developing a mathematical model. Firstly, the City of Casey has thirteen public secondary schools; each one is assigned a decision variable representing the number of additional ES workers that have been allocated to it. These variables are given in Table \ref{dec_vars}.
@@ -381,15 +379,15 @@
         \label{dec_vars}
     \end{table}
     
-    As stated in Section \ref{problem_id}, the objective of the present exercise is to allocate ES workers to public schools in such a way as to \textit{minimise} the total salary cost. According to \Citeauthor{salary} (\citedate{salary}), the salary for an Education Support worker with ten years' experience is \$68,943 as at 1 January, 2023.
+    As stated in Section \ref{problem_id}, the objective of the present exercise is to allocate ES workers to public schools in such a way as to \textit{minimise} the total salary cost. According to \Citeauthor{salary} (\citedate{salary}), the current salary for an Education Support worker with ten years' experience is \$68,943.
 
-    The linear program can be substantially simplified by assuming that all assigned ES workers will be paid this salary; that is, an assumption can be made that all hired workers will have ten years' experience. Then the objective function is to minimise the total cost given by:
+    The linear program can be simplified by assuming that all assigned ES workers will be paid this salary. Then the objective function is to minimise the total cost as given by:
 
     \begin{equation}
         total\_cost = 68,943 \times \sum_{i=1}^{13} x_i
     \end{equation}
 
-    Because the salary is identical for each theoretical ES worker, the objective could also be expressed as a minimisation of the \textit{number} of hired workers:
+    Because the salary is identical for each ES worker, the objective could also be expressed as a minimisation of the \textit{number} of hired workers:
 
     \begin{equation}
         total\_num\_hired = \sum_{i=1}^{13} x_i
@@ -398,9 +396,9 @@
     In order for the linear program to produce a fiscally responsible solution, the following constraints are required:
 
     \begin{itemize}
-        \item The total expenditure must be below some nominated budget. In order to determine what this bound should be, the recurrent funding available to non-government schools in the City of Casey in 2020 has been obtained from the My School website \parencite{naplan} and compared against the funding required according to the 2020 SRS \parencite{srs_2020}. Table \ref{private_funding} shows that in 2020, non-government schools received more than \$106 million in excess funds. Given the significant underservicing of government schools, these surplus funds should be redistributed to the public system. This approach is validated by the observation made by \Citeauthor{equity} (\citedate{equity}) that governments should consider equity rather equality; that is, they should abort their insistence upon providing large amounts of public funds to privately educated students regardless of need. With this in mind, the nominated budget for the present analysis is set at \$106,656,982.
-        \item In order to avoid a large influx of new workers causing a school's staffrooms to become overcrowded (and thus introducing new problems pertaining to amenity and safety), the growth of new ES workers at a school should be limited to 25\% of the initial number of employees at the school. The initial staffing figures have been obtained from \Citeauthor{naplan} (\citedate{naplan}).
-        \item Regardless of whether or not a school needs additional support, the final ratio of enrolled students to non-teaching staff should be below 40. While this is still much higher than the median ratio of 21 as shown in Table \ref{es_staff_ratios} for non-government schools, this bound represents a reasonable short-term improvement for four out of thirteen government schools; the Victorian government should thereafter continue to drive the ratio downwards over time.
+        \item The total expenditure must be within some nominated budget. The recurrent funding available to non-government schools in the City of Casey in 2020 has been obtained from the My School website \parencite{naplan} and compared against the 2020 SRS base amount \parencite{srs_2020}. Table \ref{private_funding} shows that in 2020, non-government schools received more than \$106 million in excess funds. Given the significant underservicing of government schools, these surplus funds should be redistributed to the public system. This approach is validated by the observation made by \Citeauthor{equity} (\citedate{equity}) that governments should consider equity rather equality; that is, they should abort their insistence on providing large amounts of public funds to schools who do not need this. With this in mind, the nominated budget for the present analysis is set at \$106,656,982.
+        \item In order to avoid a large influx of new workers causing a school's staffrooms to become overcrowded, the growth of new ES workers at a school should be limited to 25\% of the initial number of employees at the school. These initial staffing figures have been obtained from \Citeauthor{naplan} (\citedate{naplan}).
+        \item The final ratio of enrolled students to non-teaching staff should be below 40. While this is still much higher than the median ratio of 21 as shown in Table \ref{es_staff_ratios} for non-government schools, this represents a reasonable short-term improvement for some public schools; the Victorian government should thereafter continue to drive the ratio down over time.
         \item In order to allocate ES resources fairly, each school should be assigned a \textit{deficit score}; that is, a numerical representation of the extent to which students at the school require additional Education Support funding. This deficit score should be normalised so it represents the school's share of the overall ``academic deficit'' in Casey. Then, the school's share of the total allocated ES funding should \textit{at least} equal the school's share of the academic deficit.
     \end{itemize}
 
@@ -426,12 +424,12 @@
 
     In addition to these operational constraints, a nonnegativity constraint applies to all thirteen decision variables, as is mandatory for all linear programs. An integer constraint has also been applied, to simplify interpretation of the results by limiting the recommended funding allocations to whole multiples of a full-time salary. 
 
-    The final operational constraints are given by inequations \ref{first_constraint3} to \ref{last_constraint3}. The data used to compute the constants are given in Table \ref{params}. Note that the ``academic deficit'' score for each school has been computed by applying the following procedure to NAPLAN data \parencite{naplan} and VCE data \parencite{vce_scores}:
+    The operational constraints are represented by inequations \ref{first_constraint3} to \ref{last_constraint3}. The data used to compute the coefficients are given in Table \ref{params}. Note that the ``academic deficit'' score for each school has been computed by applying the following procedure to NAPLAN data \parencite{naplan} and VCE data \parencite{vce_scores}:
 
     \begin{enumerate}
-        \item Obtain the Year 9 raw NAPLAN scores for reading, writing, spelling and grammar. Compute the mean of these four figures to obtain a single figure for `literacy'. Compute the difference between this figure and the national average. 
-        \item Also obtain the Year 9 raw NAPLAN score for numeracy; compute the difference between this figure and the national average score for numeracy.
-        \item Obtain the median VCE study score for the school. Compute the difference between this and the mean, which is always set to 30 every year \parencite{vce_info}.
+        \item Obtain the Year 9 raw NAPLAN scores for reading, writing, spelling and grammar. Compute the mean to obtain a single figure for `literacy'. Compute the difference between this figure and the national average. 
+        \item Also obtain the Year 9 raw NAPLAN score for numeracy; compute the difference between this figure and the national average.
+        \item Obtain the median VCE study score for the school. Compute the difference between this and the mean, which is always set to 30 \parencite{vce_info}.
         \item Add up the differences computed in Steps 1 to 3. This is the school's ``academic deficit''. Note that a school with no deficit (effectively an ``academic surplus'') is assigned a score of 0.
         \item Add up all the schools' academic deficits; divide each school's deficit by this sum, yielding a normalised figure representing the school's share of the overall academic deficit.
     \end{enumerate}
@@ -489,7 +487,7 @@
         \item $d_i = \textrm{academic deficit (normalised)}$
     \end{itemize}
 
-    It is anticipated that these constraints will yield an optimal salary cost, ensuring schools are granted support that is proportional to their needs, while keeping workforce growth sustainable to ensure that existing school buildings are capable of supporting an increase in staff numbers. It is also anticipated that the total salary cost will be well below the very large \$106 million nominal budget, showing that emphasising support for underperforming students need not be an expensive exercise relative to other government programs.
+    It is anticipated that these constraints will yield an optimal salary cost, ensuring schools are granted support that is proportional to their needs, while keeping workforce growth sustainable to avoid overcrowding. It is also anticipated that the total salary cost will be well below the very large \$106 million nominal budget, showing that adequate support for underperforming students need not be an expensive exercise relative to other government programs.
 
     \subsection{Results and Discussion}
 
@@ -520,23 +518,23 @@
         \label{results3}
     \end{table}
 
-    The corresponding minimal salary cost is \$7,376,901, which is two orders of magnitude smaller than the surplus funding available to non-government schools in Casey. This linear programming model thus easily achieves an optimal salary cost that is modest enough in comparison to other government initiatives to be worthy of consideration for future adaptation and inclusion into funding allocation activities.
+    The corresponding minimal salary cost is \$7,376,901, which is two orders of magnitude smaller than the surplus funding available to non-government schools in Casey. This linear programming model thus easily achieves an optimal salary cost that is modest enough to be worthy of consideration for future adaptation and inclusion into funding allocation activities.
 
     \subsubsection{Validation of Design}
 
-    In order to validate the solution, the recommended values for all the decision variables have been examined to ensure they are realistic and feasible. The observations one may make about these results are:
+    In order to validate the solution, the recommended values for all the decision variables have been examined to ensure they are realistic and feasible. The observations one may make are:
     
     \begin{itemize}
-        \item Kambrya College has an academic deficit score of 0, because the academic performance of its students is keeping up with national averages. The linear program has sensibly assigned no ES workers to Kambrya College, showing that the model is correctly directing resources away from schools that do not require them.
+        \item Kambrya College has an academic deficit score of 0, because its students are keeping up with national averages. The linear program has sensibly assigned no ES workers to Kambrya College, showing that the model is correctly directing resources away from schools that do not require them.
         \item Schools with very high academic deficit scores, such as Doveton College and Hampton Park Secondary College, have been assigned higher numbers of ES workers. Conversely, schools with very low academic deficit scores such as Gleneagles Secondary College have been assigned only a few additional ES workers. Therefore it is evident that the model is behaving as expected, prioritising those schools whose performance is below average.
-        \item No school has been allocated an unrealistically large number of additional ES workers. If a school had been allocated 40 or 50 teachers, for example, this would be problematic in that it would likely cause the school's staffrooms to become overcrowded, and would necessitate substantial expenditure on capital works. The results show that the constraint that has been designed to keep staff growth sustainable is working as intended.
+        \item No school has been allocated an unrealistically large number of additional ES workers. The results show that the constraint that has been designed to keep staff growth sustainable is working as intended.
     \end{itemize}
 
-    These observations show that the model functions in accordance with intentions; that is, by directing resources away from schools that do not need them, and towards schools that do need them, while keeping workforce growth manageable and affordable.
+    These observations show that the model functions in accordance with intentions; that is, by directing resources away from schools that do not need them, towards schools that do need them, while keeping workforce growth manageable and affordable.
 
     \subsubsection{Sensitivity to Changes}    
     
-    The software application that has been used to solve the linear program does not produce a sensitivity analysis for programs with an integer constraint, such as the one in the present analysis. Nevertheless, there are exercises that can be undertaken to understand the sensitivity of the model to changes in inputs. To this end, experimental changes have been made to the model stimuli, and the results recorded as shown in Tables \ref{sens1} and \ref{sens2}.
+    The software that has been used to solve the linear program does not produce a sensitivity analysis for programs with an integer constraint. Nevertheless, there are exercises that can be undertaken to understand the sensitivity of the model to changes in inputs. To this end, experimental changes have been made, and the results recorded, as shown in Tables \ref{sens1} and \ref{sens2}.
 
     \begin{table}[!ht]
         \centering
@@ -572,27 +570,27 @@
     These results indicate that:
 
     \begin{itemize}
-        \item The model is not sensitive to increases in the staff growth limit; this is unsurprising, because an increase in this limit represents a loosening of the constraint, and the solver has no incentive to shift from its original solution. If the staff growth limit is \textit{decreased} by a small amount (to 0.2), then there is likewise no change. However, too large a decrease causes the solver to fail to report a solution at all.
-        \item When the target ratio of students to ES workers is progressively increased, this constraint is loosened, and the solver allocates fewer and fewer staff, yielding a smaller and smaller salary cost. By constrast, the model is highly sensitive to even a modest \textit{decrease} in the target staff ratio, and will not converge on a solution. Therefore the model is not flexible enough to deliver a smaller staff ratio if this is ever needed. This is likely because the staff ratio constraint competes with the staff growth limit constraint - so when the target staff ratio is tightened, the solver cannot meet the growth limit.
+        \item The model is not sensitive to increases in the staff growth limit; this is unsurprising, because an increase represents a loosening of the constraint, and the solver has no incentive to shift from its original solution. If the staff growth limit is \textit{decreased} by a small amount (to 0.2), then there is likewise no change. However, too large a decrease causes the solver to fail to return a solution.
+        \item When the target ratio of students to ES workers is progressively increased, this constraint is loosened, and the solver allocates fewer staff, yielding a smaller and smaller salary cost. By constrast, the model is highly sensitive to even a modest \textit{decrease} in the target staff ratio, and will not converge on a solution. Therefore the model is not flexible enough to deliver a smaller staff ratio if this is ever needed. This is likely because the staff ratio constraint competes with the staff growth limit constraint - so when the target staff ratio is tightened, the solver cannot meet the growth limit.
     \end{itemize}
     
     Overall, the sensitivity analysis shows that the model exhibits behaviour that would be expected of a linear program, except when the target staff ratio is tightened. If there manifests a need to reduce the target staff ratio, then the interplay between the model conditions would need to be examined and the constraints possibly reconfigured.
 
     \subsubsection{Comparison with Current Practice}
 
-    As discussed in Section \ref{intro}, the current practice in funding of Victorian schools is deficient in that there is no coverage for children with ADHD or ACEs (adverse childhood experiences), despite a well-established relationship between these factors and poor educational outcomes, as noted in the aforementioned papers by \Citeauthor{adhd} (\citedate{adhd}) and \Citeauthor{aces} (\citedate{aces}). 
+    As discussed in Section \ref{intro}, the current practice in funding of Victorian schools is deficient in that there is no coverage for children with ADHD or ACEs, despite a well-established relationship between these factors and poor educational outcomes, as noted in the aforementioned papers by \Citeauthor{adhd} (\citedate{adhd}) and \Citeauthor{aces} (\citedate{aces}). 
     
-    In addition, the Victorian government's current response to students falling behind, the TLI (Tutor Learning Initiative), may exacerbate students' poor performance by causing them to miss their regular classes, as discussed in Section \ref{problem_id}.
+    In addition, the Victorian government's current response to students falling behind, the TLI, may exacerbate students' poor performance by causing them to miss their regular classes, as discussed in Section \ref{problem_id}.
 
     It should also be noted that the state government's PSD (Program for Students with Disabilities) has no specific allocation for Education Support staff. When students attract equity funding due to their disabilities, the school may spend these funds in any way it chooses \parencite{srp_vic}. Therefore, qualification for funding under the PSD is no guarantee of support within the classroom. 
 
-    Both the PSD and TLI are inadequate responses to students' needs, especially for those students who do not exhibit severe enough impairments to attract funding; therefore a new approach, not wholly reliant on medical diagnoses or obvious extreme behavioural issues, such as that proposed in this study, is required. While the present analysis has a limited geographical scope, and there are limitations pertaining to data collection as discussed in Section \ref{intro}, it serves as a proof of concept in that it validates prescriptive analytics as an equitable way to direct funds where they are most needed.
+    Both the PSD and TLI are inadequate responses to students' needs, especially for students who do not exhibit severe enough impairments to attract funding; therefore a new approach, not wholly reliant on medical diagnoses or serious behavioural issues, is required. While the present analysis has a limited geographical scope, and there are limitations pertaining to data collection as discussed in Section \ref{intro}, it serves as a proof of concept for the use of prescriptive analytics for equitable distribution of funds.
 
     In addition to the aforementioned limitations, completion of this analysis has revealed another potential deficiency; namely, that the model does not address complaints by ES workers that they require more training and more collaboration with classroom teachers (as mentioned in Section \ref{problem_id}). If this model is developed further, then the allocation of collaboration time and training should be built into the next iteration. 
 
-    There is thus potential for the scope of this study to expand beyond the provision of Education Support staff, to funding a wide range of competing programs and priorities. To that end, the alternative methodologies discussed in Section \ref{solution_approach} would be worth consideration. They were not used for the present analysis because the narrow scope made them unsuitable, but for a wider scope involving the allocation of varying amounts of funding to competing causes, goal programming would likely prove effective. By contrast, for the allocation of fixed-size grants, binary programming would likely prove useful.
+    There is thus potential for the scope of this study to expand beyond the provision of Education Support staff. To that end, the alternative methodologies discussed in Section \ref{solution_approach} are worth consideration. For a wider scope involving the allocation of varying amounts of funding to competing causes, goal programming would likely prove effective. By contrast, for the allocation of fixed-size grants, binary programming would likely prove useful.
 
-    However, for a scenario in which a single pool of money, for a single purpose, is distributed among competing recipients, linear programming has shown itself to be powerful and effective at minimising costs while balancing other imperatives such as sustainable staff growth.
+    However, for a scenario in which a single pool of money, for a single purpose, is distributed among competing recipients, linear programming has shown itself to be powerful and effective.
 
     \subsection{Conclusion}
 

@@ -7,9 +7,9 @@
 ## report checklist
 
 #### abstract 200
-- [ ] Accurately and succinctly summarises contents of the report.
-- [ ] Gives the reader an excellent understanding of the report purpose and content.
-- [ ] Provide a hint of managerial implication at the bottom end of the abstract.
+- [x] Accurately and succinctly summarises contents of the report.
+- [x] Gives the reader an excellent understanding of the report purpose and content.
+- [x] Provide a hint of managerial implication at the bottom end of the abstract.
 
 #### introduction 500
 - [x] Explains purpose of report
