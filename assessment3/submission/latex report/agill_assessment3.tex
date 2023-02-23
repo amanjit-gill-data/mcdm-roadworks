@@ -66,7 +66,7 @@
         \label{obj_func1}
     \end{equation}
     
-    The objective is to \textit{minimise} this quantity. However, there is not just the cost to consider. Peanut for Life must also ensure the product is commercially viable by ensuring it is both nutritionally balanced and attractive to consumers. To this end, the following constraints on the final composition are given:
+    The objective is to \textit{minimise} this quantity while ensuring the product is both nutritionally balanced and attractive to consumers. To this end, the following constraints are given:
 
     \begin{itemize}
         \item The chanachur package must hold between 3 and 4 cups of product.
@@ -124,9 +124,9 @@
         \label{nonneg_constraint1}
     \end{equation}
 
-    Equation \ref{obj_func1}, together with inequations \ref{first_constraint1} to \ref{nonneg_constraint1}, completely define the linear programming model for optimising the composition of the new chanachur product. However, when it is solved using the Simplex algorithm, the optimal solution does not include any nuts at all. This is likely due to the high fat and energy content of the nut mixture (as shown in Table \ref{nutrients}) encouraging the solver to favour the less nutritionally dense puffed rice and cereal mixtures.
+    Equation \ref{obj_func1}, together with inequations \ref{first_constraint1} to \ref{nonneg_constraint1}, completely define the linear programming model for optimising the composition of the product. However, the optimal solution does not include any nuts at all. This is likely due to the high fat and energy content of the nut mixture (as shown in Table \ref{nutrients}).
 
-    This is an unacceptable result, as nuts cannot be excluded from a commercially viable chanachur product. For this reason, a minimum amount of nut mixture must be enforced through an additional constraint. Popular homemade chanachur recipes contain between 0.5 and 1.0 cups of nuts; approximately 75-113 grams. Therefore, for the present exercise, a nominal minimum of 100 grams has been chosen, and represented by inequation \ref{nut_min}.
+    Nuts cannot be excluded from a commercially viable chanachur product. For this reason, a minimum amount of nut mixture must be enforced through an additional constraint. Popular homemade chanachur recipes contain between 0.5 and 1.0 cups of nuts; approximately 75-113 grams. Therefore, for the present exercise, a nominal minimum of 100 grams has been chosen, and represented by inequation \ref{nut_min}.
 
     \begin{equation}
         -x_2 \leq -0.1
@@ -195,7 +195,7 @@
         \label{obj_func2}
     \end{equation}
 
-    The objective is to \textit{minimise} this cost while ensuring that the staff requirement for every day is met. This can be done by representing the number of workers required every day, given in Table \ref{workers_needed}, as a set of constraints. These manifest themselves as inequations \ref{first_constraint2} to \ref{last_constraint2}.
+    The objective is to \textit{minimise} this cost while ensuring that the daily staff requirement is met. This can be done by representing the number of workers required every day, given in Table \ref{workers_needed}, as a set of constraints:
 
     \begin{equation}
         x_2 + x_3 + x_4 + x_5 + x_6 \geq 18   
@@ -227,7 +227,7 @@
         \label{last_constraint2}
     \end{equation}
 
-    There are additional constraints; namely, that each five-day shift must be assigned at least one worker, and that the number of workers assigned to each shift is a nonnegative integer. While part-time assignments are possible in other scenarios, Orient states that its employees are entitled to two days off per week, implying that its entire staff body works five days per week.
+    Additionally, each five-day shift must be assigned at least one worker, and the number of workers assigned to each shift must be a nonnegative integer. While part-time assignments are possible in other scenarios, Orient states that its employees are entitled to two days off per week, implying that its entire staff works five days per week.
 
     These constraints are represented by inequations \ref{atleast_one} and \ref{int_constraint}. It is also conventional to explicitly require nonnegativity (see inequation \ref{nonneg_constraint2}) but inequation \ref{atleast_one} is sufficiently restrictive.
 
@@ -246,7 +246,7 @@
         \label{nonneg_constraint2}
     \end{equation}
 
-    The objective function, given by equation \ref{obj_func2}, together with these constraints form a complete linear programming model. When this model is solved, an optimal number of employees working each five-day shift is obtained (see Table \ref{results2}). The corresponding minimal salary cost is \$22,410. 
+    When this model is solved, an optimal number of employees working each five-day shift is obtained (see Table \ref{results2}). The corresponding minimal salary cost is \$22,410. 
 
     \begin{table}[!ht]
         \centering
@@ -277,16 +277,16 @@
 
     \subsection{Introduction} \label{intro}
 
-    The purpose of this analysis is to formulate a new method, using linear programming, by which funding can be allocated to public schools in such a manner that emphasises support for students who underperform academically due to disability or social factors.
+    The purpose of this analysis is to formulate a new method, using linear programming, by which funding can be allocated to public schools to improve support for students who underperform academically due to disability or social factors.
 
     Variations of this approach have previously been explored by resarchers. For example, \Citeauthor{library_funding} (\citedate{library_funding}) uses linear programming to allocate funding to different college libraries, and \Citeauthor{school_funding} (\citedate{school_funding}) uses a mixed-integer model to select schools for funding. 
     
-    This study specifically focuses on public secondary schools in a single municipality, the City of Casey in Victoria. The scope has been such limited for the following reasons:
+    This present study focuses on public secondary schools in a single municipality, the City of Casey in Victoria. The scope has been limited for the following reasons:
 
     \begin{itemize}
-        \item Because this study aims to function as a proof of concept, it is desirable to limit its scope to a small subset of schools, as this allows the efficacy of the proposed methodology to be demonstrated without the complexity inherent in larger scale modelling.
-        \item Eliminating primary schools from the analysis removes the possibility of uncontrolled differences between the primary and secondary systems affecting the results.
-        \item Confining the analysis to a single municipality eliminates any influence of demographic differences between municipalities.  
+        \item Because this study aims to function as a proof of concept, it is desirable to limit its scope, as this allows the efficacy of the proposed methodology to be demonstrated without the complexity of large scale modelling.
+        \item Eliminating primary schools from the analysis removes the possibility of uncontrolled differences between the primary and secondary systems.
+        \item Confining the analysis to a single municipality eliminates influence of demographic differences between municipalities.  
     \end{itemize}
 
     Students who require extra support at school are sometimes provided access to Education Support (ES) workers. These roles are filled by paraprofessionals who do not perform a teaching role. Because of this, they are counted among ``non-teaching staff''. Publicly available data from ACARA \parencite{acara_profiles} show that students at non-government schools may be better-serviced by non-teaching staff than those in government schools. Table \ref{es_staff_ratios} shows these statistics for the City of Casey. In order to understand why this may be happening, it is instructive to examine how schools in Victoria are funded.
@@ -307,7 +307,7 @@
 
     After adjusting for school-specific ``loadings'' \parencite{srs_2020}, the federal government provides 20\% of the SRS amount to government schools, and 80\% of it to non-government schools. The Victorian government is thus responsible for providing the remaining 80\% to government schools.
 
-    In practice, the Victorian government divides its funding into two categories: the core student learning allocation (that is, the basic amount allocated to every student) and equity funding \parencite{srp_vic}. The amount of equity funding a school receives depends on demographics and takes into account the academic needs of individual students. One type of equity funding is the PSD (Program for Students with Disabilities). To attract PSD funding to a school, a student must meet specific criteria, and the allocated amount depends on the severity of the disability \parencite{psd_guidelines}.
+    In practice, the Victorian government divides its funding into two categories: the core student learning allocation, and equity funding \parencite{srp_vic}. The amount of equity funding a school receives depends on demographics and the academic needs of individual students. One type of equity funding is the PSD (Program for Students with Disabilities). To attract PSD funding, a student must meet specific criteria, and the allocated amount depends on the severity of the disability \parencite{psd_guidelines}.
 
     While this is a sound model in principle, it is problematic for the following reasons:
 
